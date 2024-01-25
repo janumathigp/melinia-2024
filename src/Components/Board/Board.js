@@ -100,17 +100,17 @@ class Board extends React.Component
             </Typography>
           </CardContent>
           <CardContent sx={{ padding: '0px', paddingTop: '7px' }}>
-            <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: '10px' }}>
+            <div style={{ cursor:'pointer',display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: '10px' }}>
               <FontAwesomeIcon icon={faPhone} style={{ fontSize: '20px', color: '#3498db' }} />
-              <Typography variant="body1" display="block" gutterBottom sx={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 'bolder', color: '#555', fontSize: '1rem' }}>
+              <Typography variant="body1" display="block" gutterBottom onClick={() => window.location.href=`tel:${'0422-2574071 Extn: 335'}`} sx={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 'bolder', color: '#555', fontSize: '1rem' }}>
                 0422-2574071 Extn: 335
               </Typography>
             </div>
           </CardContent>
           <CardContent sx={{ padding: '0px', paddingTop: '7px' }}>
-            <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: '10px' }}>
+            <div style={{ cursor:'pointer',display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: '10px' }}>
               <FontAwesomeIcon icon={faEnvelope} style={{ fontSize: '20px', color: '#3498db' }} />
-              <Typography variant="body1" display="block" gutterBottom sx={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 'bolder', color: '#555', fontSize: '1rem' }}>
+              <Typography variant="body1" display="block" onClick={() => window.location.href=`mailto:${'stanlyfelix@cit.edu.in'}`} gutterBottom sx={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 'bolder', color: '#555', fontSize: '1rem' }}>
                 stanlyfelix@cit.edu.in
               </Typography>
             </div>
@@ -167,17 +167,21 @@ class Board extends React.Component
             </Typography>
           </CardContent>
           <CardContent sx={{ padding: '0px', paddingTop: '7px' }}>
-            <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: '10px' }}>
+            <div style={{cursor:'pointer', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: '10px' }}>
               <FontAwesomeIcon icon={faPhone} style={{ fontSize: '20px', color: '#3498db' }} />
-              <Typography variant="body1" display="block" gutterBottom sx={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 'bolder', color: '#555', fontSize: '1rem' }}>
+              <Typography variant="body1" display="block" gutterBottom sx={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 'bolder', color: '#555', fontSize: '1rem' }}
+              onClick={() => window.location.href=`tel:${data.phone}`}
+              >
                 {data.phone}
               </Typography>
             </div>
           </CardContent>
           <CardContent sx={{ padding: '0px', paddingTop: '7px' }}>
-            <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: '10px' }}>
+            <div style={{ cursor:'pointer',display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: '10px' }}>
               <FontAwesomeIcon icon={faEnvelope} style={{ fontSize: '20px', color: '#3498db' }} />
-              <Typography variant="body1" display="block" gutterBottom sx={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 'bolder', color: '#555', fontSize: '1rem' }}>
+              <Typography variant="body1" display="block" gutterBottom sx={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 'bolder', color: '#555', fontSize: '1rem' }}
+              onClick={() => window.location.href=`mailto:${data.email}`}
+              >
                 {data.email}
               </Typography>
             </div>
