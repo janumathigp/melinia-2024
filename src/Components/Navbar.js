@@ -7,6 +7,8 @@ import { Link } from "react-router-dom";
 import {MdGroups} from "react-icons/md";
 import {FaFileCode} from "react-icons/fa";
 import {FaRegFileCode} from "react-icons/fa";
+
+import meliniaLogo from "../Assets/log.png"
 import {
   AiOutlineHome,
   
@@ -34,9 +36,9 @@ function NavBar() {
       expand="md"
       className={navColour ? "sticky" : "navbar"}
     >
-      <Container>
+      <Container className='font'>
         <Navbar.Brand href="/" className="d-flex">
-          {/* <img src={logo} className="img-fluid logo" alt="brand" /> */}
+          <img src={meliniaLogo} className="logo" alt="brand" />
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
