@@ -35,7 +35,7 @@ function App() {
     <Router>
       <Preloader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
-        <Navbar />
+        <Navbar style={{display:'flex', justifyContent:'end'}} />
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />

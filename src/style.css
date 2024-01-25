@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Orbitron&family=Rajdhani:wght@300&display=swap');
 html {
   --section-background-color: linear-gradient(
     to bottom left,
@@ -33,7 +35,7 @@ button:focus {
   height: 100%;
   z-index: 999999;
   background-color: #0c0513;
-  background-image: url(./Assets/pre.svg);
+  background-image: url(./assets/pre.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -82,7 +84,7 @@ button:focus {
 /* Navbar Section  */
 /* --------- */
 .sticky {
-  background-color: #1a2c2ea9 !important;
+  background-color: #150F23 !important;
   transition: all 0.3s ease-out 0s !important;
   box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
   backdrop-filter: blur(15px) !important;
@@ -161,8 +163,10 @@ button:focus {
 }
 
 .logo {
+  position: relative;
+  bottom: 5.4px;
   height: 1.4em !important;
-  width: 2.5em !important;
+  width: 5.5em !important;
 }
 
 .navbar-nav .nav-link {
@@ -248,42 +252,74 @@ button:focus {
     transform: rotate(0deg);
   }
 }
-#tsparticles {
-  position: fixed !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-  width: 100%;
-  height: 100%;
-}
+
 
 .home-header {
   padding-top: 80px !important;
 }
 
 .home-section {
-  position: relative;
-  z-index: -1;
-  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
-  background-size: 100% 100%;
+  /* position: relative;
+  z-index: -1; */
+  /* background-image: var(--image-gradient), url(./assets/home-bg1.jpg); */
+  /* background-size: 100% 100%;
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
-  padding-top: 30px !important;
+  padding-top: 30px !important; */
 }
 
 .home-content {
   padding: 9rem 0 2rem !important;
   color: whitesmoke;
   text-align: left;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .heading {
-  font-size: 2.4em !important;
-  padding-left: 50px !important;
+  font-size: 1.1em !important;
+  letter-spacing: 0.2 em;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.font{
+  font-family: 'Orbitron', sans-serif;
+  font-size: medium;
 }
 
 .heading-name {
-  font-size: 2.5em !important;
-  padding-left: 45px !important;
+  font-size: 4em !important;
+  
+}
+
+.citLogo{
+  margin-top: 20px;
+  height: 75px;
+}
+
+@media (min-width: 544px) { 
+  
+  .citLogo{
+    margin-top: 20px;
+    height: 100px;
+  }
+
+  .heading-name {
+    font-size: 6em !important;
+    padding-left: 45px !important;
+  }
+  .heading {
+    font-size: 1.5em !important;
+    letter-spacing: 0.2 em;
+    font-family: 'Orbitron', sans-serif;
+  }
+
+  .rajdhaniFont{
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: bold;
+    text-align: center;
+  } 
 }
 
 .main-name {
@@ -335,6 +371,11 @@ button:focus {
   padding-bottom: 20px !important;
   text-align: center;
 }
+.rajdhaniFont{
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: bold;
+  text-align: center;
+} 
 
 .home-about-body {
   padding-top: 50px;
@@ -840,7 +881,33 @@ button:focus {
   opacity: 1;
   height: 100%;
 }
+.meliniaFont{
+  padding-bottom: 20px;
+  text-align: center;
+  font-family: 'Audiowide', sans-serif;
+  font-size: xx-large;
+  background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 0.9;
+  animation: animate 5s ease-in-out infinite;
 
+}
+
+
+@keyframes animate {
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
+}
 
 
 
