@@ -8,7 +8,7 @@ import {MdGroups} from "react-icons/md";
 import {FaFileCode} from "react-icons/fa";
 import {FaRegFileCode} from "react-icons/fa";
 
-import meliniaLogo from "../assets/log.png"
+import meliniaLogo from "../Assets/log.png"
 import {
   AiOutlineHome,
   

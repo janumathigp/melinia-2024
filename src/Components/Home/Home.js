@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 // import homeLogo from "../../Assets/home-main.png";
 
 import { Particle } from "../ParticlesBackground";
-import citlogo from "../../assets/citlogo.png"
+import citlogo from "../../Assets/citlogo.png"
 //  import Home2 from "./Home2";
 // import Type from "./Type";
 
