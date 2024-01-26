@@ -12,8 +12,20 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope,faPhone } from '@fortawesome/free-solid-svg-icons';
 import '@fontsource/poppins'; // Import Poppins font
 import '@fontsource/montserrat'; // Import Montserrat font
+import { styled } from "@mui/system";
 
-
+const StyledTypography = styled(Typography)({
+  ontSize: "2.5rem",
+  fontWeight: 700,
+  color: "#4a4a4a", // Dark gray color for an antique look
+  textAlign: "center",
+  marginBottom: "20px",
+  fontFamily: "serif", // Use a serif font for a manuscript feel
+  letterSpacing: "1px",
+  textTransform: "uppercase",
+  // borderBottom: "2px solid #4a4a4a",
+  },
+);
 class Board extends React.Component
 {
 
@@ -52,6 +64,7 @@ class Board extends React.Component
           },
 
       ];
+
     render()
     {
         return(
@@ -195,9 +208,19 @@ class Board extends React.Component
             </Card>
           ))}
         </div>
-        <div>      <Typography variant="h4" gutterBottom>
+        {/* <div>      <Typography variant="h4" gutterBottom>
         Office Bearers
-      </Typography></div>
+      </Typography></div> */}
+
+
+<div>
+      {/* Use the StyledTypography component */}
+      <StyledTypography variant="h4" gutterBottom>
+        Office Bearers
+      </StyledTypography>
+    </div>
+
+
       <div style={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center', flexWrap: 'wrap' }}>
           {[1, 2].map((index) => (
             <Card
