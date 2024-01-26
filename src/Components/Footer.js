@@ -8,7 +8,6 @@ import {
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import {Link} from "react-router-dom";
 
 function Footer() {
   let date = new Date();
