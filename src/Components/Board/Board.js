@@ -3,7 +3,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import stanleysImage from "../../Assets/stanley.jpg";
+import stanleysImage from "../../Assets/stanleyNew.jpg";
 import keerthiImage from '../../Assets/keerthikamamupdated.jpg';
 import manjuImage from '../../Assets/manjumam.jpeg';
 import sujithraImage from '../../Assets/sujithramam.jpeg';
@@ -34,7 +34,7 @@ class Board extends React.Component
     cardDataTeachers = [
         {
           name: "Dr.V.Keerthika",
-          role: "Event Managementr",
+          role: "Event Management",
           department: "Department of Computing",
           phone: "0422-2574071 Extn: 335",
           email: "vkeerthika@cit.edu.in",
@@ -92,7 +92,7 @@ class Board extends React.Component
 <div>
 <div style={{ backgroundColor: '#d9d2e9', marginTop: '4%' }}>
   <br></br><br></br>
-          <section style={{  marginLeft: 'auto', marginRight: 'auto', maxWidth: '300px'}}>
+          <section style={{  marginLeft: 'auto', marginRight: 'auto', maxWidth: '355px'}}>
             <Card
               sx={{
                 borderBottom: '10px solid #2C2244',
@@ -155,9 +155,10 @@ class Board extends React.Component
           </CardContent>
             </Card>
           </section>
-          <br></br>
+          <br></br><br></br>
         {/* New row of four cards */}
-        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap' }}>
+        {/* <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap' }}> */}
+        <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap' }}>
           {this.cardDataTeachers.map((data, index) => (
             <Card
               key={index}
@@ -194,6 +195,7 @@ class Board extends React.Component
             alt={data.name}
             height="fit-content"
             image={data.image}
+            sx={{height:'275px'}}
           />
           <CardContent sx={{ padding: '0px', paddingTop: '7px' }}>
             <Typography gutterBottom variant="h5" component="div" sx={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 'bold', fontSize: '1.5rem' }}>
