@@ -56,15 +56,18 @@ class Board extends React.Component
     {
         return(
 <div>
-<div style={{ backgroundColor: '#ffe6cc', marginTop: '4%' }}>
-          <section style={{ marginBottom: '6%', marginLeft: 'auto', marginRight: 'auto', maxWidth: '300px' }}>
+<div style={{ backgroundColor: '#d9d2e9', marginTop: '4%' }}>
+  <br></br><br></br>
+          <section style={{  marginLeft: 'auto', marginRight: 'auto', maxWidth: '300px'}}>
             <Card
               sx={{
+                borderBottom: '10px solid #2C2244',
+    borderRadius: '18px',
                 width: '100%',
                 boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
                 fontFamily: 'Poppins, sans-serif',
                 transition: 'transform 0.3s ease-in-out',
-                padding:'5px',
+                padding:'15px',
                 '&:hover': {
                   transform: 'scale(1.05)',
                 },
@@ -78,7 +81,8 @@ class Board extends React.Component
                 '@media (min-width: 1025px) and (max-width: 1440px)': {
                   maxWidth: '80%',
                 },
-                backgroundColor: '#f2f2f2 !important',
+                // backgroundColor: '#f2f2f2 !important',
+                backgroundColor:'#f0f0f0'
               }}
             >
               {/* ... (Existing card content) */}
@@ -117,20 +121,22 @@ class Board extends React.Component
           </CardContent>
             </Card>
           </section>
-          
+          <br></br>
         {/* New row of four cards */}
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap' }}>
           {this.cardDataTeachers.map((data, index) => (
             <Card
               key={index}
               sx={{
+                borderBottom: '10px solid #2C2244',
+    borderRadius: '18px',
                 width: '100%',
                 maxWidth: '250px', // Adjust the maximum width as needed
                 boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
                 fontFamily: 'Poppins, sans-serif',
                 transition: 'transform 0.3s ease-in-out',
                 margin: '0 10px 20px',
-                padding:'5px',
+                padding:'15px',
                 '&:hover': {
                   transform: 'scale(1.05)',
                 },
@@ -145,7 +151,7 @@ class Board extends React.Component
                 '@media (min-width: 1025px) and (max-width: 1440px)': {
                   maxWidth: '40%',
                 },
-                backgroundColor: '#f2f2f2 !important',
+                backgroundColor: '#f0f0f0 !important',
               }}
             >
               {/* ... (Card content for new row) */}
@@ -197,13 +203,15 @@ class Board extends React.Component
             <Card
               key={index}
               sx={{
+                borderBottom: '10px solid #2C2244',
+    borderRadius: '18px',
                 width: '100%',
                 maxWidth: '250px', // Adjust the maximum width as needed
                 boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
                 fontFamily: 'Poppins, sans-serif',
                 transition: 'transform 0.3s ease-in-out',
                 margin: '0 10px 20px',
-                padding:'5px',
+                padding:'15px',
                 '&:hover': {
                   transform: 'scale(1.05)',
                 },
@@ -218,7 +226,7 @@ class Board extends React.Component
                 '@media (min-width: 1025px) and (max-width: 1440px)': {
                   maxWidth: '40%',
                 },
-                backgroundColor: '#f2f2f2 !important',
+                backgroundColor: '#f0f0f0 !important',
               }}
             >
               {/* ... (Card content for new row) */}
@@ -258,18 +266,21 @@ class Board extends React.Component
             </Card>
           ))}
         </div>
+        <br></br>
         <div style={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center', flexWrap: 'wrap' }}>
           {[1, 2].map((index) => (
             <Card
               key={index}
               sx={{
+                borderBottom: '10px solid #2C2244',
+    borderRadius: '18px',
                 width: '100%',
                 maxWidth: '250px', // Adjust the maximum width as needed
                 boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
                 fontFamily: 'Poppins, sans-serif',
                 transition: 'transform 0.3s ease-in-out',
                 margin: '0 10px 20px',
-                padding:'5px',
+                padding:'15px',
                 '&:hover': {
                   transform: 'scale(1.05)',
                 },
@@ -284,7 +295,7 @@ class Board extends React.Component
                 '@media (min-width: 1025px) and (max-width: 1440px)': {
                   maxWidth: '40%',
                 },
-                backgroundColor: '#f2f2f2 !important',
+                backgroundColor: '#f0f0f0 !important',
               }}
             >
               {/* ... (Card content for new row) */}
@@ -324,18 +335,21 @@ class Board extends React.Component
             </Card>
           ))}
         </div>
+        <br></br>
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap' }}>
           {[1, 2, 3, 4].map((index) => (
             <Card
               key={index}
               sx={{
+                borderBottom: '10px solid #2C2244',
+    borderRadius: '18px',
                 width: '100%',
                 maxWidth: '250px', // Adjust the maximum width as needed
                 boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
                 fontFamily: 'Poppins, sans-serif',
                 transition: 'transform 0.3s ease-in-out',
                 margin: '0 10px 20px',
-                padding:'5px',
+                padding:'15px',
                 '&:hover': {
                   transform: 'scale(1.05)',
                 },
@@ -350,7 +364,7 @@ class Board extends React.Component
                 '@media (min-width: 1025px) and (max-width: 1440px)': {
                   maxWidth: '40%',
                 },
-                backgroundColor: '#f2f2f2 !important',
+                backgroundColor: '#f0f0f0 !important',
               }}
             >
               {/* ... (Card content for new row) */}
@@ -390,8 +404,8 @@ class Board extends React.Component
             </Card>
           ))}
         </div>
+        <br></br>
         </div>
-
       </div>
           
         );

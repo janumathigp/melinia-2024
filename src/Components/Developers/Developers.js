@@ -19,7 +19,7 @@ class Developers extends React.Component
     render()
     {
         return(
-<div style={{ backgroundColor: '#ffe6cc', marginTop: '4%', }}>
+<div style={{ backgroundColor: '#b5b5b5', marginTop: '4%', }}>
         <Typography variant="h3" gutterBottom style={{ marginTop: '73px', padding: '10px' }}>
           Developers
         </Typography>
