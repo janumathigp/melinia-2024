@@ -19,6 +19,7 @@ import {
 import ScrollToTop from "./Components/ScrollToTop";
 import "./style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Developers from './Components/Developers/Developers';
 // import Achievements from "./components/Achievements/Achievements";
 
 
@@ -40,9 +41,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/board" element={<Board />} />
-          <Route path="/technical" element={<Technical />} />
-          <Route path="/nontechnical" element={<Nontechnical />} />
-
+          {/* <Route path="/technical" element={<Technical />} />
+          <Route path="/nontechnical" element={<Nontechnical />} /> */}
+          <Route path="/developers" element={<Developers />} />
 
         </Routes>
         <Footer />

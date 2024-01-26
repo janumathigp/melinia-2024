@@ -7,16 +7,36 @@ import {
   AiFillYoutube,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import {Link} from "react-router-dom";
 
 function Footer() {
   let date = new Date();
   let year = date.getFullYear();
+
+  
+  const handleClick = () => {
+    window.location.href = '/developers';
+  };
+  
+  
+
   return (
-    <Container fluid className="footer">
+    <Container fluid className="footer" style={{zIndex:'10',position:'relative'}}>
       <Row>
-        <Col md="4" className="footer-copywright">
-          <h3>Designed and Developed by M.Sc</h3>
-        </Col>
+        {/* <Col md="4" className="footer-copywright">
+          <h3 style={{cursor:'pointer'}} onClick={() => window.location.href = '/developers'}>Designed and Developed by M.Sc<ArrowForwardIcon  sx={{fontSize:"18px",marginLeft:"4px",color:"white"}}/></h3>
+        </Col> */}
+<Col md="4"  className="footer-copywright">
+        <h3
+          style={{ cursor: 'pointer' }}
+          onClick={handleClick}
+        >
+          Designed and Developed by M.Sc<ArrowForwardIcon sx={{ fontSize: "18px", marginLeft: "4px", color: "white" }} />
+        </h3>
+      </Col>
+
+
         <Col md="4" className="footer-copywright">
           <h3>Copyright © {year} M.Sc</h3>
         </Col>
