@@ -16,9 +16,10 @@ import { styled } from "@mui/system";
 import rohith from '../../Assets/rohith.jpg';
 
 const StyledTypography = styled(Typography)({
-  ontSize: "2.5rem",
+  fontSize: "2.5rem",
   fontWeight: 700,
-  color: "#4a4a4a", // Dark gray color for an antique look
+  // color: "#4a4a4a", // Dark gray color for an antique look
+  color:'rgb(18, 2, 98)',
   textAlign: "center",
   marginBottom: "20px",
   fontFamily: "serif", // Use a serif font for a manuscript feel
