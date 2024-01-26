@@ -1,17 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 // import homeLogo from "../../Assets/home-main.png";
 
 import { Particle } from "../ParticlesBackground";
+import AboutMelinia from "../aboutMelinia";
+import QueryCard from "../QueryCard";
+import Workshop from "../workshop";
 import citlogo from "../../Assets/citlogo.png"
+import Sponsors from "../Sponsers";
+import ChiefGuest from "../ChiefGuest";
 //  import Home2 from "./Home2";
 // import Type from "./Type";
 
 function Home() {
+
+  const [isEventCompleted, setCondition] = useState(false);
   return (
     <>
       
-   <Particle></Particle>
+      <Particle></Particle>
     <section>
      
       <Container fluid className="home-section" id="home">
@@ -42,6 +49,10 @@ function Home() {
               <div style={{display:'flex', justifyContent:'center'}}>
                 <img className="citLogo" src={citlogo} alt="CIT"/>
               </div>
+              {isEventCompleted ? (<div style={{display:'flex', justifyContent:'center', textAlign:'center', marginTop:'15px'}}>
+                <span className="rajdhaniFont">Melinia 2k24's over we'll meet you soon next year</span>
+              </div>) : null}
+              
 
               <div style={{ padding: 50, textAlign: "left" }}>
                 {/* <Type /> */}
@@ -58,10 +69,29 @@ function Home() {
               /> */}
             </Col>
           </Row>
+          
+        </Container>
+       
+        <Container style={{margin:0, padding: 0, minWidth:'100%'}}>
+        <Workshop/>
+        </Container>
+       
+        <Container style={{margin:0, padding: 0, minWidth:'100%'}}>
+          <QueryCard/>
+        </Container>
+        <Container style={{margin:0, padding: 0, minWidth:'100%'}}>
+          <Sponsors/>
+        </Container>
+        <Container style={{margin:0, padding: 0, minWidth:'100%'}}>
+          <ChiefGuest/>
+        </Container>
+        <Container style={{margin:0, padding: 0, minWidth:'100%'}}>
+        <AboutMelinia/>
         </Container>
       </Container>
       {/* <Home2 /> */}
     </section>
+    
     
     </>
   );
