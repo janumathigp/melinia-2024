@@ -13,6 +13,7 @@ import { faEnvelope,faPhone } from '@fortawesome/free-solid-svg-icons';
 import '@fontsource/poppins'; // Import Poppins font
 import '@fontsource/montserrat'; // Import Montserrat font
 import { styled } from "@mui/system";
+import rohith from '../../Assets/rohith.jpg';
 
 const StyledTypography = styled(Typography)({
   ontSize: "2.5rem",
@@ -64,6 +65,25 @@ class Board extends React.Component
           },
 
       ];
+
+      cardDataCMSEC=[
+        {
+          name: "S Rohith",
+          role: "Secretary",
+          department: "M.Sc. Software Systems",
+          phone: "9655898111",
+          email: "2031036mss@cit.edu.in",
+          image: rohith,
+        },
+        {
+          name: "S Rohith",
+          role: "Secretary",
+          department: "M.Sc. Software Systems",
+          phone: "9655898111",
+          email: "2031036mss@cit.edu.in",
+          image: rohith,
+        }
+      ]
 
     render()
     {
@@ -222,7 +242,7 @@ class Board extends React.Component
 
 
       <div style={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center', flexWrap: 'wrap' }}>
-          {[1, 2].map((index) => (
+          {this.cardDataCMSEC.map((data, index) => (
             <Card
               key={index}
               sx={{
@@ -257,24 +277,24 @@ class Board extends React.Component
             component="img"
             alt="Stanley"
             height="fit-content"
-            image={stanleysImage}
+            image={data.image}
           />
           <CardContent sx={{ padding: '0px', paddingTop: '7px' }}>
             <Typography gutterBottom variant="h5" component="div" sx={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 'bold', fontSize: '1.5rem' }}>
-              Dr. C. Stanley Felix
+              {data.name}
             </Typography>
             <Typography variant="body1" display="block" gutterBottom sx={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 'bolder', color: '#555', fontSize: '1rem' }}>
-              Faculty Advisor
+              {data.role}
             </Typography>
             <Typography variant="body2" color="text.secondary" sx={{ fontFamily: 'Montserrat, sans-serif', color: '#777', fontSize: '0.9rem' }}>
-              Department of Computing
+              {data.department}
             </Typography>
           </CardContent>
           <CardContent sx={{ padding: '0px', paddingTop: '7px' }}>
             <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: '10px' }}>
               <FontAwesomeIcon icon={faPhone} style={{ fontSize: '20px', color: '#3498db' }} />
               <Typography variant="body1" display="block" gutterBottom sx={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 'bolder', color: '#555', fontSize: '1rem' }}>
-                0422-2574071 Extn: 335
+                {data.phone}
               </Typography>
             </div>
           </CardContent>
@@ -282,7 +302,7 @@ class Board extends React.Component
             <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: '10px' }}>
               <FontAwesomeIcon icon={faEnvelope} style={{ fontSize: '20px', color: '#3498db' }} />
               <Typography variant="body1" display="block" gutterBottom sx={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 'bolder', color: '#555', fontSize: '1rem' }}>
-                stanlyfelix@cit.edu.in
+                {data.email}
               </Typography>
             </div>
           </CardContent>
