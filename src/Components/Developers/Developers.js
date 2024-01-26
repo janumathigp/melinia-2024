@@ -1,11 +1,9 @@
 import React from "react";
 import mohanImage from "../../Assets/mohan.jpg";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope,faPhone } from '@fortawesome/free-solid-svg-icons';
 import '@fontsource/poppins'; // Import Poppins font
 import '@fontsource/montserrat'; // Import Montserrat font
-import { Card, CardContent, CardMedia, Grid, IconButton, Typography } from "@mui/material";
-import { Box, width } from "@mui/system";
+import { Card, CardContent, Grid, IconButton, Typography } from "@mui/material";
+import { Box } from "@mui/system";
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
