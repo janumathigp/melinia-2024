@@ -3,17 +3,17 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import stanleysImage from "../../Assets/stanleyNew.jpg";
-import keerthiImage from '../../Assets/keerthikamamupdated.jpg';
-import manjuImage from '../../Assets/manjumam.jpeg';
-import sujithraImage from '../../Assets/sujithramam.jpeg';
-import hemaImage from '../../Assets/hemashreemam.jpeg';
+import stanleysImage from "../../assets/crew/stanleyNew.jpg";
+import keerthiImage from '../../assets/crew/keerthikamamupdated.jpg';
+import manjuImage from '../../assets/crew/manjumam.jpeg';
+import sujithraImage from '../../assets/crew/sujithramam.jpeg';
+import hemaImage from '../../assets/crew/hemashreemam.jpeg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope,faPhone } from '@fortawesome/free-solid-svg-icons';
 import '@fontsource/poppins'; // Import Poppins font
 import '@fontsource/montserrat'; // Import Montserrat font
 import { styled } from "@mui/system";
-import rohith from '../../Assets/rohith.jpg';
+import rohith from '../../assets/crew/rohith.jpg';
 
 const StyledTypography = styled(Typography)({
   fontSize: "2.5rem",

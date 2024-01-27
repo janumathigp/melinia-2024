@@ -2,17 +2,19 @@ import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-//import logo from "../Assets/logo.jpg";
-import { Link } from "react-router-dom";
-import {MdGroups} from "react-icons/md";
-import {FaFileCode} from "react-icons/fa";
-import {FaRegFileCode} from "react-icons/fa";
+//import logo from "../assets/logo.jpg";
 
-import meliniaLogo from "../Assets/log.png"
-import {
-  AiOutlineHome,
+import { Link } from "react-router-dom";
+// import {MdGroups} from "react-icons/md";
+// import {FaFileCode} from "react-icons/fa";
+// import {FaRegFileCode} from "react-icons/fa";
+
+// import meliniaLogo from "../assets/logo/log.png"
+import citlogo from '../assets/logo/citlogo.png'
+// import {
+//   AiOutlineHome,
   
-} from "react-icons/ai";
+// } from "react-icons/ai";
 
 
 function NavBar() {
@@ -39,7 +41,7 @@ function NavBar() {
     >
       <Container className='font'>
         <Navbar.Brand href="/" className="d-flex">
-          <img src={meliniaLogo} className="logo" alt="brand" />
+          <img src={citlogo} className="logo" alt="brand" />
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -47,15 +49,16 @@ function NavBar() {
             updateExpanded(expand ? false : "expanded");
           }}
         >
+          {/* <span></span>
           <span></span>
-          <span></span>
-          <span></span>
+          <span></span> */}
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
+                {/* <AiOutlineHome style={{ marginBottom: "2px" }} />  */}
+                Home
               </Nav.Link>
             </Nav.Item>
 
@@ -65,8 +68,8 @@ function NavBar() {
                 to="/board"
                 onClick={() => updateExpanded(false)}
               >
-                <MdGroups style={{ marginBottom: "2px" }} />  Board Members
-              </Nav.Link>
+                {/* <MdGroups style={{ marginBottom: "2px" }} />  */}
+Crew              </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
@@ -75,10 +78,10 @@ function NavBar() {
                 to="/technical"
                 onClick={() => updateExpanded(false)}
               >
-                <FaFileCode
+                {/* <FaFileCode
                   style={{ marginBottom: "2px" }}
-                />{" "}
-                Technical Events
+                />{" "} */}
+                Events
               </Nav.Link>
             </Nav.Item>
 
@@ -88,7 +91,8 @@ function NavBar() {
                 to="/nontechnical"
                 onClick={() => updateExpanded(false)}
               >
-                <FaRegFileCode style={{ marginBottom: "2px" }} /> Non-technical Events
+                {/* <FaRegFileCode style={{ marginBottom: "2px" }} /> Non-technical Events */}
+                Contact
               </Nav.Link>
             </Nav.Item>
 

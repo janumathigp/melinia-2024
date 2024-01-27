@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-// import homeLogo from "../../Assets/home-main.png";
-
 import { Particle } from "../ParticlesBackground";
 import AboutMelinia from "../aboutMelinia";
 import QueryCard from "../QueryCard";
 import Workshop from "../workshop";
-import citlogo from "../../Assets/citlogo.png"
+import citlogo from "../../assets/logo/citlogo.png"
 import Sponsors from "../Sponsers";
 import ChiefGuest from "../ChiefGuest";
-//  import Home2 from "./Home2";
-// import Type from "./Type";
+import Timeline from "../Timeline/Timeline";
+import Contact from '../Contact/Contact';
+import Events from '../Events/Events';
+
 
 function Home() {
 
@@ -27,28 +27,34 @@ function Home() {
             <Col className="home-header">
               <div style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
 
+              <h1 style={{ paddingBottom: 15, textAlign: 'center' }} className="heading">
+                Department of Computing
+              </h1>
+              <div style={{display:'flex', justifyContent:'center'}}>
+              <div className="rajdhaniFont">
+                <span>
+                  Proudly Presents
+                </span>
+                <br></br>
+              </div>
+              <br></br>
+              <br></br>
+              
+              </div>
+
               <h1 className="heading-name meliniaFont">
                 MELINIA
                 <strong className="main-name"> 2024  </strong>
               </h1>
               <h1 style={{ paddingBottom: 15, textAlign: 'center' }} className="heading">
-                A national level technical symposium!{" "}
+                A national level technical symposium
                 
               </h1>
-              <div style={{display:'flex', justifyContent:'center'}}>
-              <div className="rajdhaniFont">
-                <span>
-                  Proudly organized and presented by
-                </span>
-                <br></br>
-                <span>(Department of Computing)</span>
-              </div>
-              
-              
-              </div>
-              <div style={{display:'flex', justifyContent:'center'}}>
+
+              {/* <div style={{display:'flex', justifyContent:'center'}}>
                 <img className="citLogo" src={citlogo} alt="CIT"/>
-              </div>
+              </div> */}
+
               {isEventCompleted ? (<div style={{display:'flex', justifyContent:'center', textAlign:'center', marginTop:'15px'}}>
                 <span className="rajdhaniFont">Melinia 2k24's over we'll meet you soon next year</span>
               </div>) : null}
@@ -71,7 +77,15 @@ function Home() {
           </Row>
           
         </Container>
+
+
+        <Container style={{margin:0, padding: 0, minWidth:'100%'}}>
+        <AboutMelinia/>
+        </Container>
        
+        <Container style={{margin:0, padding: 0, minWidth:'100%'}}>
+        <Events/>
+        </Container>
         <Container style={{margin:0, padding: 0, minWidth:'100%'}}>
         <Workshop/>
         </Container>
@@ -85,8 +99,12 @@ function Home() {
         <Container style={{margin:0, padding: 0, minWidth:'100%'}}>
           <ChiefGuest/>
         </Container>
-        <Container style={{margin:0, padding: 0, minWidth:'100%'}}>
-        <AboutMelinia/>
+ 
+        <Container>
+  <Timeline/>
+</Container>
+<Container >
+          <Contact/>
         </Container>
       </Container>
       {/* <Home2 /> */}

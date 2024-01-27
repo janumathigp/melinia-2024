@@ -1,5 +1,5 @@
 import React from "react";
-import mohanImage from "../../Assets/mohan.jpg";
+import mohanImage from "../../assets/developers/mohan.jpg";
 import '@fontsource/poppins'; // Import Poppins font
 import '@fontsource/montserrat'; // Import Montserrat font
 import { Card, CardContent, Grid, IconButton, Typography } from "@mui/material";
@@ -8,9 +8,10 @@ import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import PhoneCallbackIcon from '@mui/icons-material/PhoneCallback';
-import rithik from "../../Assets/rithik.png";
-import abhinivesh from "../../Assets/abhinivesh.JPG";
-import susma from "../../Assets/susmaCompress.png";
+import rithik from "../../assets/developers/rithik.png";
+import abhinivesh from "../../assets/developers/abhinivesh.JPG";
+import susma from "../../assets/developers/susmaCompress.png";
+import janu from '../../assets/developers/janumathi.jpg';
 import { styled } from "@mui/system";
 const StyledTypography = styled(Typography)({
     fontSize: "2.5rem",
@@ -142,7 +143,7 @@ class Developers extends React.Component
             <Grid container spacing={2} justifyContent="center" alignItems="center">
               <Grid item xs={12} md={6}>
                 <img
-                  src={mohanImage}
+                  src={janu}
                   style={{
                     height: "100%",
                     width: "100%",
