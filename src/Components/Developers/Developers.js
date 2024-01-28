@@ -1,5 +1,5 @@
 import React from "react";
-import mohanImage from "../../assets/developers/mohan.jpg";
+import mohanImage from "../../Assets/developers/mohan.jpg";
 import '@fontsource/poppins'; // Import Poppins font
 import '@fontsource/montserrat'; // Import Montserrat font
 import { Card, CardContent, Grid, IconButton, Typography } from "@mui/material";
@@ -8,10 +8,10 @@ import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import PhoneCallbackIcon from '@mui/icons-material/PhoneCallback';
-import rithik from "../../assets/developers/rithik.png";
-import abhinivesh from "../../assets/developers/abhinivesh.JPG";
-import susma from "../../assets/developers/susmaCompress.png";
-import janu from '../../assets/developers/janumathi.jpg';
+import rithik from "../../Assets/developers/rithik.png";
+import abhinivesh from "../../Assets/developers/abhinivesh.JPG";
+import susma from "../../Assets/developers/susmaCompress.png";
+import janu from '../../Assets/developers/janumathi.jpg';
 import { styled } from "@mui/system";
 const StyledTypography = styled(Typography)({
     fontSize: "2.5rem",

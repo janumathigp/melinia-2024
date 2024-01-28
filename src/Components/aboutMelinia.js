@@ -1,5 +1,5 @@
 import React from "react";
-import meliniaEvent from "../assets/addon/melinia.jpg"
+import meliniaEvent from "../Assets/addon/melinia.jpg"
 
 function AboutMelinia() {
 

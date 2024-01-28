@@ -1,12 +1,12 @@
 // Timeline.js
 import React from 'react';
 import './Timeline.css';
-import launch from '../../assets/timeline/launch.png'
-import event from '../../assets/timeline/event.png'
-import dance from '../../assets/timeline/dance.png'
-import final from '../../assets/timeline/final.jpg'
-import valediction from '../../assets/timeline/valediction.png'
-import lunch from '../../assets/timeline/lunch.png'
+import launch from '../../Assets/timeline/launch.png'
+import event from '../../Assets/timeline/event.png'
+import dance from '../../Assets/timeline/dance.png'
+import final from '../../Assets/timeline/final.jpg'
+import valediction from '../../Assets/timeline/valediction.png'
+import lunch from '../../Assets/timeline/lunch.png'
 
 
 

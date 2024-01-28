@@ -35,7 +35,7 @@ button:focus {
   height: 100%;
   z-index: 999999;
   background-color: #0c0513;
-  background-image: url(./assets/pre.svg);
+  background-image: url(./Assets/pre.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -270,11 +270,13 @@ button:focus {
 }
 
 .home-content {
-  padding: 9rem 0 2rem !important;
+  padding: 9rem 0 5rem !important;
   color: whitesmoke;
   text-align: left;
   width: 100%;
   display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
   justify-content: center;
 }
 .reverseFlex{
@@ -515,7 +517,7 @@ button:focus {
   }
 
   .heading-name {
-    font-size: 6em !important;
+    font-size: 8em !important;
     padding-left: 45px !important;
   }
   .heading {
