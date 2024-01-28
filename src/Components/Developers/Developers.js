@@ -48,7 +48,8 @@ class Developers extends React.Component
         { icon: <LinkedInIcon sx={{color:"#0077B5",fontSize:'2.25rem'}} />,link:"https://www.linkedin.com/in/janumathi-g-p/" },
         { icon: <EmailOutlinedIcon sx={{color:"GrayText",fontSize:'2.25rem'}}/>, link: "mailto:janusivan05@gmail.com" },
         { icon: <PhoneCallbackIcon sx={{color:"green",fontSize:'2.25rem'}}/>, link: "tel:+91 9360638869" },
-        { icon: <InstagramIcon sx={{ color: "#833AB4",fontSize:'2.25rem', cursor: 'not-allowed' }} onClick={() => null} />, link: null },
+        // { icon: <InstagramIcon sx={{ color: "#833AB4",fontSize:'2.25rem', cursor: 'not-allowed' }} onClick={() => null} />, link: null },
+        // { icon: <InstagramIcon sx={{color:"#833AB4",fontSize:'2.25rem', cursor: 'not-allowed'}} onClick={() => null}/>, link: "/developers" },
       ];
       iconsSusma = [
         { icon: <LinkedInIcon sx={{color:"#0077B5",fontSize:'2.25rem'}} />,link:"https://www.linkedin.com/in/susmav/" },
@@ -68,7 +69,7 @@ class Developers extends React.Component
       </StyledTypography>
 
         {/* Card 1: Image on Left */}
-        <Box sx={{ marginTop: "20px", marginBottom: "50px", minWidth: '300px', maxWidth: '800px', margin: 'auto' }}>
+        {/* <Box sx={{ marginTop: "20px", marginBottom: "50px", minWidth: '300px', maxWidth: '800px', margin: 'auto' }}>
           <Card sx={{ maxHeight: "auto", maxWidth: "100%", margin: "auto",backgroundColor:'#f0f0f0',padding:'15px',borderRadius:'12px' }} elevation="none">
             <Grid container spacing={2} justifyContent="center" alignItems="center">
               <Grid item xs={12} md={6}>
@@ -100,10 +101,12 @@ class Developers extends React.Component
               </Grid>
             </Grid>
           </Card>
-        </Box>
-        <br></br>
+        </Box> */}
+
+
+        {/* <br></br> */}
 {/* Card 2: Image on Right */}
-<Box sx={{ marginTop: "20px", marginBottom: "50px", minWidth: '300px', maxWidth: '800px', margin: 'auto' }}>
+{/* <Box sx={{ marginTop: "20px", marginBottom: "50px", minWidth: '300px', maxWidth: '800px', margin: 'auto' }}>
   <Card sx={{ height: "auto", maxWidth: "100%", margin: "auto",backgroundColor:'#f0f0f0',padding:'15px',borderRadius:'12px' }} elevation="none">
     <Grid container spacing={2} justifyContent="center" alignItems="center" sx={{ flexDirection: { xs: "column-reverse", md: "row" } }}>
       <Grid item xs={12} md={6} sx={{ display: "flex", flexDirection: "column", justifyContent: "center" }}>
@@ -137,8 +140,8 @@ class Developers extends React.Component
     </Grid>
   </Card>
 </Box>
-<br></br>
-<Box sx={{ marginTop: "20px", marginBottom: "50px", minWidth: '300px', maxWidth: '800px', margin: 'auto' }}>
+<br></br> */}
+{/* <Box sx={{ marginTop: "20px", marginBottom: "50px", minWidth: '300px', maxWidth: '800px', margin: 'auto' }}>
           <Card sx={{ height: "auto", maxWidth: "100%", margin: "auto",backgroundColor:'#f0f0f0',padding:'15px',borderRadius:'12px' }} elevation="none">
             <Grid container spacing={2} justifyContent="center" alignItems="center">
               <Grid item xs={12} md={6}>
@@ -172,9 +175,9 @@ class Developers extends React.Component
             </Grid>
           </Card>
         </Box>
-        <br></br>
+        <br></br> */}
 {/* Card 2: Image on Right */}
-<Box sx={{ marginTop: "20px", marginBottom: "50px", minWidth: '300px', maxWidth: '800px', margin: 'auto' }}>
+{/* <Box sx={{ marginTop: "20px", marginBottom: "50px", minWidth: '300px', maxWidth: '800px', margin: 'auto' }}>
   <Card sx={{ height: "auto", maxWidth: "100%", margin: "auto",backgroundColor:'#f0f0f0',padding:'15px',borderRadius:'12px' }} elevation="none">
     <Grid container spacing={2} justifyContent="center" alignItems="center" sx={{ flexDirection: { xs: "column-reverse", md: "row" } }}>
       <Grid item xs={12} md={6} sx={{ display: "flex", flexDirection: "column", justifyContent: "center" }}>
@@ -208,7 +211,140 @@ class Developers extends React.Component
     </Grid>
   </Card>
 </Box>
-<br></br>
+<br></br> */}
+<Grid container spacing={2} justifyContent="center" alignItems="center">
+          {/* Card 1 */}
+          <Grid item xs={12} md={3}>
+            <Box sx={{ minWidth: '300px', maxWidth: '800px', margin: 'auto' }}>
+              <Card sx={{ maxHeight: 'auto', maxWidth: '300px', margin: 'auto', backgroundColor: '#f0f0f0', padding: '15px', borderRadius: '12px' }} elevation="none">
+                <img
+                  src={abhinivesh}
+                  style={{
+                    height: '400px',
+                    width: '100%',
+                    objectFit: 'cover',
+                    borderTopLeftRadius: '12px',
+                    borderTopRightRadius: '12px',
+                  }}
+                  alt="Abhinivesh"
+                />
+                <CardContent>
+                  <Typography variant="h4" sx={{ fontSize: { xs: '20px', md: '28px' }, textAlign: { xs: 'center', md: 'left' }, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', color: 'rgb(18, 2, 98)' }} fontWeight="700">
+                    Abhinivesh S
+                  </Typography>
+                  <Typography mb={4} color="rgb(18, 2, 98)" textAlign={{ xs: 'center', md: 'left' }}>
+                  M.Sc. Software Systems - 4th Year
+                  </Typography>
+                  <Box mt={2}>
+                    {this.iconsAbhinivesh.map(({ icon, link }) => (
+                  <StyledIcon key={link} href={link} target="_blank">
+                    {icon}
+                  </StyledIcon>
+                ))}
+                  </Box>
+                </CardContent>
+              </Card>
+            </Box>
+          </Grid>
+          <Grid item xs={12} md={3}>
+            <Box sx={{ minWidth: '300px', maxWidth: '800px', margin: 'auto' }}>
+              <Card sx={{ maxHeight: 'auto', maxWidth: '300px', margin: 'auto', backgroundColor: '#f0f0f0', padding: '15px', borderRadius: '12px' }} elevation="none">
+                <img
+                  src={rithik}
+                  style={{
+                    height: '400px',
+                    width: '100%',
+                    objectFit: 'cover',
+                    borderTopLeftRadius: '12px',
+                    borderTopRightRadius: '12px',
+                  }}
+                  alt="Rithik"
+                />
+                <CardContent>
+                  <Typography variant="h4" sx={{ fontSize: { xs: '20px', md: '28px' }, textAlign: { xs: 'center', md: 'left' }, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', color: 'rgb(18, 2, 98)' }} fontWeight="700">
+                    Rithik Suthan S
+                  </Typography>
+                  <Typography mb={4} color="rgb(18, 2, 98)" textAlign={{ xs: 'center', md: 'left' }}>
+                  M.Sc. Software Systems - 4th Year
+                  </Typography>
+                  <Box mt={2}>
+                    {this.iconsRithik.map(({ icon, link }) => (
+                      <StyledIcon key={link} href={link} target="_blank">
+                        {icon}
+                      </StyledIcon>
+                    ))}
+                  </Box>
+                </CardContent>
+              </Card>
+            </Box>
+          </Grid>
+          <Grid item xs={12} md={3}>
+            <Box sx={{ minWidth: '300px', maxWidth: '800px', margin: 'auto' }}>
+              <Card sx={{ maxHeight: 'auto', maxWidth: '300px', margin: 'auto', backgroundColor: '#f0f0f0', padding: '15px', borderRadius: '12px' }} elevation="none">
+                <img
+                  src={janu}
+                  style={{
+                    height: '400px',
+                    width: '100%',
+                    objectFit: 'cover',
+                    borderTopLeftRadius: '12px',
+                    borderTopRightRadius: '12px',
+                  }}
+                  alt="Janumathi"
+                />
+                <CardContent>
+                  <Typography variant="h4" sx={{ fontSize: { xs: '20px', md: '28px' }, textAlign: { xs: 'center', md: 'left' }, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', color: 'rgb(18, 2, 98)' }} fontWeight="700">
+                    Janumathi G P
+                  </Typography>
+                  <Typography mb={4} color="rgb(18, 2, 98)" textAlign={{ xs: 'center', md: 'left' }}>
+                  M.Sc. Software Systems - 4th Year
+                  </Typography>
+                  <Box mt={2}>
+                    {this.iconsJanumathi.map(({ icon, link }) => (
+                      <StyledIcon key={link} href={link} target="_blank">
+                        {icon}
+                      </StyledIcon>
+                    ))}
+                  </Box>
+                </CardContent>
+              </Card>
+            </Box>
+          </Grid>
+          <Grid item xs={12} md={3}>
+            <Box sx={{ minWidth: '300px', maxWidth: '800px', margin: 'auto' }}>
+              <Card sx={{ maxHeight: 'auto', maxWidth: '300px', margin: 'auto', backgroundColor: '#f0f0f0', padding: '15px', borderRadius: '12px' }} elevation="none">
+                <img
+                  src={susma}
+                  style={{
+                    height: '400px',
+                    width: '100%',
+                    objectFit: 'cover',
+                    borderTopLeftRadius: '12px',
+                    borderTopRightRadius: '12px',
+                  }}
+                  alt="Susma"
+                />
+                <CardContent>
+                  <Typography variant="h4" sx={{ fontSize: { xs: '20px', md: '28px' }, textAlign: { xs: 'center', md: 'left' }, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', color: 'rgb(18, 2, 98)' }} fontWeight="700">
+                    Susma V
+                  </Typography>
+                  <Typography mb={4} color="rgb(18, 2, 98)" textAlign={{ xs: 'center', md: 'left' }}>
+                    M.Sc. Software Systems - 4th Year
+                  </Typography>
+                  <Box mt={2}>
+                    {this.iconsSusma.map(({ icon, link }) => (
+                      <StyledIcon key={link} href={link} target="_blank">
+                        {icon}
+                      </StyledIcon>
+                    ))}
+                  </Box>
+                </CardContent>
+              </Card>
+            </Box>
+          </Grid>
+        </Grid>
+
+        <br></br><br></br><br></br>
       </div>
         );
     }
