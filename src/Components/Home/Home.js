@@ -4,7 +4,7 @@ import { Particle } from "../ParticlesBackground";
 import AboutMelinia from "../aboutMelinia";
 import QueryCard from "../QueryCard";
 import Workshop from "../workshop";
-import citlogo from "../../assets/logo/citlogo.png"
+import citlogo from "../../Assets/logo/citlogo.png"
 import Sponsors from "../Sponsers";
 import ChiefGuest from "../ChiefGuest";
 import Timeline from "../Timeline/Timeline";

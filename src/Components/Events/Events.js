@@ -4,13 +4,13 @@ import {Link} from 'react-router-dom';
 import MainDescription from './MainDescription';
 
 // Import images for your cards
-import Keycharades from "../../assets/events/KEY CHARADES.png"
-import SEQUELVERSE from "../../assets/events/SEQUELVERSE.png"
-import bidbattle from "../../assets/events/bidbattle.png"
-import codegolf from "../../assets/events/code golf.png"
-import crypticquest from "../../assets/events/crypticquest.png"
-import datacraft from "../../assets/events/data craft.png"
-import somethingfishy from "../../assets/events/something fishy.png"
+import Keycharades from "../../Assets/events/KEY CHARADES.png"
+import SEQUELVERSE from "../../Assets/events/SEQUELVERSE.png"
+import bidbattle from "../../Assets/events/bidbattle.png"
+import codegolf from "../../Assets/events/code golf.png"
+import crypticquest from "../../Assets/events/crypticquest.png"
+import datacraft from "../../Assets/events/data craft.png"
+import somethingfishy from "../../Assets/events/something fishy.png"
 
 
 const cardData = [

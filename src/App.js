@@ -1,12 +1,12 @@
 //    import logo from './logo.svg';
 import './App.css';
 import React, { useState, useEffect } from "react";
-import Preloader from "./components/Pre";
-import Navbar from "./components/Navbar";
-import Home from "./components/Home/Home";
-import Board from "./components/Board/Board";
-import MainDescription from './components/Events/MainDescription';
-import Footer from "./components/Footer";
+import Preloader from "./Components/Pre";
+import Navbar from "./Components/Navbar";
+import Home from "./Components/Home/Home";
+import Board from "./Components/Board/Board";
+import MainDescription from './Components/Events/MainDescription';
+import Footer from "./Components/Footer";
 
 
 
@@ -15,11 +15,11 @@ import {
   Route,
   Routes,
 } from "react-router-dom";
-import ScrollToTop from "./components/ScrollToTop";
+import ScrollToTop from "./Components/ScrollToTop";
 import "./style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Developers from './components/Developers/Developers';
-// import Achievements from "./components/Achievements/Achievements";
+import Developers from './Components/Developers/Developers';
+// import Achievements from "./Components/Achievements/Achievements";
 
 
 function App() {

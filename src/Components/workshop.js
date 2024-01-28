@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import meliniaEvent from "../assets/addon/melinia.jpg";
-import workshopImage from "../assets/addon/workshop.jpeg";
+import meliniaEvent from "../Assets/addon/melinia.jpg";
+import workshopImage from "../Assets/addon/workshop.jpeg";
 import Divider from "@mui/material/Divider";
 import Button from "@mui/material/Button";
 import { FaArrowRight } from "react-icons/fa";

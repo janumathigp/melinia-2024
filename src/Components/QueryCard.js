@@ -1,7 +1,7 @@
 import { Button, Card, Grid, Typography } from '@mui/material'
 import { Box, Container } from '@mui/system'
 import React from 'react'
-import contactUsImage from "../assets/addon/contact.png"
+import contactUsImage from "../Assets/addon/contact.png"
 import { FaArrowRight } from 'react-icons/fa'
 
 function QueryCard() {

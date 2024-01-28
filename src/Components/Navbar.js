@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 // import {FaRegFileCode} from "react-icons/fa";
 
 // import meliniaLogo from "../assets/logo/log.png"
-import citlogo from '../assets/logo/citlogo.png'
+import citlogo from '../Assets/logo/citlogo.png'
 // import {
 //   AiOutlineHome,
   
