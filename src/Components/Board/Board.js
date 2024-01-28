@@ -3,7 +3,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import stanleysImage from "../../Assets/crew/stanleyNew.jpg";
+import stanleysImage from "../../Assets/crew/stanleycurrent.jpg";
 import keerthiImage from '../../Assets/crew/keerthikamamupdated.jpg';
 import manjuImage from '../../Assets/crew/manjumam.jpeg';
 import sujithraImage from '../../Assets/crew/sujithramam.jpeg';
@@ -14,6 +14,7 @@ import '@fontsource/poppins'; // Import Poppins font
 import '@fontsource/montserrat'; // Import Montserrat font
 import { styled } from "@mui/system";
 import rohith from '../../Assets/crew/rohith.jpg';
+import abhinaya from  "../../Assets/crew/abjinaya.jpg";
 
 const StyledTypography = styled(Typography)({
   fontSize: "2.5rem",
@@ -69,12 +70,12 @@ class Board extends React.Component
 
       cardDataCMSEC=[
         {
-          name: "S Rohith",
-          role: "Secretary",
-          department: "M.Sc. Software Systems",
-          phone: "9655898111",
-          email: "2031036mss@cit.edu.in",
-          image: rohith,
+          name: "S Abinaya",
+          role: "Chairman",
+          department: "M.Sc. Artificial Intelligence and Machine Learning",
+          phone: "9994883560",
+          email: "2034002aiml@cit.edu.in",
+          image: abhinaya,
         },
         {
           name: "S Rohith",
@@ -86,6 +87,59 @@ class Board extends React.Component
         }
       ]
 
+      cardJointSecTreasurer=[
+        {
+          name: "A R Aswath",
+          role: "Joint Secretary ",
+          department: "M.Sc. Software Systems",
+          phone: "9943263888",
+          email: "2031008mss@cit.edu.in",
+          image: stanleysImage,
+        },
+        {
+          name: "M Praveen Kumar",
+          role: "Treasurer",
+          department: "M.Sc. Software Systems",
+          phone: "9600224398",
+          email: "2031033mss@cit.edu.in",
+          image: stanleysImage,
+        }
+      ]
+
+      cardStudentCoordinators=[
+        {
+          name: "Susma Mondal R",
+          role: "Event Head Coordinator",
+          department: "M.Sc. Decision and Computing Sciences",
+          phone: "9843736523",
+          email: "2033035mdcs@cit.edu.in",
+          image: stanleysImage,
+        },
+        {
+          name: "Abirami Raghupathi",
+          role: "Event Head Coordinator",
+          department: "M.Sc. Decision and Computing Sciences",
+          phone: "9003764378",
+          email: "2033002mdcs@cit.edu.in",
+          image: stanleysImage,
+        },
+        {
+          name: "Prakalya B S",
+          role: "Event Head Coordinator",
+          department: "Data Science",
+          phone: "9488038087",
+          email: "2032031mds@cit.edu.in",
+          image: stanleysImage,
+        },
+        {
+          name: "Bhupesh P S",
+          role: "Event Head Coordinator ",
+          department: "Data Science",
+          phone: "9994615335",
+          email: "2032008mds@cit.edu.in",
+          image: stanleysImage,
+        }
+      ]
     render()
     {
         return(
@@ -252,7 +306,7 @@ class Board extends React.Component
                 borderBottom: '10px solid #2C2244',
     borderRadius: '18px',
                 width: '100%',
-                maxWidth: '250px', // Adjust the maximum width as needed
+                maxWidth: '270px', // Adjust the maximum width as needed
                 boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
                 fontFamily: 'Poppins, sans-serif',
                 transition: 'transform 0.3s ease-in-out',
@@ -314,14 +368,14 @@ class Board extends React.Component
         </div>
         <br></br>
         <div style={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center', flexWrap: 'wrap' }}>
-          {[1, 2].map((index) => (
+          {this.cardJointSecTreasurer.map((data, index) => (
             <Card
               key={index}
               sx={{
                 borderBottom: '10px solid #2C2244',
     borderRadius: '18px',
                 width: '100%',
-                maxWidth: '250px', // Adjust the maximum width as needed
+                maxWidth: '270px', // Adjust the maximum width as needed
                 boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
                 fontFamily: 'Poppins, sans-serif',
                 transition: 'transform 0.3s ease-in-out',
@@ -353,20 +407,20 @@ class Board extends React.Component
           />
           <CardContent sx={{ padding: '0px', paddingTop: '7px' }}>
             <Typography gutterBottom variant="h5" component="div" sx={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 'bold', fontSize: '1.5rem' }}>
-              Dr. C. Stanley Felix
+              {data.name}
             </Typography>
             <Typography variant="body1" display="block" gutterBottom sx={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 'bolder', color: '#555', fontSize: '1rem' }}>
-              Faculty Advisor
-            </Typography>
+              {data.role}
+                          </Typography>
             <Typography variant="body2" color="text.secondary" sx={{ fontFamily: 'Montserrat, sans-serif', color: '#777', fontSize: '0.9rem' }}>
-              Department of Computing
+              {data.department}
             </Typography>
           </CardContent>
           <CardContent sx={{ padding: '0px', paddingTop: '7px' }}>
             <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: '10px' }}>
               <FontAwesomeIcon icon={faPhone} style={{ fontSize: '20px', color: '#3498db' }} />
               <Typography variant="body1" display="block" gutterBottom sx={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 'bolder', color: '#555', fontSize: '1rem' }}>
-                0422-2574071 Extn: 335
+                {data.phone}
               </Typography>
             </div>
           </CardContent>
@@ -374,7 +428,7 @@ class Board extends React.Component
             <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: '10px' }}>
               <FontAwesomeIcon icon={faEnvelope} style={{ fontSize: '20px', color: '#3498db' }} />
               <Typography variant="body1" display="block" gutterBottom sx={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 'bolder', color: '#555', fontSize: '1rem' }}>
-                stanlyfelix@cit.edu.in
+                {data.email}
               </Typography>
             </div>
           </CardContent>
@@ -383,14 +437,14 @@ class Board extends React.Component
         </div>
         <br></br>
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap' }}>
-          {[1, 2, 3, 4].map((index) => (
+          {this.cardStudentCoordinators.map((data, index) => (
             <Card
               key={index}
               sx={{
                 borderBottom: '10px solid #2C2244',
     borderRadius: '18px',
                 width: '100%',
-                maxWidth: '250px', // Adjust the maximum width as needed
+                maxWidth: '270px', // Adjust the maximum width as needed
                 boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
                 fontFamily: 'Poppins, sans-serif',
                 transition: 'transform 0.3s ease-in-out',
@@ -422,20 +476,20 @@ class Board extends React.Component
           />
           <CardContent sx={{ padding: '0px', paddingTop: '7px' }}>
             <Typography gutterBottom variant="h5" component="div" sx={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 'bold', fontSize: '1.5rem' }}>
-              Dr. C. Stanley Felix
+              {data.name}
             </Typography>
             <Typography variant="body1" display="block" gutterBottom sx={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 'bolder', color: '#555', fontSize: '1rem' }}>
-              Faculty Advisor
+              {data.role}
             </Typography>
             <Typography variant="body2" color="text.secondary" sx={{ fontFamily: 'Montserrat, sans-serif', color: '#777', fontSize: '0.9rem' }}>
-              Department of Computing
+              {data.email}
             </Typography>
           </CardContent>
           <CardContent sx={{ padding: '0px', paddingTop: '7px' }}>
             <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: '10px' }}>
               <FontAwesomeIcon icon={faPhone} style={{ fontSize: '20px', color: '#3498db' }} />
               <Typography variant="body1" display="block" gutterBottom sx={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 'bolder', color: '#555', fontSize: '1rem' }}>
-                0422-2574071 Extn: 335
+                {data.phone}
               </Typography>
             </div>
           </CardContent>
@@ -443,7 +497,7 @@ class Board extends React.Component
             <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: '10px' }}>
               <FontAwesomeIcon icon={faEnvelope} style={{ fontSize: '20px', color: '#3498db' }} />
               <Typography variant="body1" display="block" gutterBottom sx={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 'bolder', color: '#555', fontSize: '1rem' }}>
-                stanlyfelix@cit.edu.in
+                {data.email}
               </Typography>
             </div>
           </CardContent>
