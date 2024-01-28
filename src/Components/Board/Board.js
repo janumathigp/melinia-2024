@@ -160,7 +160,8 @@ class Board extends React.Component
                   transform: 'scale(1.05)',
                 },
                 '@media (max-width: 600px)': {
-                  marginTop: '73px',
+                  // marginTop: '73px',
+                  marginTop: '33%',
                   maxWidth: '100%',
                 },
                 '@media (min-width: 601px) and (max-width: 1024px)': {
@@ -231,7 +232,8 @@ class Board extends React.Component
                 },
                 '@media (max-width: 600px)': {
                   marginTop: '10px',
-                  maxWidth: '100%',
+                  // maxWidth: '100%',
+                  maxWidth: '85%',
                 //   margin: '0 5px 20px',
                 },
                 '@media (min-width: 601px) and (max-width: 1024px)': {
@@ -247,9 +249,15 @@ class Board extends React.Component
               <CardMedia
             component="img"
             alt={data.name}
-            height="fit-content"
+            // height="fit-content"
             image={data.image}
-            sx={{height:'275px'}}
+           sx={{height:'275px',
+          
+           '@media (max-width: 600px)': {
+            height:"fit-content"
+          },
+          
+          }}
           />
           <CardContent sx={{ padding: '0px', paddingTop: '7px' }}>
             <Typography gutterBottom variant="h5" component="div" sx={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 'bold', fontSize: '1.5rem' }}>
@@ -317,7 +325,8 @@ class Board extends React.Component
                 },
                 '@media (max-width: 600px)': {
                   marginTop: '10px',
-                  maxWidth: '100%',
+                  // maxWidth: '100%',
+                  maxWidth: '85%',
                 //   margin: '0 5px 20px',
                 },
                 '@media (min-width: 601px) and (max-width: 1024px)': {
@@ -386,7 +395,8 @@ class Board extends React.Component
                 },
                 '@media (max-width: 600px)': {
                   marginTop: '10px',
-                  maxWidth: '100%',
+                  // maxWidth: '100%',
+                  maxWidth: '85%',
                 //   margin: '0 5px 20px',
                 },
                 '@media (min-width: 601px) and (max-width: 1024px)': {
@@ -455,7 +465,8 @@ class Board extends React.Component
                 },
                 '@media (max-width: 600px)': {
                   marginTop: '10px',
-                  maxWidth: '100%',
+                  // maxWidth: '100%',
+                  maxWidth: '85%',
                 //   margin: '0 5px 20px',
                 },
                 '@media (min-width: 601px) and (max-width: 1024px)': {
