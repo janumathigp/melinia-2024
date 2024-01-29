@@ -13,6 +13,7 @@ import abhinivesh from "../../Assets/developers/abhinivesh.JPG";
 import susma from "../../Assets/developers/susmaCompress.png";
 import janu from '../../Assets/developers/janumathi.jpg';
 import { styled } from "@mui/system";
+import { Particle } from "../ParticlesBackground";
 const StyledTypography = styled(Typography)({
     fontSize: "2.5rem",
     fontWeight: 700,
@@ -60,7 +61,8 @@ class Developers extends React.Component
     render()
     {
         return(
-<div style={{ backgroundColor: '#d9d2e9', marginTop: '4%', }}>
+<div style={{ backgroundColor: '#d9d2e9', marginTop: '4%' }}>
+  <Particle></Particle>
         {/* <Typography variant="h3" gutterBottom style={{ marginTop: '73px', padding: '10px' }}>
           Developers
         </Typography> */}
@@ -212,7 +214,7 @@ class Developers extends React.Component
   </Card>
 </Box>
 <br></br> */}
-<Grid container spacing={2} justifyContent="center" alignItems="center">
+<Grid container spacing={2} justifyContent="center" alignItems="center" position="relative" zIndex={100}>
           {/* Card 1 */}
           <Grid item xs={12} md={3}>
             <Box sx={{ minWidth: '300px', maxWidth: '800px', margin: 'auto' }}>

@@ -101,7 +101,7 @@ const MainDescription = () => {
                     <p className='element-3'>{rules}</p>
                 </div>
             </div>
-
+            <div style={{display:'flex',flexDirection:'row'}}>
             <div className='element-5 '>
                 <h3 >Coordinators</h3>
                 <ul className='coord '>
@@ -137,6 +137,7 @@ const MainDescription = () => {
             <div className='note'>
                 <h3 className='element-5'>Note</h3>
                 <p className='element-3'>{note}</p>
+            </div>
             </div>
         </div>
 
