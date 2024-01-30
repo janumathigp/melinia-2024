@@ -7,6 +7,7 @@ import stanleysImage from "../../Assets/crew/stanleycurrent.jpg";
 import keerthiImage from '../../Assets/crew/keerthikamamupdated.jpg';
 import manjuImage from '../../Assets/crew/manjumam.jpeg';
 import sujithraImage from '../../Assets/crew/sujithramam.jpeg';
+import praveen from '../../Assets/developers/praveen.jpg'
 import hemaImage from '../../Assets/crew/hemashreemam.jpeg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope,faPhone } from '@fortawesome/free-solid-svg-icons';
@@ -75,7 +76,7 @@ class Board extends React.Component
           department: "M.Sc. Artificial Intelligence and Machine Learning",
           phone: "9994883560",
           email: "2034002aiml@cit.edu.in",
-          image: abhinaya,
+          image: praveen,
         },
         {
           name: "S Rohith",
@@ -94,7 +95,7 @@ class Board extends React.Component
           department: "M.Sc. Software Systems",
           phone: "9943263888",
           email: "2031008mss@cit.edu.in",
-          image: stanleysImage,
+          image: praveen,
         },
         {
           name: "M Praveen Kumar",
@@ -102,7 +103,7 @@ class Board extends React.Component
           department: "M.Sc. Software Systems",
           phone: "9600224398",
           email: "2031033mss@cit.edu.in",
-          image: stanleysImage,
+          image: praveen,
         }
       ]
 

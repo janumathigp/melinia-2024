@@ -2,25 +2,18 @@ import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-//import logo from "../assets/logo.jpg";
+import { Link as ScrollLink } from "react-scroll";
+import { useMediaQuery } from "react-responsive";
 
 import { Link } from "react-router-dom";
-// import {MdGroups} from "react-icons/md";
-// import {FaFileCode} from "react-icons/fa";
-// import {FaRegFileCode} from "react-icons/fa";
-
-// import meliniaLogo from "../assets/logo/log.png"
-import citlogo from '../Assets/logo/citlogo.png'
-// import {
-//   AiOutlineHome,
-  
-// } from "react-icons/ai";
-
+import citlogo from '../Assets/logo/citlogo.png';
+import cit from '../Assets/logo/cit.png';
 
 function NavBar() {
-  
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
+  const isMobile = useMediaQuery({ maxWidth: 767 });
+
 
   function scrollHandler() {
     if (window.scrollY >= 20) {
@@ -39,27 +32,28 @@ function NavBar() {
       expand="md"
       className={navColour ? "sticky" : "navbar"}
     >
-      <Container className='font'>
+      <Container className="font">
         <Navbar.Brand href="/" className="d-flex">
-          <img src={citlogo} className="logo" alt="brand" />
+
+
+          <img src={isMobile ? cit : citlogo}
+            className={isMobile ? "mobile" : "logo"} alt="brand" />
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           onClick={() => {
             updateExpanded(expand ? false : "expanded");
           }}
-        >
-          {/* <span></span>
-          <span></span>
-          <span></span> */}
-        </Navbar.Toggle>
+        />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                {/* <AiOutlineHome style={{ marginBottom: "2px" }} />  */}
+                <ScrollLink className="scroll-link" style={{ textDecoration: "none"}}>
                 Home
+                </ScrollLink>
               </Nav.Link>
+
             </Nav.Item>
 
             <Nav.Item>
@@ -68,33 +62,47 @@ function NavBar() {
                 to="/board"
                 onClick={() => updateExpanded(false)}
               >
-                {/* <MdGroups style={{ marginBottom: "2px" }} />  */}
-Crew              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/technical"
-                onClick={() => updateExpanded(false)}
-              >
-                {/* <FaFileCode
-                  style={{ marginBottom: "2px" }}
-                />{" "} */}
-                Events
+                <ScrollLink className="scroll-link" style={{ textDecoration: "none"}}>
+                Crew
+                </ScrollLink>
+                
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/nontechnical"
-                onClick={() => updateExpanded(false)}
-              >
-                {/* <FaRegFileCode style={{ marginBottom: "2px" }} /> Non-technical Events */}
-                Contact
+              <Nav.Link>
+                <ScrollLink
+                  className="scroll-link"  // Add a specific class for Events
+                  to="events"
+                  smooth={true}
+                  duration={500}
+                  offset={-70}
+                  spy={true}
+                  onClick={() => updateExpanded(false)}
+                  style={{ textDecoration: "none"}}
+                >
+                  Events
+                </ScrollLink>
               </Nav.Link>
             </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link>
+                <ScrollLink
+                  className="scroll-link"  // Add a specific class for Contact
+                  to="contact"
+                  smooth={true}
+                  duration={500}
+                  offset={-70}
+                  spy={true}
+                  onClick={() => updateExpanded(false)}
+                  style={{ textDecoration: "none" }}
+                >
+                  Contact
+                </ScrollLink>
+              </Nav.Link>
+            </Nav.Item>
+
 
           </Nav>
         </Navbar.Collapse>
@@ -102,4 +110,5 @@ Crew              </Nav.Link>
     </Navbar>
   );
 }
-export default NavBar;    
+
+export default NavBar;

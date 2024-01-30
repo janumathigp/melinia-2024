@@ -31,7 +31,7 @@ const Contact = () => {
   return (
   
 
-  <body>
+  <body id = "contact">
     <div class="main-block">
       <div class="left-part">
         <i class="fas fa-envelope"></i>

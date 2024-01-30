@@ -118,9 +118,15 @@ const Events = () => {
     const cardHeight = 350;
   
     return (
-        <div style={{ display: 'flex', flexDirection: 'row',  height: '500px' }}>
+        <div id= "events" className='aboutBox' style={{ display: 'flex', flexDirection: 'row',  height: '500px' }}>
           <div style={{ textAlign: 'center',display:'flex', flex: 1 , alignItems: 'center', justifyContent:'center'}}>
-            <h1 className='aboutFont'>EVENTS</h1>
+            <h1 className='aboutFont' style={{padding:"30px"}}>DIVERSE EVENTS , ENDLESS POSSIBILITIES
+
+
+
+
+
+</h1>
           </div>
           <div style={{ display:'flex',textAlign: 'center', flex: 1,  alignItems: 'center', justifyContent:'center'}}>
             <AnimatePresence>
