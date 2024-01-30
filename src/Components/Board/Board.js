@@ -16,6 +16,7 @@ import '@fontsource/montserrat'; // Import Montserrat font
 import { styled } from "@mui/system";
 import rohith from '../../Assets/crew/rohith.jpg';
 import abhinaya from  "../../Assets/crew/abjinaya.jpg";
+import { Particle } from "../ParticlesBackground";
 
 const StyledTypography = styled(Typography)({
   fontSize: "2.5rem",
@@ -146,8 +147,9 @@ class Board extends React.Component
         return(
 <div>
 <div style={{ backgroundColor: '#d9d2e9', marginTop: '4%' }}>
+  <Particle></Particle>
   <br></br><br></br>
-          <section style={{  marginLeft: 'auto', marginRight: 'auto', maxWidth: '355px'}}>
+          <section style={{  marginLeft: 'auto', marginRight: 'auto', maxWidth: '355px', position:'relative',zIndex:'100'}}>
             <Card
               sx={{
                 borderBottom: '10px solid #2C2244',
@@ -214,7 +216,7 @@ class Board extends React.Component
           <br></br><br></br>
         {/* New row of four cards */}
         {/* <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap' }}> */}
-        <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap' }}>
+        <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', position:'relative',zIndex:'100' }}>
           {this.cardDataTeachers.map((data, index) => (
             <Card
               key={index}
@@ -307,7 +309,7 @@ class Board extends React.Component
     </div>
 
 
-      <div style={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center', flexWrap: 'wrap' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center', flexWrap: 'wrap' , position:'relative',zIndex:'100'}}>
           {this.cardDataCMSEC.map((data, index) => (
             <Card
               key={index}
@@ -377,7 +379,7 @@ class Board extends React.Component
           ))}
         </div>
         <br></br>
-        <div style={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center', flexWrap: 'wrap' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center', flexWrap: 'wrap' , position:'relative',zIndex:'100'}}>
           {this.cardJointSecTreasurer.map((data, index) => (
             <Card
               key={index}
@@ -447,7 +449,7 @@ class Board extends React.Component
           ))}
         </div>
         <br></br>
-        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap' }}>
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', position:'relative',zIndex:'100' }}>
           {this.cardStudentCoordinators.map((data, index) => (
             <Card
               key={index}
