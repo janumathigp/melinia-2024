@@ -14,7 +14,7 @@ function QueryCard() {
   };
   return (
     <Box sx={{marginTop:{xs:"60px",md:"200px"}}} >
-        <Box width="100%" sx={{height:"220px",background:"#0c0915",display:"flex",flexDirection:"row",alignItems:"center",justifyContent:"center"}}>
+        <Box width="100%" sx={{height:"220px",background:"white",display:"flex",flexDirection:"row",alignItems:"center",justifyContent:"center"}}>
             <Container sx={{display:"flex",flexDirection:"row",alignItems:"center", justifyContent:{xs:'center', md:'flex-start'}}}>
                 <Box sx={{display:{xs:"none",md:"block"}}}>
                     <img src={contactUsImage} style={{objectFit:"contain",marginTop:"-82px", marginLeft:'-50px'}}/>

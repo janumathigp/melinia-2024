@@ -1,5 +1,6 @@
 @import url("https://use.fontawesome.com/releases/v5.4.1/css/all.css");
     @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+
       html, body {
       min-height: 60%;
       padding: 0;
@@ -21,8 +22,14 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      min-height: 70vh;
+      /* min-height: 100vh; */
       background-color: rgba(21, 15, 35, 0.6) !important; /* Adjust the alpha value (0.0 to 1.0) for the desired transparency */
+    }
+    .info{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
       form {
       padding: 25px;

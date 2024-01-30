@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
-import { motion, AnimatePresence, useAnimation } from 'framer-motion';
 import {Link} from 'react-router-dom';
-import MainDescription from './MainDescription';
+import { FcNext } from "react-icons/fc";
 
-// Import images for your cards
 import Keycharades from "../../Assets/events/KEY CHARADES.png"
 import SEQUELVERSE from "../../Assets/events/SEQUELVERSE.png"
 import bidbattle from "../../Assets/events/bidbattle.png"
@@ -90,89 +88,32 @@ const cardData = [
 ];
 
 const Events = () => {
-    const [selectedCard, setSelectedCard] = useState(null);
-    const dragControls = useAnimation();
-    let dragStartX = 0;
-  
-    const handleDragStart = (event, info) => {
-      dragStartX = info.point.x;
-    };
-  
-    const handleDragEnd = (event, info) => {
-      const dragDistance = info.point.x - dragStartX;
-      const totalCards = cardData.length;
-    
-      let newSelectedCard = selectedCard;
-    
-      if (dragDistance > 50) {
-        newSelectedCard = (selectedCard + 1) % totalCards;
-      } else if (dragDistance < -50) {
-        newSelectedCard = (selectedCard - 1 + totalCards) % totalCards;
-      }
-    
-      setSelectedCard(newSelectedCard);
-      dragControls.start({ x: 0, y: 0 }); // Reset only the x-coordinate
-    };
-  
-    const cardWidth = 350;
-    const cardHeight = 350;
-  
-    return (
-        <div id= "events" className='aboutBox' style={{ display: 'flex', flexDirection: 'row',  height: '500px' }}>
-          <div style={{ textAlign: 'center',display:'flex', flex: 1 , alignItems: 'center', justifyContent:'center'}}>
-            <h1 className='aboutFont' style={{padding:"30px"}}>DIVERSE EVENTS , ENDLESS POSSIBILITIES
+  const [selectedCard, setSelectedCard] = useState(0);
 
+  const handleNext = () => {
+    setSelectedCard((selectedCard + 1) % cardData.length);
+  };
 
+  const cardWidth = 350;
+  const cardHeight = 350;
 
-
-
-</h1>
-          </div>
-          <div style={{ display:'flex',textAlign: 'center', flex: 1,  alignItems: 'center', justifyContent:'center'}}>
-            <AnimatePresence>
-              {cardData.map((card, index) => (
-
-                <motion.div
-                  key={card.id}
-                  drag="x"
-                  dragConstraints={{ left: 0, right: 0 }}
-                  animate={dragControls}
-                  onDragStart={handleDragStart}
-                  onDragEnd={handleDragEnd}
-                  onClick={() => {
-                    setSelectedCard(index);
-                  }}
-                  style={{
-                    position: 'absolute',
-                    width: `${cardWidth}px`,
-                    height: `${cardHeight}px`,
-                    backgroundColor: 'white',
-                    borderRadius: '8px',
-                    padding: '16px',
-                    zIndex: index === selectedCard ? 2 : 1,
-                    transformOrigin: 'bottom center',
-                 
-                  }}
-                >
-          <Link key={card.id} to={`events/${card.id}`} style={{textDecoration:"none", color:"violet"}}>
-
-                  <img src={card.imageUrl} alt={`Card ${card.id}`} style={{ width: '100%', borderRadius: '8px 8px 0 0' }} />
-                  <div>
-                    <p>{card.technical}</p>
-                    <h2>{card.title}</h2>
-                    <p>Date: {card.date}</p>
-                    <p>Time: {card.time}</p>
-                  </div>
+  return (
+    <div id="events" className='aboutBox2' style={{ display: 'flex', flexDirection: 'row', height: '500px' }}>
+      <div style={{ textAlign: 'center', display: 'flex', flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+        <h1 className='aboutFont' style={{ padding: "30px" }}>DIVERSE EVENTS, ENDLESS POSSIBILITIES</h1>
+      </div>
+      <div style={{ display: 'flex', textAlign: 'center', flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+        <div style={{ position: 'relative'}}>
+          <Link key={cardData[selectedCard].id} to={`events/${cardData[selectedCard].id}`} style={{ textDecoration: "none", color: "violet" }}>
+            <img src={cardData[selectedCard].imageUrl} alt={`Card ${cardData[selectedCard].id}`} style={{ width: '80%', borderRadius: '10px' }} />
           </Link>
-
-                </motion.div>
-                // </div>
-
-              ))}
-            </AnimatePresence>
-          </div>
         </div>
-      );
-    };
-    
-    export default Events;
+        <div>
+          <button onClick={handleNext}><FcNext size={30} /></button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Events;
