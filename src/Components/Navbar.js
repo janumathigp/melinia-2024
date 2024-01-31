@@ -51,30 +51,32 @@
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ms-auto" defaultActiveKey="#home">
               <Nav.Item>
-                <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                  <ScrollLink className="scroll-link" style={{ textDecoration: "none"}}>
+                <Nav.Link className="scroll-link" as={Link} to="/" onClick={() => updateExpanded(false)}>
+                  {/* <ScrollLink className="scroll-link" style={{ textDecoration: "none"}}>
                   Home
-                  </ScrollLink>
+                  </ScrollLink> */}
+                  Home
                 </Nav.Link>
 
               </Nav.Item>
 
               <Nav.Item>
                 <Nav.Link
+                className="scroll-link"
                   as={Link}
                   to="/board"
                   onClick={() => updateExpanded(false)}
                 >
-                  <ScrollLink className="scroll-link" style={{ textDecoration: "none"}}>
+                  {/* <ScrollLink className="scroll-link" style={{ textDecoration: "none"}}>
                   Crew
-                  </ScrollLink>
-                  
+                  </ScrollLink> */}
+                  Crew
                 </Nav.Link>
               </Nav.Item>
 
               <Nav.Item>
-                <Nav.Link>
-                  <ScrollLink
+                <Nav.Link className="scroll-link">
+                  {/* <ScrollLink
                     className="scroll-link"  // Add a specific class for Events
                     to="events"
                     smooth={true}
@@ -85,13 +87,14 @@
                     style={{ textDecoration: "none"}}
                   >
                     Events
-                  </ScrollLink>
+                  </ScrollLink> */}
+                  Events
                 </Nav.Link>
               </Nav.Item>
 
               <Nav.Item>
-                <Nav.Link>
-                  <ScrollLink
+                <Nav.Link className="scroll-link">
+                  {/* <ScrollLink
                     className="scroll-link"  // Add a specific class for Contact
                     to="contact"
                     smooth={true}
@@ -102,7 +105,8 @@
                     style={{ textDecoration: "none" }}
                   >
                     Contact
-                  </ScrollLink>
+                  </ScrollLink> */}
+                  Contact
                 </Nav.Link>
               </Nav.Item>
 
