@@ -13,7 +13,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope,faPhone } from '@fortawesome/free-solid-svg-icons';
 import '@fontsource/poppins'; // Import Poppins font
 import '@fontsource/montserrat'; // Import Montserrat font
-import { styled } from "@mui/system";
+import { display, styled } from "@mui/system";
 import rohith from '../../Assets/crew/rohith.jpg';
 import abhinaya from  "../../Assets/crew/abjinaya.jpg";
 import susmaMondal from "../../Assets/crew/susmaMondal.jpg";
@@ -257,10 +257,10 @@ class Board extends React.Component
               <CardMedia
             component="img"
             alt={data.name}
-            // height="fit-content"
+            height="320px"
             image={data.image}
-           sx={{height:'275px',
-          
+            
+           sx={{
            '@media (max-width: 600px)': {
             height:"fit-content"
           },
@@ -308,8 +308,10 @@ class Board extends React.Component
 
 <div>
       {/* Use the StyledTypography component */}
-      <StyledTypography variant="h4" gutterBottom>
+      <StyledTypography variant="h4" gutterBottom >
+        <span style={{fontFamily:'"Raleway", serif !important'}}>
         Office Bearers
+        </span>
       </StyledTypography>
     </div>
 
@@ -349,8 +351,8 @@ class Board extends React.Component
               {/* ... (Card content for new row) */}
               <CardMedia
             component="img"
-            alt="Stanley"
-            height="fit-content"
+            alt="Image"
+            height="320px"
             image={data.image}
           />
           <CardContent sx={{ padding: '0px', paddingTop: '7px' }}>
@@ -419,9 +421,9 @@ class Board extends React.Component
               {/* ... (Card content for new row) */}
               <CardMedia
             component="img"
-            alt="Stanley"
-            height="fit-content"
-            image={stanleysImage}
+            alt="Image"
+            height="320px"
+            image={data.image}
           />
           <CardContent sx={{ padding: '0px', paddingTop: '7px' }}>
             <Typography gutterBottom variant="h5" component="div" sx={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 'bold', fontSize: '1.5rem' }}>
@@ -489,9 +491,9 @@ class Board extends React.Component
               {/* ... (Card content for new row) */}
               <CardMedia
             component="img"
-            alt="Stanley"
-            height="fit-content"
-            image={stanleysImage}
+            alt="Image"
+            height="320px"
+            image={data.image}
           />
           <CardContent sx={{ padding: '0px', paddingTop: '7px' }}>
             <Typography gutterBottom variant="h5" component="div" sx={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 'bold', fontSize: '1.5rem' }}>
@@ -500,9 +502,9 @@ class Board extends React.Component
             <Typography variant="body1" display="block" gutterBottom sx={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 'bolder', color: '#555', fontSize: '1rem' }}>
               {data.role}
             </Typography>
-            <Typography variant="body2" color="text.secondary" sx={{ fontFamily: 'Montserrat, sans-serif', color: '#777', fontSize: '0.9rem' }}>
+            {/* <Typography variant="body2" color="text.secondary" sx={{ fontFamily: 'Montserrat, sans-serif', color: '#777', fontSize: '0.9rem' }}>
               {data.email}
-            </Typography>
+            </Typography> */}
           </CardContent>
           <CardContent sx={{ padding: '0px', paddingTop: '7px' }}>
             <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: '10px' }}>
