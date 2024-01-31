@@ -3,7 +3,6 @@ import { Box, Container } from "@mui/system";
 import Divider from "@mui/material/Divider";
 import React, { useState } from "react";
 import { FaHandshake } from "react-icons/fa";
-import kla from "../Assets/logo/kla.png"
 
 function Sponsors() {
   const sponsors = [
@@ -14,7 +13,8 @@ function Sponsors() {
     },
     {
       name:"KLA",
-      logo:kla}
+      logo:"https://rootquotient.com/assets/images/new-home-page/rq-logo-secondary-new.png"
+    }
     
     // {
     //   name: "KLA",
