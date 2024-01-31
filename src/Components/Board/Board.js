@@ -16,6 +16,11 @@ import '@fontsource/montserrat'; // Import Montserrat font
 import { styled } from "@mui/system";
 import rohith from '../../Assets/crew/rohith.jpg';
 import abhinaya from  "../../Assets/crew/abjinaya.jpg";
+import susmaMondal from "../../Assets/crew/susmaMondal.jpg";
+import prakalya from "../../Assets/crew/prakalya.jpg";
+import abhirami from "../../Assets/crew/abhirami2.jpg";
+import aswath from "../../Assets/crew/aswath.jpg";
+import bhupesh from "../../Assets/crew/bhupesh.jpg"
 import { Particle } from "../ParticlesBackground";
 
 const StyledTypography = styled(Typography)({
@@ -77,7 +82,7 @@ class Board extends React.Component
           department: "M.Sc. Artificial Intelligence and Machine Learning",
           phone: "9994883560",
           email: "2034002aiml@cit.edu.in",
-          image: praveen,
+          image: abhinaya,
         },
         {
           name: "S Rohith",
@@ -96,7 +101,7 @@ class Board extends React.Component
           department: "M.Sc. Software Systems",
           phone: "9943263888",
           email: "2031008mss@cit.edu.in",
-          image: praveen,
+          image: aswath,
         },
         {
           name: "M Praveen Kumar",
@@ -115,7 +120,7 @@ class Board extends React.Component
           department: "M.Sc. Decision and Computing Sciences",
           phone: "9843736523",
           email: "2033035mdcs@cit.edu.in",
-          image: stanleysImage,
+          image: susmaMondal,
         },
         {
           name: "Abirami Raghupathi",
@@ -123,7 +128,7 @@ class Board extends React.Component
           department: "M.Sc. Decision and Computing Sciences",
           phone: "9003764378",
           email: "2033002mdcs@cit.edu.in",
-          image: stanleysImage,
+          image: abhirami,
         },
         {
           name: "Prakalya B S",
@@ -131,7 +136,7 @@ class Board extends React.Component
           department: "Data Science",
           phone: "9488038087",
           email: "2032031mds@cit.edu.in",
-          image: stanleysImage,
+          image: prakalya,
         },
         {
           name: "Bhupesh P S",
@@ -139,7 +144,7 @@ class Board extends React.Component
           department: "Data Science",
           phone: "9994615335",
           email: "2032008mds@cit.edu.in",
-          image: stanleysImage,
+          image: bhupesh,
         }
       ]
     render()

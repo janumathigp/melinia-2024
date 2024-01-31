@@ -36,72 +36,78 @@ function NavBar() {
         <Navbar.Brand href="/" className="d-flex">
 
 
-          <img src={isMobile ? cit : citlogo}
-            className={isMobile ? "mobile" : "logo"} alt="brand" />
-        </Navbar.Brand>
-        <Navbar.Toggle
-          aria-controls="responsive-navbar-nav"
-          onClick={() => {
-            updateExpanded(expand ? false : "expanded");
-          }}
-        />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ms-auto" defaultActiveKey="#home">
-            <Nav.Item>
-              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <ScrollLink className="scroll-link" style={{ textDecoration: "none"}}>
-                Home
-                </ScrollLink>
-              </Nav.Link>
+            <img src={isMobile ? cit : citlogo}
+              className={isMobile ? "mobile" : "logo"} alt="brand" />
+          </Navbar.Brand>
+          {isMobile ? (  <FiMoreVertical
+            onClick={() => {
+              updateExpanded(!expand);
+            }}
+            style={{ color:"white",cursor: "pointer" , fontSize: "4rem"}}
+            className="navbar-toggler"
+          />): ""}
+        
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="ms-auto" defaultActiveKey="#home">
+              <Nav.Item>
+                <Nav.Link className="scroll-link" as={Link} to="/" onClick={() => updateExpanded(false)}>
+                  {/* <ScrollLink className="scroll-link" style={{ textDecoration: "none"}}>
+                  Home
+                  </ScrollLink> */}
+                  Home
+                </Nav.Link>
 
             </Nav.Item>
 
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/board"
-                onClick={() => updateExpanded(false)}
-              >
-                <ScrollLink className="scroll-link" style={{ textDecoration: "none"}}>
-                Crew
-                </ScrollLink>
-                
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link>
-                <ScrollLink
-                  className="scroll-link"  // Add a specific class for Events
-                  to="events"
-                  smooth={true}
-                  duration={500}
-                  offset={-70}
-                  spy={true}
+              <Nav.Item>
+                <Nav.Link
+                className="scroll-link"
+                  as={Link}
+                  to="/board"
                   onClick={() => updateExpanded(false)}
-                  style={{ textDecoration: "none"}}
                 >
+                  {/* <ScrollLink className="scroll-link" style={{ textDecoration: "none"}}>
+                  Crew
+                  </ScrollLink> */}
+                  Crew
+                </Nav.Link>
+              </Nav.Item>
+
+              <Nav.Item>
+                <Nav.Link className="scroll-link">
+                  {/* <ScrollLink
+                    className="scroll-link"  // Add a specific class for Events
+                    to="events"
+                    smooth={true}
+                    duration={500}
+                    offset={-70}
+                    spy={true}
+                    onClick={() => updateExpanded(false)}
+                    style={{ textDecoration: "none"}}
+                  >
+                    Events
+                  </ScrollLink> */}
                   Events
-                </ScrollLink>
-              </Nav.Link>
-            </Nav.Item>
+                </Nav.Link>
+              </Nav.Item>
 
-            <Nav.Item>
-              <Nav.Link>
-                <ScrollLink
-                  className="scroll-link"  // Add a specific class for Contact
-                  to="contact"
-                  smooth={true}
-                  duration={500}
-                  offset={-70}
-                  spy={true}
-                  onClick={() => updateExpanded(false)}
-                  style={{ textDecoration: "none" }}
-                >
+              <Nav.Item>
+                <Nav.Link className="scroll-link">
+                  {/* <ScrollLink
+                    className="scroll-link"  // Add a specific class for Contact
+                    to="contact"
+                    smooth={true}
+                    duration={500}
+                    offset={-70}
+                    spy={true}
+                    onClick={() => updateExpanded(false)}
+                    style={{ textDecoration: "none" }}
+                  >
+                    Contact
+                  </ScrollLink> */}
                   Contact
-                </ScrollLink>
-              </Nav.Link>
-            </Nav.Item>
+                </Nav.Link>
+              </Nav.Item>
 
 
           </Nav>
