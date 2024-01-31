@@ -32,9 +32,7 @@ const Contact = () => {
   
 
   <body id = "contact">
-
     <div class="main-block">
-
       <div class="left-part">
         <i class="fas fa-envelope"></i>
         <i class="fas fa-at"></i>
@@ -42,18 +40,13 @@ const Contact = () => {
       </div>
       <form onSubmit={handleOnSubmit}>
         <h1>Any Queries</h1>
-           <div class="info">
-            <div class="input-group">
-              <input type="text" name="from_name" placeholder="Name" />
-            </div>
-            <div class="input-group">
-              <input type="email" name="from_email" placeholder="Email" />
-            </div>
-            <div class="input-group">
-              <textarea name="message" placeholder="Type your query here..."></textarea>
-            </div>
-            <button type='submit'>Submit</button>
-          </div>
+        <div class="info">
+          
+          <input type="name" name="from_name" placeholder="Name"/>
+          <input type="email" name="from_email" placeholder="Email"/>
+          <input type="textarea" name="message" placeholder="Type your query here..."/><br/><br/>
+          <button type='submit' >Submit</button>
+        </div>
         
         
       </form>

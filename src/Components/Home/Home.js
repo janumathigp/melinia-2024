@@ -40,7 +40,7 @@ function Home() {
                     <strong className="main-name"> 2024  </strong>
                   </h1>
                   <h1 style={{ paddingBottom: 15, textAlign: 'center' }} className="heading">
-                    National Level Technical Symposium
+                    A national level technical symposium
                   </h1>
                   {isEventCompleted ? (
                     <div style={{ display: 'flex', justifyContent: 'center', textAlign: 'center', marginTop: '15px' }}>
@@ -52,25 +52,32 @@ function Home() {
                   </div>
                 </div>
               </Col>
-            
+              <Col md={5} style={{ paddingBottom: 20 }}>
+                {/* <img
+                  src={homeLogo}
+                  alt="home pic"
+                  className="img-fluid"
+                  style={{ maxHeight: "450px" }}
+                /> */}
+              </Col>
             </Row>
           </Container>
-          <Container style={{ margin: 0, padding: 0, minWidth: '100%', marginBottom:"30px" }}>
+          <Container style={{ margin: 0, padding: 0, minWidth: '100%' }}>
             <AboutMelinia />
           </Container>
-          <Container style={{ margin: 0, padding: 0, minWidth: '100%',marginBottom:"30px" }}>
+          <Container style={{ margin: 0, padding: 0, minWidth: '100%' }}>
             <Events />
           </Container>
-          <Container style={{ margin: 0, padding: 0, minWidth: '100%', marginBottom:"30px" }}>
+          <Container style={{ margin: 0, padding: 0, minWidth: '100%' }}>
             <Workshop />
           </Container>
-          <Container style={{ margin: 0, padding: 0, minWidth: '100%', marginBottom:"30px" }}>
+          <Container style={{ margin: 0, padding: 0, minWidth: '100%' }}>
             <QueryCard />
           </Container>
-          <Container style={{ margin: 0, padding: 0, minWidth: '100%', marginBottom:"30px" }}>
+          <Container style={{ margin: 0, padding: 0, minWidth: '100%' }}>
             <Sponsors />
           </Container>
-          <Container style={{ margin: 0, padding: 0, minWidth: '100%', marginBottom:"30px" }}>
+          <Container style={{ margin: 0, padding: 0, minWidth: '100%' }}>
             <ChiefGuest />
           </Container>
           <Container>
