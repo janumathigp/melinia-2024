@@ -13,7 +13,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope,faPhone } from '@fortawesome/free-solid-svg-icons';
 import '@fontsource/poppins'; // Import Poppins font
 import '@fontsource/montserrat'; // Import Montserrat font
-import { styled } from "@mui/system";
+import { display, styled } from "@mui/system";
 import rohith from '../../Assets/crew/rohith.jpg';
 import abhinaya from  "../../Assets/crew/abjinaya.jpg";
 import susmaMondal from "../../Assets/crew/susmaMondal.jpg";
@@ -189,22 +189,22 @@ class Board extends React.Component
             height="fit-content"
             image={stanleysImage}
           />
-          <CardContent sx={{ padding: '0px', paddingTop: '7px' }}>
+          <CardContent sx={{ padding: '0px', paddingTop: '7px',fontFamily:'"Raleway", serif !important' }}>
             <Typography gutterBottom variant="h5" component="div" sx={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 'bold', fontSize: '1.5rem' }}>
-              Dr. C. Stanley Felix
+              <span style={{fontFamily:'"Raleway", serif !important' }}>Dr. C. Stanley Felix</span>
             </Typography>
             <Typography variant="body1" display="block" gutterBottom sx={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 'bolder', color: '#555', fontSize: '1rem' }}>
-              Faculty Advisor
+              <span style={{fontFamily:'"Raleway", serif !important' }}>Faculty Advisor</span>
             </Typography>
             <Typography variant="body2" color="text.secondary" sx={{ fontFamily: 'Montserrat, sans-serif', color: '#777', fontSize: '0.9rem' }}>
-              Department of Computing
+            <span style={{fontFamily:'"Raleway", serif !important' }}>Department of Computing</span>
             </Typography>
           </CardContent>
           <CardContent sx={{ padding: '0px', paddingTop: '7px' }}>
             <div style={{ cursor:'pointer',display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: '10px' }}>
               <FontAwesomeIcon icon={faPhone} style={{ fontSize: '20px', color: '#3498db' }} />
               <Typography variant="body1" display="block" gutterBottom onClick={() => window.location.href=`tel:${'0422-2574071 Extn: 335'}`} sx={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 'bolder', color: '#555', fontSize: '1rem' }}>
-                0422-2574071 Extn: 335
+              <span style={{fontFamily:'"Raleway", serif !important' }}>0422-2574071 Extn: 335</span>
               </Typography>
             </div>
           </CardContent>
@@ -212,7 +212,7 @@ class Board extends React.Component
             <div style={{ cursor:'pointer',display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: '10px' }}>
               <FontAwesomeIcon icon={faEnvelope} style={{ fontSize: '20px', color: '#3498db' }} />
               <Typography variant="body1" display="block" onClick={() => window.location.href=`mailto:${'stanlyfelix@cit.edu.in'}`} gutterBottom sx={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 'bolder', color: '#555', fontSize: '1rem' }}>
-                stanlyfelix@cit.edu.in
+              <span style={{fontFamily:'"Raleway", serif !important' }}>stanlyfelix@cit.edu.in</span>
               </Typography>
             </div>
           </CardContent>
@@ -257,10 +257,10 @@ class Board extends React.Component
               <CardMedia
             component="img"
             alt={data.name}
-            // height="fit-content"
+            height="320px"
             image={data.image}
-           sx={{height:'275px',
-          
+            
+           sx={{
            '@media (max-width: 600px)': {
             height:"fit-content"
           },
@@ -269,13 +269,13 @@ class Board extends React.Component
           />
           <CardContent sx={{ padding: '0px', paddingTop: '7px' }}>
             <Typography gutterBottom variant="h5" component="div" sx={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 'bold', fontSize: '1.5rem' }}>
-            {data.name}
+            <span style={{fontFamily:'"Raleway", serif !important' }}>{data.name}</span>
             </Typography>
             <Typography variant="body1" display="block" gutterBottom sx={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 'bolder', color: '#555', fontSize: '1rem' }}>
-              {data.role}
+              <span style={{fontFamily:'"Raleway", serif !important' }}>{data.role}</span>
             </Typography>
             <Typography variant="body2" color="text.secondary" sx={{ fontFamily: 'Montserrat, sans-serif', color: '#777', fontSize: '0.9rem' }}>
-                {data.department}
+                <span style={{fontFamily:'"Raleway", serif !important' }}>{data.department}</span>
             </Typography>
           </CardContent>
           <CardContent sx={{ padding: '0px', paddingTop: '7px' }}>
@@ -284,7 +284,7 @@ class Board extends React.Component
               <Typography variant="body1" display="block" gutterBottom sx={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 'bolder', color: '#555', fontSize: '1rem' }}
               onClick={() => window.location.href=`tel:${data.phone}`}
               >
-                {data.phone}
+                <span style={{fontFamily:'"Raleway", serif !important' }}>{data.phone}</span>
               </Typography>
             </div>
           </CardContent>
@@ -294,7 +294,7 @@ class Board extends React.Component
               <Typography variant="body1" display="block" gutterBottom sx={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 'bolder', color: '#555', fontSize: '1rem' }}
               onClick={() => window.location.href=`mailto:${data.email}`}
               >
-                {data.email}
+                <span style={{fontFamily:'"Raleway", serif !important' }}>{data.email}</span>
               </Typography>
             </div>
           </CardContent>
@@ -308,8 +308,10 @@ class Board extends React.Component
 
 <div>
       {/* Use the StyledTypography component */}
-      <StyledTypography variant="h4" gutterBottom>
+      <StyledTypography variant="h4" gutterBottom >
+        <span style={{fontFamily:'"Raleway", serif !important'}}>
         Office Bearers
+        </span>
       </StyledTypography>
     </div>
 
@@ -349,26 +351,26 @@ class Board extends React.Component
               {/* ... (Card content for new row) */}
               <CardMedia
             component="img"
-            alt="Stanley"
-            height="fit-content"
+            alt="Image"
+            height="320px"
             image={data.image}
           />
           <CardContent sx={{ padding: '0px', paddingTop: '7px' }}>
             <Typography gutterBottom variant="h5" component="div" sx={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 'bold', fontSize: '1.5rem' }}>
-              {data.name}
+            <span style={{fontFamily:'"Raleway", serif !important' }}>{data.name}</span>
             </Typography>
             <Typography variant="body1" display="block" gutterBottom sx={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 'bolder', color: '#555', fontSize: '1rem' }}>
-              {data.role}
+              <span style={{fontFamily:'"Raleway", serif !important' }}>{data.role}</span>
             </Typography>
             <Typography variant="body2" color="text.secondary" sx={{ fontFamily: 'Montserrat, sans-serif', color: '#777', fontSize: '0.9rem' }}>
-              {data.department}
+              <span style={{fontFamily:'"Raleway", serif !important' }}>{data.department}</span>
             </Typography>
           </CardContent>
           <CardContent sx={{ padding: '0px', paddingTop: '7px' }}>
             <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: '10px' }}>
               <FontAwesomeIcon icon={faPhone} style={{ fontSize: '20px', color: '#3498db' }} />
               <Typography variant="body1" display="block" gutterBottom sx={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 'bolder', color: '#555', fontSize: '1rem' }}>
-                {data.phone}
+                <span style={{fontFamily:'"Raleway", serif !important' }}>{data.phone}</span>
               </Typography>
             </div>
           </CardContent>
@@ -376,7 +378,7 @@ class Board extends React.Component
             <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: '10px' }}>
               <FontAwesomeIcon icon={faEnvelope} style={{ fontSize: '20px', color: '#3498db' }} />
               <Typography variant="body1" display="block" gutterBottom sx={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 'bolder', color: '#555', fontSize: '1rem' }}>
-                {data.email}
+                <span style={{fontFamily:'"Raleway", serif !important' }}>{data.email}</span>
               </Typography>
             </div>
           </CardContent>
@@ -419,26 +421,26 @@ class Board extends React.Component
               {/* ... (Card content for new row) */}
               <CardMedia
             component="img"
-            alt="Stanley"
-            height="fit-content"
-            image={stanleysImage}
+            alt="Image"
+            height="320px"
+            image={data.image}
           />
           <CardContent sx={{ padding: '0px', paddingTop: '7px' }}>
             <Typography gutterBottom variant="h5" component="div" sx={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 'bold', fontSize: '1.5rem' }}>
-              {data.name}
+            <span style={{fontFamily:'"Raleway", serif !important' }}>{data.name}</span>
             </Typography>
             <Typography variant="body1" display="block" gutterBottom sx={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 'bolder', color: '#555', fontSize: '1rem' }}>
-              {data.role}
+              <span style={{fontFamily:'"Raleway", serif !important' }}>{data.role}</span>
                           </Typography>
             <Typography variant="body2" color="text.secondary" sx={{ fontFamily: 'Montserrat, sans-serif', color: '#777', fontSize: '0.9rem' }}>
-              {data.department}
+              <span style={{fontFamily:'"Raleway", serif !important' }}>{data.department}</span>
             </Typography>
           </CardContent>
           <CardContent sx={{ padding: '0px', paddingTop: '7px' }}>
             <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: '10px' }}>
               <FontAwesomeIcon icon={faPhone} style={{ fontSize: '20px', color: '#3498db' }} />
               <Typography variant="body1" display="block" gutterBottom sx={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 'bolder', color: '#555', fontSize: '1rem' }}>
-                {data.phone}
+                <span style={{fontFamily:'"Raleway", serif !important' }}>{data.phone}</span>
               </Typography>
             </div>
           </CardContent>
@@ -446,7 +448,7 @@ class Board extends React.Component
             <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: '10px' }}>
               <FontAwesomeIcon icon={faEnvelope} style={{ fontSize: '20px', color: '#3498db' }} />
               <Typography variant="body1" display="block" gutterBottom sx={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 'bolder', color: '#555', fontSize: '1rem' }}>
-                {data.email}
+                <span style={{fontFamily:'"Raleway", serif !important' }}>{data.email}</span>
               </Typography>
             </div>
           </CardContent>
@@ -489,26 +491,26 @@ class Board extends React.Component
               {/* ... (Card content for new row) */}
               <CardMedia
             component="img"
-            alt="Stanley"
-            height="fit-content"
-            image={stanleysImage}
+            alt="Image"
+            height="320px"
+            image={data.image}
           />
           <CardContent sx={{ padding: '0px', paddingTop: '7px' }}>
             <Typography gutterBottom variant="h5" component="div" sx={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 'bold', fontSize: '1.5rem' }}>
-              {data.name}
+              <span style={{fontFamily:'"Raleway", serif !important' }}>{data.name}</span>
             </Typography>
             <Typography variant="body1" display="block" gutterBottom sx={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 'bolder', color: '#555', fontSize: '1rem' }}>
-              {data.role}
+              <span style={{fontFamily:'"Raleway", serif !important' }}>{data.role}</span>
             </Typography>
-            <Typography variant="body2" color="text.secondary" sx={{ fontFamily: 'Montserrat, sans-serif', color: '#777', fontSize: '0.9rem' }}>
+            {/* <Typography variant="body2" color="text.secondary" sx={{ fontFamily: 'Montserrat, sans-serif', color: '#777', fontSize: '0.9rem' }}>
               {data.email}
-            </Typography>
+            </Typography> */}
           </CardContent>
           <CardContent sx={{ padding: '0px', paddingTop: '7px' }}>
             <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: '10px' }}>
               <FontAwesomeIcon icon={faPhone} style={{ fontSize: '20px', color: '#3498db' }} />
               <Typography variant="body1" display="block" gutterBottom sx={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 'bolder', color: '#555', fontSize: '1rem' }}>
-                {data.phone}
+                <span style={{fontFamily:'"Raleway", serif !important' }}>{data.phone}</span>
               </Typography>
             </div>
           </CardContent>
@@ -516,7 +518,7 @@ class Board extends React.Component
             <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: '10px' }}>
               <FontAwesomeIcon icon={faEnvelope} style={{ fontSize: '20px', color: '#3498db' }} />
               <Typography variant="body1" display="block" gutterBottom sx={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 'bolder', color: '#555', fontSize: '1rem' }}>
-                {data.email}
+                <span style={{fontFamily:'"Raleway", serif !important' }}>{data.email}</span>
               </Typography>
             </div>
           </CardContent>
