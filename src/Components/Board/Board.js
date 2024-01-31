@@ -16,6 +16,10 @@ import '@fontsource/montserrat'; // Import Montserrat font
 import { styled } from "@mui/system";
 import rohith from '../../Assets/crew/rohith.jpg';
 import abhinaya from  "../../Assets/crew/abjinaya.jpg";
+import susmaMondal from "../../Assets/crew/susmaMondal.jpg";
+import prakalya from "../../Assets/crew/prakalya.jpg";
+import abhirami from "../../Assets/crew/abhirami.jpg";
+
 import { Particle } from "../ParticlesBackground";
 
 const StyledTypography = styled(Typography)({
@@ -77,7 +81,7 @@ class Board extends React.Component
           department: "M.Sc. Artificial Intelligence and Machine Learning",
           phone: "9994883560",
           email: "2034002aiml@cit.edu.in",
-          image: praveen,
+          image: p,
         },
         {
           name: "S Rohith",
