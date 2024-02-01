@@ -116,7 +116,7 @@ class Board extends React.Component
 
       cardStudentCoordinators=[
         {
-          name: "Susma Mondal R",
+          name: "R Susma Mondal",
           role: "Event Head Coordinator",
           department: "M.Sc. Decision and Computing Sciences",
           phone: "9843736523",
@@ -132,7 +132,7 @@ class Board extends React.Component
           image: abhirami,
         },
         {
-          name: "Prakalya B S",
+          name: "B S Prakalya",
           role: "Event Head Coordinator",
           department: "Data Science",
           phone: "9488038087",
@@ -140,7 +140,7 @@ class Board extends React.Component
           image: prakalya,
         },
         {
-          name: "Bhupesh P S",
+          name: "P S Bhupesh",
           role: "Event Head Coordinator ",
           department: "Data Science",
           phone: "9994615335",
