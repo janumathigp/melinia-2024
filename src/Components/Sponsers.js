@@ -1,7 +1,7 @@
-import { Grid } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import { Box, Container } from "@mui/system";
 import Divider from "@mui/material/Divider";
-import React from "react";
+import React, { useState } from "react";
 import { FaHandshake } from "react-icons/fa";
 import kla from "../Assets/logo/kla.png"
 
@@ -26,9 +26,12 @@ function Sponsors() {
   sx={{
     marginTop: "80px",
     height: "100%",
-    width: "100%",
-    backgroundColor: "#676368",
-    padding: "20px"
+    // width: "60%",
+    // background: "linear-gradient(to right, #c6b6c9, #b18dca);",
+    backgroundColor:"#0c0513",
+    padding: "40px",
+    borderRadius:"10%",
+    // marginLeft:"340px",
   }}
 >
       <Container
@@ -40,6 +43,7 @@ function Sponsors() {
           alignItems: "center",
           justifyContent: "center",
           flexDirection: "column",
+          
         }}
       >
       <div style={{width:'100%', padding:0}}><span
@@ -47,8 +51,9 @@ function Sponsors() {
           variant="h4"
           component="h1"
           fontWeight="700"
-          style={{ marginBottom:'10px', background:'linear-gradient(0deg, #86558d, #3b0043)', webkitBackgroundClip: 'text', backgroundClip: 'text'}}
+          style={{ marginBottom:'10px', background:'linear-gradient(0deg, #86558d, #3b0043)', webkitBackgroundClip: 'text', backgroundClip: 'text',alignItems:"center"}}
           mb={2}
+          
         >
           EVENT SPONSORS
           <FaHandshake style={{marginLeft:'15px', fontSize:'60px', marginTop:'-7px'}} />

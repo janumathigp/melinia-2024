@@ -84,9 +84,9 @@ function Home() {
    
   
 
-          <Container style={{ margin: 0, padding: 0, minWidth: '100%', marginBottom:"0px" }}>
+          {/* <Container style={{ margin: 0, padding: 0, minWidth: '100%', marginBottom:"0px" }}>
             <Contact />
-          </Container>
+          </Container> */}
         </Container>
       </section>
     </>

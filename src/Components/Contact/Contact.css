@@ -118,6 +118,7 @@
   position: relative;
   color: white;
   font-size: 26px;
+  font-family: 'Audiowide',sans-serif;
 }
 
 .app-title:after {

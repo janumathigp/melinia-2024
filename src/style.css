@@ -200,7 +200,7 @@ button:focus {
   height: 5px;
   width: 0;
   border-radius: 16px;
-  background: #5bd4f5;
+  background: #7f3fbe;
   bottom: 1px;
   left: 0;
   z-index: -1;
@@ -282,8 +282,7 @@ button:focus {
   margin-bottom: 20px;
   justify-content: center;
 }
-.reverseFlex{
-}
+
 .eventImage{
   min-width: 350px;
   height: 220px;
