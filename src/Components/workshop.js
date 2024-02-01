@@ -17,12 +17,12 @@ function Workshop() {
         </div>
         <div className="verticalDivider" style={{ height: '300px', width: '10px', backgroundColor: '#676368', marginLeft: '20px', marginRight: '15px' }}></div>
         <div style={{ paddingLeft: '30px', paddingRight: '20px', marginTop: '20px' }}>
-          <div className="d-flex justify-content-between flex-column flex-md-row">
-            <div>
+          <div className="d-flex justify-content-between flex-sm-column flex-xl-row">
+            <div style={{marginBottom:'10px'}}>
               <span className="workshopFont font-weight-bold">HACKATHON</span>
             </div>
             <div>
-              <span className="workshopSubFont font-weight-bold" style={{ color: 'white', fontSize: '0.9em' }}>5TH APRIL 10.00 - 11.30 AM</span>
+              <span className="workshopSubFont font-weight-bold" style={{ color: 'white', fontSize: '0.9em' }}>Round 1 : Feb 1-10 2024 <br></br> Round 2 : Feb 12-14 2024</span>
             </div>
           </div>
           {/* <div style={{ marginTop: '5px' }}>
@@ -69,7 +69,7 @@ Join us in crafting viable and feasible product prototypes that not only enhance
                 <span className="workshopFont font-weight-bold">PAPER PRESENTATION</span>
               </div>
               <div>
-                <span className="workshopSubFont font-weight-bold" style={{ color: 'white', fontSize: '0.9em' }}>5TH APRIL 10.00 - 11.30 AM</span>
+                <span className="workshopSubFont font-weight-bold" style={{ color: 'white', fontSize: '0.9em' }}>Feb 16 2024</span>
               </div>
             </div>
             {/* <div style={{ marginTop: '5px', display:'flex', justifyContent:'start' }}>
