@@ -1,7 +1,7 @@
-import { Grid, Typography } from "@mui/material";
+import { Grid } from "@mui/material";
 import { Box, Container } from "@mui/system";
 import Divider from "@mui/material/Divider";
-import React, { useState } from "react";
+import React from "react";
 import { FaHandshake } from "react-icons/fa";
 import kla from "../Assets/logo/kla.png"
 
@@ -27,7 +27,7 @@ function Sponsors() {
     marginTop: "80px",
     height: "100%",
     width: "100%",
-    background: "linear-gradient(to right, #c6b6c9, #b18dca);",
+    backgroundColor: "#676368",
     padding: "20px"
   }}
 >

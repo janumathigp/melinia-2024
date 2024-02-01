@@ -22,8 +22,12 @@ function Workshop() {
               <span className="workshopFont font-weight-bold">HACKATHON</span>
             </div>
             <div>
-              <span className="workshopSubFont font-weight-bold" style={{ color: 'white', fontSize: '0.9em' }}>5TH APRIL 10.00 - 11.30 AM</span>
+              <span className="workshopSubFont font-weight-bold" style={{ color: 'white', fontSize: '0.9em' }}>Round 1: Feb 1-10 2024<br/>Round 2: Feb 12-14 2024</span>
             </div>
+            {/* <br/>
+            <div>
+              <span className="workshopSubFont font-weight-bold" style={{ color: 'white', fontSize: '0.9em' }}>Round 2: Feb 12-14 2024</span>
+            </div> */}
           </div>
           {/* <div style={{ marginTop: '5px' }}>
             <span className="workshopFont">ABOUT THE MELINIA HACKATHON</span>
@@ -69,7 +73,7 @@ Join us in crafting viable and feasible product prototypes that not only enhance
                 <span className="workshopFont font-weight-bold">PAPER PRESENTATION</span>
               </div>
               <div>
-                <span className="workshopSubFont font-weight-bold" style={{ color: 'white', fontSize: '0.9em' }}>5TH APRIL 10.00 - 11.30 AM</span>
+                <span className="workshopSubFont font-weight-bold" style={{ color: 'white', fontSize: '0.9em' }}>Presentation: Feb 16 2024</span>
               </div>
             </div>
             {/* <div style={{ marginTop: '5px', display:'flex', justifyContent:'start' }}>

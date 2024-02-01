@@ -2,6 +2,7 @@ import React from 'react';
 import emailjs from 'emailjs-com';
 import Swal from 'sweetalert2';
 import './Contact.css';
+import { Particle } from '../ParticlesBackground';
 
 const SERVICE_ID = "service_ahi3duf";
 const TEMPLATE_ID = "template_r4ya1dd";
@@ -31,34 +32,58 @@ const Contact = () => {
   return (
   
 
-  <body id = "contact">
-
-    <div class="main-block">
-
-      <div class="left-part">
-        <i class="fas fa-envelope"></i>
-        <i class="fas fa-at"></i>
-        <i class="fas fa-mail-bulk"></i>
+  
+  <>
+  <Particle></Particle>
+  {/* <div class="heading"> Feel free to ask</div> */}
+  <div class="contactbackground">
+  <div class="contactcontainer">
+    <div class="screen">
+      <div class="screen-header">
+        <div class="screen-header-left">
+          <div class="screen-header-button close"></div>
+          <div class="screen-header-button maximize"></div>
+          <div class="screen-header-button minimize"></div>
+        </div>
+        <div class="screen-header-right">
+          <div class="screen-header-ellipsis"></div>
+          <div class="screen-header-ellipsis"></div>
+          <div class="screen-header-ellipsis"></div>
+        </div>
       </div>
-      <form onSubmit={handleOnSubmit}>
-        <h1>Any Queries</h1>
-           <div class="info">
-            <div class="input-group">
-              <input type="text" name="from_name" placeholder="Name" />
-            </div>
-            <div class="input-group">
-              <input type="email" name="from_email" placeholder="Email" />
-            </div>
-            <div class="input-group">
-              <textarea name="message" placeholder="Type your query here..."></textarea>
-            </div>
-            <button type='submit'>Submit</button>
+      <div class="screen-body">
+        <div class="screen-body-item left">
+          <div class="app-title">
+            <span>ANY</span>
+            <span>QUERIES?</span>
           </div>
-        
-        
-      </form>
+         
+        </div>
+        <div class="screen-body-item" >
+          <form class="app-form" onSubmit={handleOnSubmit}>
+            <div class="app-form-group">
+              <input class="app-form-control" placeholder="NAME" name="from_name" />
+            </div>
+            <div class="app-form-group">
+              <input class="app-form-control" placeholder="EMAIL" name="from_email"/>
+            </div>
+            
+            <div class="app-form-group message">
+              <input class="app-form-control" placeholder="MESSAGE" name='message'/>
+            </div>
+            <div class="app-form-group buttons">
+              
+              <button type="submit" class="app-form-button">SEND</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
-  </body>
+    
+  </div>
+</div>
+</>
+
   );
 }
 
