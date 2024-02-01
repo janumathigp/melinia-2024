@@ -96,7 +96,7 @@ const Events = () => {
   };
 
   return (
-    <Container fluid style={{ padding: '30px' }}>
+    <Container fluid style={{ padding: '30px' }} id='events'>
       <span className="aboutFont" >
         DIVERSE EVENTS, ENDLESS POSSIBILITIES
       </span>

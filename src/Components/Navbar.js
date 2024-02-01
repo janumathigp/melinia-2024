@@ -15,7 +15,17 @@
     const [navColour, updateNavbar] = useState(false);
     const isMobile = useMediaQuery({ maxWidth: 767 });
 
-
+    const handleScrollToEvents = () => {
+      const eventsSection = document.getElementById("events");
+      if (eventsSection) {
+        window.scrollTo({
+          top: eventsSection.offsetTop - 70, // Adjust the offset if needed
+          behavior: "smooth",
+        });
+      }
+      updateExpanded(false);
+    };
+    
     function scrollHandler() {
       if (window.scrollY >= 20) {
         updateNavbar(true);
@@ -94,19 +104,9 @@
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item style={{backgroundColor:'#61016e', borderRadius:'10px '}}>
-                <Nav.Link className="scroll-link">
-                  {/* <ScrollLink
-                    className="scroll-link"  // Add a specific class for Events
-                    to="events"
-                    smooth={true}
-                    duration={500}
-                    offset={-70}
-                    spy={true}
-                    onClick={() => updateExpanded(false)}
-                    style={{ textDecoration: "none"}}
-                  >
-                    Events
-                  </ScrollLink> */}
+                <Nav.Link className="scroll-link" onClick={handleScrollToEvents}
+                style={{ textDecoration: "none", color: "white" }}>
+                 
                   Events
                 </Nav.Link>
               </Nav.Item>
