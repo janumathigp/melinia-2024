@@ -1,5 +1,5 @@
 import React from "react";
-import meliniaEvent from "../Assets/addon/melinia.jpg"
+import meliniaEvent from "../Assets/addon/meliniaposter.jpg"
 import Divider from "@mui/material/Divider";
 
 

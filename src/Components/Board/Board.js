@@ -4,24 +4,25 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import stanleysImage from "../../Assets/crew/stanleycurrent.jpg";
-import keerthiImage from '../../Assets/crew/keerthikamamupdated.jpg';
-import manjuImage from '../../Assets/crew/manjumam.jpeg';
-import sujithraImage from '../../Assets/crew/sujithramam.jpeg';
-import praveen from '../../Assets/developers/praveen.jpg'
-import hemaImage from '../../Assets/crew/hemashreemam.jpeg';
+import keerthiImage from '../../Assets/crew/keerthikaEdited.jpg';
+import manjuImage from '../../Assets/crew/manjumamEdited.jpg';
+import sujithraImage from '../../Assets/crew/sujithraMamEdited.jpg';
+import praveen from '../../Assets/crew/praveenEdited.jpg'
+import hemaImage from '../../Assets/crew/hemaShreeEdited.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope,faPhone } from '@fortawesome/free-solid-svg-icons';
 import '@fontsource/poppins'; // Import Poppins font
 import '@fontsource/montserrat'; // Import Montserrat font
 import { display, styled } from "@mui/system";
-import rohith from '../../Assets/crew/rohith.jpg';
-import abhinaya from  "../../Assets/crew/abjinaya.jpg";
-import susmaMondal from "../../Assets/crew/susmaMondal.jpg";
-import prakalya from "../../Assets/crew/prakalya.jpg";
+import rohith from '../../Assets/crew/rohitEdited.jpg';
+import abhinaya from  "../../Assets/crew/abhinayaqEdited.jpg";
+import susmaMondal from "../../Assets/crew/susmaEdited.jpg";
+import prakalya from "../../Assets/crew/prakalyaEdited.jpg";
 import abhirami from "../../Assets/crew/abhirami2.jpg";
-import aswath from "../../Assets/crew/aswath.jpg";
-import bhupesh from "../../Assets/crew/bhupesh.jpg"
+import aswath from "../../Assets/crew/ashwathEdited.jpg";
+import bhupesh from "../../Assets/crew/bhupeshEdited.jpg"
 import { Particle } from "../ParticlesBackground";
+import "./Board.css";
 
 const StyledTypography = styled(Typography)({
   fontSize: "2.5rem",
@@ -115,7 +116,7 @@ class Board extends React.Component
 
       cardStudentCoordinators=[
         {
-          name: "Susma Mondal R",
+          name: "R Susma Mondal",
           role: "Event Head Coordinator",
           department: "M.Sc. Decision and Computing Sciences",
           phone: "9843736523",
@@ -131,7 +132,7 @@ class Board extends React.Component
           image: abhirami,
         },
         {
-          name: "Prakalya B S",
+          name: "B S Prakalya",
           role: "Event Head Coordinator",
           department: "Data Science",
           phone: "9488038087",
@@ -139,7 +140,7 @@ class Board extends React.Component
           image: prakalya,
         },
         {
-          name: "Bhupesh P S",
+          name: "P S Bhupesh",
           role: "Event Head Coordinator ",
           department: "Data Science",
           phone: "9994615335",
@@ -151,9 +152,9 @@ class Board extends React.Component
     {
         return(
 <div>
-<div style={{ backgroundColor: '#d9d2e9', marginTop: '4%' }}>
+<div style={{ backgroundColor: '#d9d2e9', marginTop: '100px' }}>
   <Particle></Particle>
-  <br></br><br></br>
+          <br></br><br></br>
           <section style={{  marginLeft: 'auto', marginRight: 'auto', maxWidth: '355px', position:'relative',zIndex:'100'}}>
             <Card
               sx={{
@@ -169,7 +170,7 @@ class Board extends React.Component
                 },
                 '@media (max-width: 600px)': {
                   // marginTop: '73px',
-                  marginTop: '33%',
+                  // marginTop: '33%',
                   maxWidth: '100%',
                 },
                 '@media (min-width: 601px) and (max-width: 1024px)': {
@@ -258,6 +259,7 @@ class Board extends React.Component
             component="img"
             alt={data.name}
             height="320px"
+            className="image-fit"
             image={data.image}
             
            sx={{
@@ -353,6 +355,7 @@ class Board extends React.Component
             component="img"
             alt="Image"
             height="320px"
+            className="image-fit"
             image={data.image}
           />
           <CardContent sx={{ padding: '0px', paddingTop: '7px' }}>
@@ -423,6 +426,7 @@ class Board extends React.Component
             component="img"
             alt="Image"
             height="320px"
+            className="image-fit"
             image={data.image}
           />
           <CardContent sx={{ padding: '0px', paddingTop: '7px' }}>
@@ -493,6 +497,7 @@ class Board extends React.Component
             component="img"
             alt="Image"
             height="320px"
+            className="image-fit"
             image={data.image}
           />
           <CardContent sx={{ padding: '0px', paddingTop: '7px' }}>
@@ -502,9 +507,9 @@ class Board extends React.Component
             <Typography variant="body1" display="block" gutterBottom sx={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 'bolder', color: '#555', fontSize: '1rem' }}>
               <span style={{fontFamily:'"Raleway", serif !important' }}>{data.role}</span>
             </Typography>
-            {/* <Typography variant="body2" color="text.secondary" sx={{ fontFamily: 'Montserrat, sans-serif', color: '#777', fontSize: '0.9rem' }}>
-              {data.email}
-            </Typography> */}
+            <Typography variant="body2" color="text.secondary" sx={{ fontFamily: 'Montserrat, sans-serif', color: '#777', fontSize: '0.9rem' }}>
+              {data.department}
+            </Typography>
           </CardContent>
           <CardContent sx={{ padding: '0px', paddingTop: '7px' }}>
             <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: '10px' }}>

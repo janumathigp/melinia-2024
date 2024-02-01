@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Particle } from "../ParticlesBackground";
 import AboutMelinia from "../aboutMelinia";
+
+//import melinia from "../../Assets/addon/meliniaposter.jpg"
 import QueryCard from "../QueryCard";
 import Workshop from "../workshop";
 import Sponsors from "../Sponsers";
