@@ -359,7 +359,7 @@ button:focus {
   min-height: 300px;
   /* text-align: center; */
 
-  background-color:rgba(241, 236, 253, 0.6);
+  background-color:#55476F;
 
   
 }
@@ -375,7 +375,7 @@ button:focus {
 .workshopSubFont{
   font-family: 'Orbitron', sans-serif;
   font-weight: bold;
-  font-size: 1.1em;
+  font-size: 1.5em;
 }
 
 .heading {
@@ -439,7 +439,7 @@ button:focus {
   .workshopSubFont{
     font-family: 'Orbitron', sans-serif;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.6rem;
   }
   .workshopFont{
     background: linear-gradient(56deg, #d96caf, #ba0072);
@@ -452,7 +452,7 @@ button:focus {
     /* font-family: 'Orbitron', sans-serif; */
     font-family: 'Audiowide', sans-serif;
     font-weight: 100 !important;
-    font-size: 2.5em !important;
+    font-size: 2.0em !important;
     
 
   }
@@ -468,7 +468,7 @@ button:focus {
   /* font-family: 'Orbitron', sans-serif; */
   font-family: 'Audiowide', sans-serif;
   font-weight: 100 !important;
-  font-size: 1.6em !important;
+  font-size: 2.3em !important;
 
 }
 @media (min-width:900px) {
