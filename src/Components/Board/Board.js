@@ -4,24 +4,25 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import stanleysImage from "../../Assets/crew/stanleycurrent.jpg";
-import keerthiImage from '../../Assets/crew/keerthikamamupdated.jpg';
-import manjuImage from '../../Assets/crew/manjumam.jpeg';
-import sujithraImage from '../../Assets/crew/sujithramam.jpeg';
-import praveen from '../../Assets/developers/praveen.jpg'
-import hemaImage from '../../Assets/crew/hemashreemam.jpeg';
+import keerthiImage from '../../Assets/crew/keerthikaEdited.jpg';
+import manjuImage from '../../Assets/crew/manjumamEdited.jpg';
+import sujithraImage from '../../Assets/crew/sujithraMamEdited.jpg';
+import praveen from '../../Assets/crew/praveenEdited.jpg'
+import hemaImage from '../../Assets/crew/hemaShreeEdited.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope,faPhone } from '@fortawesome/free-solid-svg-icons';
 import '@fontsource/poppins'; // Import Poppins font
 import '@fontsource/montserrat'; // Import Montserrat font
 import { display, styled } from "@mui/system";
-import rohith from '../../Assets/crew/rohith.jpg';
-import abhinaya from  "../../Assets/crew/abjinaya.jpg";
-import susmaMondal from "../../Assets/crew/susmaMondal.jpg";
-import prakalya from "../../Assets/crew/prakalya.jpg";
+import rohith from '../../Assets/crew/rohitEdited.jpg';
+import abhinaya from  "../../Assets/crew/abhinayaqEdited.jpg";
+import susmaMondal from "../../Assets/crew/susmaEdited.jpg";
+import prakalya from "../../Assets/crew/prakalyaEdited.jpg";
 import abhirami from "../../Assets/crew/abhirami2.jpg";
-import aswath from "../../Assets/crew/aswath.jpg";
-import bhupesh from "../../Assets/crew/bhupesh.jpg"
+import aswath from "../../Assets/crew/ashwathEdited.jpg";
+import bhupesh from "../../Assets/crew/bhupeshEdited.jpg"
 import { Particle } from "../ParticlesBackground";
+import "./Board.css";
 
 const StyledTypography = styled(Typography)({
   fontSize: "2.5rem",
@@ -258,6 +259,7 @@ class Board extends React.Component
             component="img"
             alt={data.name}
             height="320px"
+            className="image-fit"
             image={data.image}
             
            sx={{
@@ -353,6 +355,7 @@ class Board extends React.Component
             component="img"
             alt="Image"
             height="320px"
+            className="image-fit"
             image={data.image}
           />
           <CardContent sx={{ padding: '0px', paddingTop: '7px' }}>
@@ -423,6 +426,7 @@ class Board extends React.Component
             component="img"
             alt="Image"
             height="320px"
+            className="image-fit"
             image={data.image}
           />
           <CardContent sx={{ padding: '0px', paddingTop: '7px' }}>
@@ -493,6 +497,7 @@ class Board extends React.Component
             component="img"
             alt="Image"
             height="320px"
+            className="image-fit"
             image={data.image}
           />
           <CardContent sx={{ padding: '0px', paddingTop: '7px' }}>
