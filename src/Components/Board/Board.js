@@ -507,9 +507,9 @@ class Board extends React.Component
             <Typography variant="body1" display="block" gutterBottom sx={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 'bolder', color: '#555', fontSize: '1rem' }}>
               <span style={{fontFamily:'"Raleway", serif !important' }}>{data.role}</span>
             </Typography>
-            {/* <Typography variant="body2" color="text.secondary" sx={{ fontFamily: 'Montserrat, sans-serif', color: '#777', fontSize: '0.9rem' }}>
-              {data.email}
-            </Typography> */}
+            <Typography variant="body2" color="text.secondary" sx={{ fontFamily: 'Montserrat, sans-serif', color: '#777', fontSize: '0.9rem' }}>
+              {data.department}
+            </Typography>
           </CardContent>
           <CardContent sx={{ padding: '0px', paddingTop: '7px' }}>
             <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: '10px' }}>
