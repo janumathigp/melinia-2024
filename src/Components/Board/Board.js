@@ -124,7 +124,7 @@ class Board extends React.Component
           image: susmaMondal,
         },
         {
-          name: "Abirami Raghupathi",
+          name: "R Abirami",
           role: "Event Head Coordinator",
           department: "M.Sc. Decision and Computing Sciences",
           phone: "9003764378",
