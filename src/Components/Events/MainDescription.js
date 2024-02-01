@@ -15,6 +15,7 @@ import codegolf from "../../Assets/events/code golf.png"
 import crypticquest from "../../Assets/events/crypticquest.png"
 import datacraft from "../../Assets/events/data craft.png"
 import somethingfishy from "../../Assets/events/something fishy.png"
+import { Container } from 'react-bootstrap';
 
 
 const cardData = [
@@ -55,94 +56,108 @@ const MainDescription = () => {
     const { title, description, round1, round2, rules, venue, note, teamsize, coordinators, date, time, technical } = event;
 
     return (
-        <div style={{ marginTop: '100px', backgroundColor: 'white' }}>
-            <div className='element-1' style={{ display: 'flex' }}>
-                <h2 className="aboutFont" style={{ margin: '10px' }}>{title}</h2>
+        <Container className="text-white" style={{ marginTop: "100px" }}>
+            <div className='title'>
+                <h3 className=" aboutFont text-lg">{title}</h3>
+            </div>
+            {technical ? (
+    <div>
+        Technical Event
+    </div>
+) : (
+    <div>
+        Non - Technical Event
+    </div>
+)}
+
+
+            <div className='description text-md text-lg' style={{ textAlign: "justify", marginBottom: "40px" }}>
+                {description}
             </div>
 
-            <p className='element-1'>{description}</p>
-
-            <div className='info'>
-                <div className='venue element-4'>
-                    <IoLocation style={{ fontSize: "30px" }} />
-                    <p className='info-detail' style={{ fontSize: '25px' }}>{venue}</p>
+            <div className='info-event row text-white' style={{ marginBottom: "40px" }}>
+                <div className='venue col-md-4' >
+                    <IoLocation style={{ fontSize: "20px" }} />
+                    <p className='info-detail text-md text-lg' style={{ fontSize: '20px' }}>{venue}</p>
                 </div>
 
-                <div className='time element-4' >
-                    <MdOutlineAccessTimeFilled style={{ fontSize: "30px" }} />
-                    <p className='info-detail' style={{ fontSize: '25px' }}>{date} {time}</p>
+                <div className='time col-md-4'>
+                    <MdOutlineAccessTimeFilled style={{ fontSize: "20px" }} />
+                    <p className='info-detail text-md text-lg' style={{ fontSize: '20px' }}>{date} {time}</p>
                 </div>
 
-                <div className='teamsize element-4' >
-                    <BsPeopleFill style={{ fontSize: "30px" }} />
-                    <p className='info-detail' style={{ fontSize: '25px' }}>{teamsize}</p>
+                <div className='teamsize col-md-4'>
+                    <BsPeopleFill style={{ fontSize: "20px" }} />
+                    <p className='info-detail text-md text-lg' style={{ fontSize: '20px' }}>{teamsize}</p>
                 </div>
             </div>
 
-            <div className='round-rules'>
-                <div className='rounds'>
-                    <div className='element-2'>
+            <div className='round-rules row' style={{ padding: "20px" }}>
+                <div className='rounds col-md-6'>
+                    <h3 className="text-lg">Rounds</h3>
+                    <div className='element-2' style={{ marginBottom: "20px" }}>
                         <Bs1CircleFill style={{ fontSize: '50px' }} />
-                        <h3>{round1.title}</h3>
+                        <h3 className="text-md text-lg">{round1.title}</h3>
                     </div>
                     <div className='element-3'>
-                        <p>{round1.detail}</p>
+                        <p className="text-md text-lg">{round1.detail}</p>
                     </div>
-                    <div className='element-2'>
+                    <div className='element-2' style={{ marginBottom: "20px" }}>
                         <Bs2CircleFill style={{ fontSize: '50px' }} />
-                        <h3>{round2.title}</h3>
+                        <h3 className="text-md text-lg">{round2.title}</h3>
                     </div>
                     <div className='element-3'>
-                        <p>{round2.detail}</p>
+                        <p className="text-md text-lg">{round2.detail}</p>
                     </div>
                 </div>
-                <div className='rules'>
-                    <h3 className='element-2'>Rules</h3>
-                    <p className='element-3'>{rules}</p>
+                <div className='rules col-md-6'>
+                    <h3 className="text-lg" style={{ marginBottom: "20px" }}>Rules</h3>
+                    <p className='element-3 text-md text-lg'>{rules}</p>
                 </div>
             </div>
-            <div style={{display:'flex',flexDirection:'row'}}>
-            <div className='element-5 '>
-                <h3 >Coordinators</h3>
-                <ul className='coord '>
-                    {coordinators.map((coordinator) => (
 
-                        <li key={coordinator.name} style={{ fontSize: '20px' }}>
-                            <div className='sep'>
-                            <div className='details'>
-                                <div> {coordinator.name}</div> <div>{coordinator.Num}</div>
-                            </div>
-                            <div className='link'>
-                                <a
-                                    href={`https://wa.me/${coordinator.Num}`}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    <FaWhatsapp />
-                                </a>
-                            
-                                <a
-                                    href={`tel:${coordinator.Num}`}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    <FaPhoneAlt />
-                                </a>
-                            </div>
-                            </div>
-                        </li>
-                    ))}
-                </ul>
-            </div>
-            <div className='note'>
-                <h3 className='element-5'>Note</h3>
-                <p className='element-3'>{note}</p>
-            </div>
-            </div>
-        </div>
 
-    );
+            <div className='row' style={{ display: "flex", flexDirection: "row" }}>
+                <h3 className="text-lg">Coordinators</h3>
+                <div className='coord1' style={{ display: "flex", flexDirection: "row", margin: "20px 0", justifyContent: "center", alignItems: "center" }}>
+                    <div style={{ display: "flex", flexDirection: "column" }}>
+                        <div className="text-md">{coordinators[0].name}</div>
+                        <div className="text-md">{coordinators[0].Num}</div>
+                    </div>
+                    <div style={{ display: "flex", flexDirection: "column", marginLeft: "20px" }}>
+                        <a href={`https://wa.me/${coordinators[0].Num}`} target="_blank" rel="noopener noreferrer">
+                            <FaWhatsapp />
+                        </a>
+                        <a href={`tel:${coordinators[0].Num}`} target="_blank" rel="noopener noreferrer">
+                            <FaPhoneAlt />
+                        </a>
+                    </div>
+                </div>
+                <div className='coord1' style={{ display: "flex", flexDirection: "row", margin: "20px 0", justifyContent: "center", alignItems: "center" }}>
+                    <div style={{ display: "flex", flexDirection: "column" }}>
+                        <div className="text-md">{coordinators[1].name}</div>
+                        <div className="text-md">{coordinators[1].Num}</div>
+                    </div>
+                    <div style={{ display: "flex", flexDirection: "column", marginLeft: "20px" }}>
+                        <a href={`https://wa.me/${coordinators[1].Num}`} target="_blank" rel="noopener noreferrer">
+                            <FaWhatsapp />
+                        </a>
+                        <a href={`tel:${coordinators[1].Num}`} target="_blank" rel="noopener noreferrer">
+                            <FaPhoneAlt />
+                        </a>
+                    </div>
+                </div>
+            </div>
 
+            <div className='row'>
+                <div className='note col-md-12' style={{ marginBottom: "20px", padding: "20px" }}>
+                    <h3 className="text-lg">Note</h3>
+                    <p className='element-3 text-md text-lg'>{note}</p>
+                </div>
+            </div>
+
+        </Container>
+    )
 };
 
 export default MainDescription;

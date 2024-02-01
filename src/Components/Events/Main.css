@@ -30,12 +30,6 @@
     width: 40%;
 }
 
-.info {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
 
 .info-detail {
     margin: 10px;
