@@ -213,46 +213,45 @@ const MainDescription = () => {
 
     return (
         <>
-        <Container className="text-white" style={{ marginTop: "100px" }}>
-            <Particle></Particle>
-            <div className='title'>
-                <h3 className=" aboutFont text-lg">{title}</h3>
-            </div>
-            {technical ? (
-                <div style={{ padding: "10px" }}>
-                    Technical Event
+            <Container className="text-white" style={{ marginTop: "100px" }}>
+                <Particle></Particle>
+                <div className='title'>
+                    <h3 className=" aboutFont text-lg">{title}</h3>
                 </div>
-            ) : (
-                <div style={{ padding: "10px" }}>
-                    Non - Technical Event
-                </div>
-            )}
+                {technical ? (
+                    <div style={{ padding: "10px" }}>
+                        Technical Event
+                    </div>
+                ) : (
+                    <div style={{ padding: "10px" }}>
+                        Non - Technical Event
+                    </div>
+                )}
 
 
-            <div className='description text-md text-lg' style={{ textAlign: "justify", marginBottom: "40px" }}>
-                {description}
-            </div>
-
-            <div className='info-event row text-white' style={{ marginBottom: "40px" }}>
-                <div className='venue col-md-4' >
-                    <IoLocation style={{ fontSize: "20px" }} />
-                    <p className='info-detail text-md text-lg' style={{ fontSize: '20px' }}>{venue}</p>
+                <div className='description text-md text-lg' style={{ textAlign: "justify", marginBottom: "40px" }}>
+                    {description}
                 </div>
 
-                <div className='time col-md-4'>
-                    <MdOutlineAccessTimeFilled style={{ fontSize: "20px" }} />
-                    <p className='info-detail text-md text-lg' style={{ fontSize: '20px' }}>{date} {time}</p>
+                <div className='info-event row text-white' style={{ marginBottom: "40px" }}>
+                    <div className='venue col-md-4' >
+                        <IoLocation style={{ fontSize: "20px" }} />
+                        <p className='info-detail text-md text-lg' style={{ fontSize: '20px' }}>{venue}</p>
+                    </div>
+
+                    <div className='time col-md-4'>
+                        <MdOutlineAccessTimeFilled style={{ fontSize: "20px" }} />
+                        <p className='info-detail text-md text-lg' style={{ fontSize: '20px' }}>{date} {time}</p>
+                    </div>
+
+                    <div className='teamsize col-md-4'>
+                        <BsPeopleFill style={{ fontSize: "20px" }} />
+                        <p className='info-detail text-md text-lg' style={{ fontSize: '20px' }}>{teamsize}</p>
+                    </div>
                 </div>
 
-                <div className='teamsize col-md-4'>
-                    <BsPeopleFill style={{ fontSize: "20px" }} />
-                    <p className='info-detail text-md text-lg' style={{ fontSize: '20px' }}>{teamsize}</p>
-                </div>
-            </div>
-
-            <h3 className="text-lg">Rounds</h3>
-            <div className='round-rules' style={{ padding: "20px" }}>
-            <div className='round-rules' style={{ padding: "20px" }}>
+                <h3 className="text-lg">Rounds</h3>
+              <div className='round-rules' style={{ padding: 0 }}>
     <div className='rounds' style={{
         display: "flex",
         flexDirection: "row",  // Default to row layout
@@ -294,48 +293,47 @@ const MainDescription = () => {
     </div>
 </div>
 
-</div>
 
 
-            <div className='rules '>
-                <h3 className="text-lg" style={{ marginBottom: "20px" }}>Guidelines</h3>
-                <p className='element-3 text-md text-lg' style={{ textAlign: "center" }}>{rules}</p>
-            </div>
-            <h3 className="text-lg">Coordinators</h3>
+                <div className='rules '>
+                    <h3 className="text-lg" style={{ marginBottom: "20px" }}>Guidelines</h3>
+                    <p className='element-3 text-md text-lg' style={{ textAlign: "center" }}>{rules}</p>
+                </div>
+                <h3 className="text-lg">Coordinators</h3>
 
-            <div className='column' style={{ display: "flex", flexDirection: "row", justifyContent: "center", gap: "2rem" }}>
-                <div className='coord1' style={{ display: "flex", flexDirection: "row", margin: "20px 0", justifyContent: "center", alignItems: "center" }}>
-                    <div style={{ display: "flex", flexDirection: "column" }}>
-                        <div className="text-md">{coordinators[0].name}</div>
-                        <div className="text-md">{coordinators[0].Num}</div>
+                <div className='column' style={{ display: "flex", flexDirection: "row", justifyContent: "center", gap: "2rem" }}>
+                    <div className='coord1' style={{ display: "flex", flexDirection: "row", margin: "20px 0", justifyContent: "center", alignItems: "center" }}>
+                        <div style={{ display: "flex", flexDirection: "column" }}>
+                            <div className="text-md">{coordinators[0].name}</div>
+                            <div className="text-md">{coordinators[0].Num}</div>
+                        </div>
+                        <div style={{ display: "flex", flexDirection: "column", marginLeft: "20px" }}>
+                            <a href={`https://wa.me/${coordinators[0].Num}`} target="_blank" rel="noopener noreferrer">
+                                <FaWhatsapp />
+                            </a>
+                            <a href={`tel:${coordinators[0].Num}`} target="_blank" rel="noopener noreferrer">
+                                <FaPhoneAlt />
+                            </a>
+                        </div>
                     </div>
-                    <div style={{ display: "flex", flexDirection: "column", marginLeft: "20px" }}>
-                        <a href={`https://wa.me/${coordinators[0].Num}`} target="_blank" rel="noopener noreferrer">
-                            <FaWhatsapp />
-                        </a>
-                        <a href={`tel:${coordinators[0].Num}`} target="_blank" rel="noopener noreferrer">
-                            <FaPhoneAlt />
-                        </a>
+                    <div className='coord2' style={{ display: "flex", flexDirection: "row", margin: "20px 0", justifyContent: "center", alignItems: "center" }}>
+                        <div style={{ display: "flex", flexDirection: "column" }}>
+                            <div className="text-md ">{coordinators[1].name}</div>
+                            <div className="text-md">{coordinators[1].Num}</div>
+                        </div>
+                        <div style={{ display: "flex", flexDirection: "column", marginLeft: "20px" }}>
+                            <a href={`https://wa.me/${coordinators[1].Num}`} target="_blank" rel="noopener noreferrer">
+                                <FaWhatsapp />
+                            </a>
+                            <a href={`tel:${coordinators[1].Num}`} target="_blank" rel="noopener noreferrer">
+                                <FaPhoneAlt />
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div className='coord2' style={{ display: "flex", flexDirection: "row", margin: "20px 0", justifyContent: "center", alignItems: "center" }}>
-                    <div style={{ display: "flex", flexDirection: "column" }}>
-                        <div className="text-md ">{coordinators[1].name}</div>
-                        <div className="text-md">{coordinators[1].Num}</div>
-                    </div>
-                    <div style={{ display: "flex", flexDirection: "column", marginLeft: "20px" }}>
-                        <a href={`https://wa.me/${coordinators[1].Num}`} target="_blank" rel="noopener noreferrer">
-                            <FaWhatsapp />
-                        </a>
-                        <a href={`tel:${coordinators[1].Num}`} target="_blank" rel="noopener noreferrer">
-                            <FaPhoneAlt />
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </Container>
+                <button style={{margin:"10px"}}>Register</button>            </Container>
         </>
-        
+
     )
 };
 

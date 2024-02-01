@@ -25,7 +25,7 @@ function Home() {
               <Col className="home-header">
                 <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
                   <h1 style={{ paddingBottom: 15, textAlign: 'center' }} className="heading">
-                    Department of Computing
+                    Department of Computing <br/>(MSc SS | AIML | DS | DCS)
                   </h1>
                   <div style={{ display: 'flex', justifyContent: 'center' }}>
                     <div className="rajdhaniFont">

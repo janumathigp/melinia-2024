@@ -3,15 +3,12 @@ import { Box, Container } from "@mui/system";
 import Divider from "@mui/material/Divider";
 import React, { useState } from "react";
 import { FaHandshake } from "react-icons/fa";
-import kla from "../Assets/logo/kla.png"
+import kla from "../Assets/logo/rq.png"
 
 function Sponsors() {
   const sponsors = [
     
-    {
-      name: "Smartail",
-      logo: "https://smartail.ai/wp-content/uploads/2021/09/Site-Identity-Logo-Smartail.svg",
-    },
+    
     {
       name:"KLA",
       logo:kla}
@@ -51,7 +48,6 @@ function Sponsors() {
           mb={2}
         >
           EVENT SPONSORS
-          <FaHandshake style={{marginLeft:'15px', fontSize:'60px', marginTop:'-7px'}} />
         </span> <Divider style={{padding:'0', marginTop:'10px', borderColor:'black'}}/></div>
         
        

@@ -19,7 +19,6 @@
 }
 
 .round-rules {
-    margin: 10px 50px;
     display: flex;
     flex-direction: row;
     /* justify-content: space-between; */
