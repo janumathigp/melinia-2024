@@ -152,9 +152,9 @@ class Board extends React.Component
     {
         return(
 <div>
-<div style={{ backgroundColor: '#d9d2e9', marginTop: '4%' }}>
+<div style={{ backgroundColor: '#d9d2e9', marginTop: '100px' }}>
   <Particle></Particle>
-  <br></br><br></br>
+          <br></br><br></br>
           <section style={{  marginLeft: 'auto', marginRight: 'auto', maxWidth: '355px', position:'relative',zIndex:'100'}}>
             <Card
               sx={{
@@ -170,7 +170,7 @@ class Board extends React.Component
                 },
                 '@media (max-width: 600px)': {
                   // marginTop: '73px',
-                  marginTop: '33%',
+                  // marginTop: '33%',
                   maxWidth: '100%',
                 },
                 '@media (min-width: 601px) and (max-width: 1024px)': {
