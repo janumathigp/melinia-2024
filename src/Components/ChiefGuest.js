@@ -15,17 +15,17 @@ function ChiefGuest() {
         }}
       >
         <Box display="flex" flexDirection="column" alignItems="center" justifyContent="center">
-          <span className="font1" variant="h4" component="h1" fontWeight="700" style={{color:'white', fontSize:{sm:'2em', md:'3em'}}} mb={1} textAlign="center">
+          <span className="font1" fontWeight="700" style={{color:'white', fontSize:'1.6rem'}} mb={1} textAlign="center">
             MEET OUR CHIEF GUEST
           </span>
         
 
-          <Avatar src={chief} sx={{width:300,objectFit:"contain",height:300,borderRadius:"100%"}} />
+          <Avatar src={chief} sx={{marginTop:'10px', marginBottom:'10px',width:230,objectFit:"contain",height:230,borderRadius:"100%",}} />
 
           <span className="font2" color="white"  variant="h6" style={{marginTop:8, color:'#d3d3d3', fontWeight:'bolder', fontSize:'1.5em', marginBottom:4}}>Mr. Sathish Nandagopal</span>
-          <span className="font3" variant="subtitle2" style={{color:'#d3d3d3', fontWeight:'bolder', marginBottom:4}}>(Co-Founder and CEO of SMARTAIL)</span>
+          <span className="font3" variant="subtitle2" style={{color:'#d3d3d3', fontWeight:'bolder', marginBottom:4}}>(HR of Wipro)</span>
 
-          <span className="font3" color="#d3d3d3" textAlign="center" style={{color:'#d3d3d3', fontWeight:'bolder', marginBottom:4}}>Mr. Ganesan will be joining us as Chief Guest for our National Level Technical Symposium Melinia 2024 . He has been instrumental in revolutionizing the education industry through the integration of cutting-edge technology. His expertise and knowledge in the field of AI and DT have been widely recognized, and we are honored to have him to grace our event as Chief Guest.</span>
+          <span className="font3" color="#d3d3d3" textAlign="center" style={{color:'#d3d3d3', fontWeight:'bolder', fontSize:'1.3rem', marginBottom:4}}>Excitement fills the air as we announce Sathish Nandagopal, Location HR at Wipro, as the Chief Guest for our techfest. With a passion for leading global people agendas, Sathish oversees the human capital needs of 3200+ employees in the location, ensuring the right talent for impactful business outcomes. Committed to fostering inclusivity, he envisions a workplace where everyone can contribute and succeed equally. Join us for an insightful session with Sathish Nandagopal, a leader dedicated to excellence and positive change</span>
         </Box>
       </Container>
     </Box>
