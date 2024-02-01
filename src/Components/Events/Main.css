@@ -20,22 +20,15 @@
 
 .round-rules {
     margin: 10px 50px;
-    /* width: 40%; */
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .round {
     width: 40%;
 }
 
-.info {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
 
 .info-detail {
     margin: 10px;
