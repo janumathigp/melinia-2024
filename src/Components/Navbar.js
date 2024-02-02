@@ -2,29 +2,41 @@
   import Navbar from "react-bootstrap/Navbar";
   import Nav from "react-bootstrap/Nav";
   import Container from "react-bootstrap/Container";
-  import { Link as ScrollLink } from "react-scroll";
   import { useMediaQuery } from "react-responsive";
   import { FiMoreVertical } from "react-icons/fi";
 
-  import { Link } from "react-router-dom";
+  import { Link, useLocation, useNavigate } from 'react-router-dom';
   import citlogo from '../Assets/logo/citlogo.png';
   import cit from '../Assets/logo/cit.png';
 
   function NavBar() {
+
+  
+
     const [expand, updateExpanded] = useState(false);
     const [navColour, updateNavbar] = useState(false);
     const isMobile = useMediaQuery({ maxWidth: 767 });
 
+    const location = useLocation();
+    const navigate = useNavigate();
+  
     const handleScrollToEvents = () => {
-      const eventsSection = document.getElementById("events");
-      if (eventsSection) {
-        window.scrollTo({
-          top: eventsSection.offsetTop - 70, // Adjust the offset if needed
-          behavior: "smooth",
-        });
+      if (location.pathname === '/') {
+        const eventsSection = document.getElementById('events');
+        if (eventsSection) {
+          eventsSection.scrollIntoView({ behavior: 'smooth' });
+        }
+      } else {
+        navigate('/');
+        setTimeout(() => {
+          const eventsSection = document.getElementById('events');
+          if (eventsSection) {
+            eventsSection.scrollIntoView({ behavior: 'smooth' });
+          }
+        }, 0);
       }
-      updateExpanded(false);
     };
+  
     
     function scrollHandler() {
       if (window.scrollY >= 20) {

@@ -125,7 +125,7 @@ const cardData = [
         rules: "Students are requested to bring their own laptops with stable internet connection",
         venue: "Room -104",
         teamsize: 2,
-        coordinators: [{ name: "Chanakya", Num: "9500924924" }, { name: "Prakalya", Num: "9488038087" }],
+        coordinators: [{ name: "Chanakkya", Num: "9500924924" }, { name: "Prakalya", Num: "9488038087" }],
         date: '2024-02-16',
         time: '12:00 PM',
         technical: false,
@@ -307,28 +307,14 @@ const MainDescription = () => {
                             <div className="text-md">{coordinators[0].name}</div>
                             <div className="text-md">{coordinators[0].Num}</div>
                         </div>
-                        <div style={{ display: "flex", flexDirection: "column", marginLeft: "20px" }}>
-                            <a href={`https://wa.me/${coordinators[0].Num}`} target="_blank" rel="noopener noreferrer">
-                                <FaWhatsapp />
-                            </a>
-                            <a href={`tel:${coordinators[0].Num}`} target="_blank" rel="noopener noreferrer">
-                                <FaPhoneAlt />
-                            </a>
-                        </div>
+      
                     </div>
                     <div className='coord2' style={{ display: "flex", flexDirection: "row", margin: "20px 0", justifyContent: "center", alignItems: "center" }}>
                         <div style={{ display: "flex", flexDirection: "column" }}>
                             <div className="text-md ">{coordinators[1].name}</div>
                             <div className="text-md">{coordinators[1].Num}</div>
                         </div>
-                        <div style={{ display: "flex", flexDirection: "column", marginLeft: "20px" }}>
-                            <a href={`https://wa.me/${coordinators[1].Num}`} target="_blank" rel="noopener noreferrer">
-                                <FaWhatsapp />
-                            </a>
-                            <a href={`tel:${coordinators[1].Num}`} target="_blank" rel="noopener noreferrer">
-                                <FaPhoneAlt />
-                            </a>
-                        </div>
+                     
                     </div>
                 </div>
                 <button style={{margin:"10px"}}>Register</button>            </Container>
