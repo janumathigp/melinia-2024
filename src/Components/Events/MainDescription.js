@@ -6,7 +6,7 @@ import { IoLocation } from "react-icons/io5";
 import { FaWhatsapp, FaPhoneAlt } from "react-icons/fa";
 import { MdOutlineAccessTimeFilled } from "react-icons/md";
 import { Particle } from '../ParticlesBackground';
-
+import mixpanel from 'mixpanel-browser';
 import './Main.css';
 
 import Keycharades from "../../Assets/events/KEY CHARADES.png"
@@ -204,7 +204,45 @@ const MainDescription = () => {
     const { id } = useParams();
     const eventId = parseInt(id, 10); // Convert id to integer if it's stored as a string
     const event = cardData.find((event) => event.id === eventId);
-
+    const handleLinkClick = (cardId) => {
+        if(cardId===1){
+            console.log('going');
+          mixpanel.track("keycharades event register clicked", {
+            page:"events"
+          });
+        }
+        else if(cardId===2){
+          mixpanel.track("sequelverse event register clicked", {
+            page:"events"
+          });
+        }
+        else if(cardId===3){
+          mixpanel.track("codegolf event register clicked", {
+            page:"events"
+          });
+        }
+        else if(cardId===4){
+          mixpanel.track("bidbattle event register clicked", {
+            page:"events"
+          });
+        }
+        else if(cardId===5){
+          mixpanel.track("crypticquest event register clicked", {
+            page:"events"
+          });
+        }
+        else if(cardId===6){
+          mixpanel.track("datacraft event register clicked", {
+            page:"events"
+          });
+        }
+        else if(cardId===7){
+          mixpanel.track("somethingfishy event register clicked", {
+            page:"events"
+          });
+        }
+        // You can call your custom function or perform any other actions here
+      };
     if (!event) {
         return <div>Error: Event not found</div>;
     }
@@ -321,7 +359,7 @@ const MainDescription = () => {
 
                     </div>
                 </div>
-                <button >
+                <button onClick={() => handleLinkClick(Number(id))}>
                     <a href='https://docs.google.com/forms/d/e/1FAIpQLSeNh2Ouo9eoOSXaeQmVFUQahUHBQuYW8X5TdTUFBRecjgbFeQ/viewform?usp=sf_link' style={{textDecoration:"none", color:"white", width:"50% !important"}}
                     target="_blank"
                     >

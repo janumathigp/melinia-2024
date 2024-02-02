@@ -24,10 +24,10 @@ function Home() {
             <Row>
               <Col className="home-header">
                 <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-                <h1 style={{ paddingBottom: 15, textAlign: 'center',fontFamily:"Audiowide",fontSize:"3em"}} className=" q">
+                <h1 style={{ paddingBottom: 15, textAlign: 'center',fontFamily:"Audiowide",fontSize:"1.5em"}} className=" q">
                     Coimbatore Institute of Technology
                   </h1>
-                  <h1 style={{ paddingBottom: 15, textAlign: 'center',fontFamily:"Audiowide"}} className=" q">
+                  <h1 style={{ paddingBottom: 15, textAlign: 'center',fontFamily:"Audiowide",fontSize:"1.3em"}} className="q">
                     Department of Computing <br/>MSc SS | DS | DCS | AIML
                   </h1>
                   <div style={{ display: 'flex', justifyContent: 'center' }}>
