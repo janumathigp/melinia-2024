@@ -322,7 +322,9 @@ const MainDescription = () => {
                     </div>
                 </div>
                 <button >
-                    <a href='https://docs.google.com/forms/d/e/1FAIpQLSeNh2Ouo9eoOSXaeQmVFUQahUHBQuYW8X5TdTUFBRecjgbFeQ/viewform?usp=sf_link' style={{textDecoration:"none", color:"white", width:"50% !important"}}>
+                    <a href='https://docs.google.com/forms/d/e/1FAIpQLSeNh2Ouo9eoOSXaeQmVFUQahUHBQuYW8X5TdTUFBRecjgbFeQ/viewform?usp=sf_link' style={{textDecoration:"none", color:"white", width:"50% !important"}}
+                    target="_blank"
+                    >
                         Register
                     </a>
 
