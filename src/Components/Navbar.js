@@ -99,7 +99,7 @@
              
 
               <Nav.Item>
-                <Nav.Link className="scroll-link">
+                <Nav.Link className="scroll-link" as={Link} to="/contact" onClick={() => updateExpanded(false)}>
                   {/* <ScrollLink
                     className="scroll-link"  // Add a specific class for Contact
                     to="contact"
