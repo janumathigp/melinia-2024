@@ -122,7 +122,7 @@ const cardData = [
             ),
         },
 
-        rules: "Students are requested to bring their own laptops with stable internet connection",
+        // rules: "Students are requested to bring their own laptops with stable internet connection",
         venue: "Room -104",
         teamsize: 2,
         coordinators: [{ name: "Chanakkya", Num: "9500924924" }, { name: "Prakalya", Num: "9488038087" }],
@@ -251,54 +251,58 @@ const MainDescription = () => {
                 </div>
 
                 <h3 className="text-lg">Rounds</h3>
-              <div className='round-rules' style={{ padding: 0 }}>
-    <div className='rounds' style={{
-        display: "flex",
-        flexDirection: "row",  // Default to row layout
-        justifyContent: "space-evenly",
-        flexWrap: "wrap",  // Allow items to wrap to the next line
-    }}>
+                <div className='round-rules' style={{ padding: 0 }}>
+                    <div className='rounds' style={{
+                        display: "flex",
+                        flexDirection: "row",  // Default to row layout
+                        justifyContent: "space-evenly",
+                        flexWrap: "wrap",  // Allow items to wrap to the next line
+                    }}>
 
-        <div className='round1' style={{ flex: "1 1 300px", margin: "10px" }}>
-            <div className='element-2' style={{ marginBottom: "20px" }}>
-                <Bs1CircleFill style={{ fontSize: '50px' }} />
-                <h3 className="text-md text-lg" style={{ textAlign: "justify" }}>{round1.title}</h3>
-            </div>
-            <div className='element-3'>
-                <p className="text-md text-lg">{round1.detail}</p>
-            </div>
-        </div>
+                        <div className='round1' style={{ flex: "1 1 300px", margin: "10px" }}>
+                            <div className='element-2' style={{ marginBottom: "20px" }}>
+                                <Bs1CircleFill style={{ fontSize: '50px' }} />
+                                <h3 className="text-md text-lg" style={{ textAlign: "justify" }}>{round1.title}</h3>
+                            </div>
+                            <div className='element-3'>
+                                <p className="text-md text-lg">{round1.detail}</p>
+                            </div>
+                        </div>
 
-        <div className='round2' style={{ flex: "1 1 300px", margin: "10px" }}>
-            <div className='element-2' style={{ marginBottom: "20px" }}>
-                <Bs2CircleFill style={{ fontSize: '50px' }} />
-                <h3 className="text-md text-lg">{round2.title}</h3>
-            </div>
-            <div className='element-3'>
-                <p className="text-md text-lg">{round2.detail}</p>
-            </div>
-        </div>
+                        <div className='round2' style={{ flex: "1 1 300px", margin: "10px" }}>
+                            <div className='element-2' style={{ marginBottom: "20px" }}>
+                                <Bs2CircleFill style={{ fontSize: '50px' }} />
+                                <h3 className="text-md text-lg">{round2.title}</h3>
+                            </div>
+                            <div className='element-3'>
+                                <p className="text-md text-lg">{round2.detail}</p>
+                            </div>
+                        </div>
 
-        {round3 && (
-            <div className='round3' style={{ flex: "1 1 300px", margin: "10px" }}>
-                <div className='element-2' style={{ marginBottom: "20px" }}>
-                    <Bs3CircleFill style={{ fontSize: '50px' }} />
-                    <h3 className="text-md text-lg">{round3.title}</h3>
+                        {round3 && (
+                            <div className='round3' style={{ flex: "1 1 300px", margin: "10px" }}>
+                                <div className='element-2' style={{ marginBottom: "20px" }}>
+                                    <Bs3CircleFill style={{ fontSize: '50px' }} />
+                                    <h3 className="text-md text-lg">{round3.title}</h3>
+                                </div>
+                                <div className='element-3'>
+                                    <p className="text-md text-lg">{round3.detail}</p>
+                                </div>
+                            </div>
+                        )}
+                    </div>
                 </div>
-                <div className='element-3'>
-                    <p className="text-md text-lg">{round3.detail}</p>
-                </div>
-            </div>
-        )}
-    </div>
-</div>
 
 
+                {rules && (
 
-                <div className='rules '>
-                    <h3 className="text-lg" style={{ marginBottom: "20px" }}>Guidelines</h3>
-                    <p className='element-3 text-md text-lg' style={{ textAlign: "center" }}>{rules}</p>
-                </div>
+                    <div className='rules '>
+                        <h3 className="text-lg" style={{ marginBottom: "20px" }}>Guidelines</h3>
+                        <p className='element-3 text-md text-lg' style={{ textAlign: "center" }}>{rules}</p>
+                    </div>
+
+                )}
+
                 <h3 className="text-lg">Coordinators</h3>
 
                 <div className='column' style={{ display: "flex", flexDirection: "row", justifyContent: "center", gap: "2rem" }}>
@@ -307,17 +311,22 @@ const MainDescription = () => {
                             <div className="text-md">{coordinators[0].name}</div>
                             <div className="text-md">{coordinators[0].Num}</div>
                         </div>
-      
+
                     </div>
                     <div className='coord2' style={{ display: "flex", flexDirection: "row", margin: "20px 0", justifyContent: "center", alignItems: "center" }}>
                         <div style={{ display: "flex", flexDirection: "column" }}>
                             <div className="text-md ">{coordinators[1].name}</div>
                             <div className="text-md">{coordinators[1].Num}</div>
                         </div>
-                     
+
                     </div>
                 </div>
-                <button style={{margin:"10px"}}>Register</button>            </Container>
+                <button style={{ margin: "10px", position:"relative"}}>
+                    <a href='https://docs.google.com/forms/d/e/1FAIpQLSeNh2Ouo9eoOSXaeQmVFUQahUHBQuYW8X5TdTUFBRecjgbFeQ/viewform?usp=sf_link' style={{textDecoration:"none", color:"white", width:"50% !important"}}>
+                        Register
+                    </a>
+
+                </button>            </Container>
         </>
 
     )
