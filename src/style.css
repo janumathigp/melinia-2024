@@ -65,18 +65,18 @@ button:focus {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #194050;
+  background: #401950;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(121, 216, 216, 0.959);
+  background: rgba(191, 121, 216, 0.959);
   border-radius: 12px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(130, 235, 230, 0.911);
+  background: rgba(216, 130, 235, 0.911);
   border-radius: 12px;
 }
 
@@ -147,6 +147,10 @@ button:focus {
     font-size: 1.4rem !important;
     /* background-color: #181a27 !important; */
   }
+   .navbar-nav .nav-item a {
+    background-color: #150F23;
+  }
+  
   .navbar-nav .nav-item a::after {
     display: none !important;
   }
@@ -176,6 +180,10 @@ button:focus {
   .nav-link {
     padding: 0.7rem 1rem !important;
   }
+  .navbar-nav .nav-item a {
+    background-color: #150F23;
+  }
+  
 }
 
 .navbar-nav .nav-item {
@@ -191,6 +199,7 @@ button:focus {
   transition: all 0.3s ease-out 0s;
   position: relative;
   z-index: 1;
+  /* background-color: #150F23; */
 }
 
 .navbar-nav .nav-item a.scroll-link::after {
