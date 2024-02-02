@@ -245,11 +245,14 @@ class Board extends React.Component
                   maxWidth: '85%',
                 //   margin: '0 5px 20px',
                 },
-                '@media (min-width: 601px) and (max-width: 1024px)': {
-                  maxWidth: '40%',
+                '@media (min-width: 601px) and (max-width: 950px)': {
+                  maxWidth: '30%',
                 },
-                '@media (min-width: 1025px) and (max-width: 1440px)': {
-                  maxWidth: '40%',
+                '@media (min-width: 950px) and (max-width: 1231px)': {
+                  maxWidth: '25%',
+                },
+                '@media (min-width: 1231px) and (max-width: 1280px)': {
+                  maxWidth: '20%',
                 },
                 backgroundColor: '#f0f0f0 !important',
               }}
@@ -341,11 +344,11 @@ class Board extends React.Component
                   maxWidth: '85%',
                 //   margin: '0 5px 20px',
                 },
-                '@media (min-width: 601px) and (max-width: 1024px)': {
-                  maxWidth: '40%',
+                '@media (min-width: 601px) and (max-width: 1239px)': {
+                  maxWidth: '28%',
                 },
-                '@media (min-width: 1025px) and (max-width: 1440px)': {
-                  maxWidth: '40%',
+                '@media (min-width: 1239px) and (max-width: 1440px)': {
+                  maxWidth: '20%',
                 },
                 backgroundColor: '#f0f0f0 !important',
               }}
@@ -412,11 +415,11 @@ class Board extends React.Component
                   maxWidth: '85%',
                 //   margin: '0 5px 20px',
                 },
-                '@media (min-width: 601px) and (max-width: 1024px)': {
-                  maxWidth: '40%',
+                '@media (min-width: 601px) and (max-width: 1239px)': {
+                  maxWidth: '28%',
                 },
-                '@media (min-width: 1025px) and (max-width: 1440px)': {
-                  maxWidth: '40%',
+                '@media (min-width: 1239px) and (max-width: 1440px)': {
+                  maxWidth: '20%',
                 },
                 backgroundColor: '#f0f0f0 !important',
               }}
@@ -483,11 +486,11 @@ class Board extends React.Component
                   maxWidth: '85%',
                 //   margin: '0 5px 20px',
                 },
-                '@media (min-width: 601px) and (max-width: 1024px)': {
-                  maxWidth: '40%',
+                '@media (min-width: 601px) and (max-width: 1231px)': {
+                  minWidth: '25%',
                 },
-                '@media (min-width: 1025px) and (max-width: 1440px)': {
-                  maxWidth: '40%',
+                '@media (min-width: 1231px) and (max-width: 1280px)': {
+                  minWidth: '20%',
                 },
                 backgroundColor: '#f0f0f0 !important',
               }}
