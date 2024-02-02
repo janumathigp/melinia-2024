@@ -20,8 +20,12 @@ import ScrollToTop from "./Components/ScrollToTop";
 import "./style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Developers from './Components/Developers/Developers';
+import mixpanel from 'mixpanel-browser';
 // import Achievements from "./Components/Achievements/Achievements";
 
+mixpanel.init("80b2a21992bf5ce950bb5dbd06b144a7",{
+  debug:true
+})
 
 function App() {
   const [load, upadateLoad] = useState(true);
