@@ -9,6 +9,14 @@ import { FaArrowRight } from "react-icons/fa";
 function Workshop() {
   const [isEventCompleted, setCondition] = useState(false);
 
+  const handleRegisterClick = () => {
+    // Navigate to the specified URL
+    window.open('https://unstop.com/o/WJEbn31?lb=D5CxNBMi', '_blank');
+  };
+  const handleRegisterClick1 = () => {
+    // Navigate to the specified URL
+    window.open('https://unstop.com/p/paper-presentation-coimbatore-institute-of-technology-cit-coimbatore-886885', '_blank');
+  };
   return (
     <div className="workshopMainBox">
       <div className="aboutBox" style={{marginBottom:"30px"}}>
@@ -47,7 +55,7 @@ function Workshop() {
 Join us in crafting viable and feasible product prototypes that not only enhance the lifestyles of students and professors but also elevate the working standards of institutions at large. Let your creativity thrive and leave a lasting mark on the world! 💡</p>
           <div style={{ display: 'flex', justifyContent: 'end' }}>
             {!isEventCompleted ? (
-              <Button className="buttonFont" style={{ backgroundColor: '#61016e' }} variant="contained">Register <FaArrowRight style={{ marginLeft: '3px' }} /></Button>
+              <Button className="buttonFont" style={{ backgroundColor: '#61016e' }} variant="contained" onClick={handleRegisterClick}>Register <FaArrowRight style={{ marginLeft: '3px' }} /></Button>
 
             ) : (<Button className="buttonFont" style={{ color: '#61016e', borderColor: '#61016e' }} variant="outlined">Event Completed <FaArrowRight style={{ marginLeft: '3px' }} /></Button>)}
 
@@ -94,7 +102,7 @@ Join us in crafting viable and feasible product prototypes that not only enhance
 Seize this opportunity to present insightful perspectives and contribute to the rich tapestry of intellectual innovation. Unfold your ideas on the stage of knowledge! 📚 </p>
             <div style={{ display: 'flex', justifyContent: 'end' }}>
               {!isEventCompleted ? (
-                <Button className="buttonFont" style={{ backgroundColor: '#61016e' }} variant="contained">Register <FaArrowRight style={{ marginLeft: '3px' }} /></Button>
+                <Button className="buttonFont" style={{ backgroundColor: '#61016e' }} variant="contained" onClick={handleRegisterClick1}>Register <FaArrowRight style={{ marginLeft: '3px' }} /></Button>
 
               ) : (<Button className="buttonFont" style={{ color: '#61016e', borderColor: '#61016e' }} variant="outlined">Event Completed <FaArrowRight style={{ marginLeft: '3px' }} /></Button>)}
             </div>

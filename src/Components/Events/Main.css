@@ -19,23 +19,15 @@
 }
 
 .round-rules {
-    margin: 10px 50px;
-    /* width: 40%; */
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .round {
     width: 40%;
 }
 
-.info {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
 
 .info-detail {
     margin: 10px;
@@ -71,5 +63,14 @@
 }
 
 .link {
-display: flex;
-flex-direction: column;}
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    background-color: #cc93a3;
+    border: none;
+    position: relative;
+    padding: 0.5rem;
+    justify-self: center;
+}
