@@ -192,7 +192,7 @@ class Board extends React.Component
           />
           <CardContent sx={{ padding: '0px', paddingTop: '7px',fontFamily:'"Raleway", serif !important' }}>
             <Typography gutterBottom variant="h5" component="div" sx={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 'bold', fontSize: '1.5rem' }}>
-              <span style={{fontFamily:'"Raleway", serif !important' }}>Dr. C. Stanley Felix</span>
+              <span style={{fontFamily:'"Raleway", serif !important' }}>Dr. C. Stanly Felix</span>
             </Typography>
             <Typography variant="body1" display="block" gutterBottom sx={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 'bolder', color: '#555', fontSize: '1rem' }}>
               <span style={{fontFamily:'"Raleway", serif !important' }}>Faculty Advisor</span>

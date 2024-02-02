@@ -268,7 +268,7 @@ button:focus {
 
 
 .home-header {
-  padding-top: 80px !important;
+  padding-top: 40px !important;
 }
 
 .home-section {
@@ -277,8 +277,6 @@ button:focus {
   /* background-image: var(--image-gradient), url(./assests/home-bg1.jpg); */
   /* background-size: 100% 100%;
   background-repeat: no-repeat;*/
-  padding-bottom: 30px !important;
-  padding-top: 30px !important; 
 }
 
 .home-content {
@@ -287,8 +285,6 @@ button:focus {
   text-align: left;
   width: 100%;
   display: flex;
-  margin-top: 20px;
-  margin-bottom: 20px;
   justify-content: center;
 }
 
@@ -329,6 +325,7 @@ button:focus {
   display: flex;
   flex-direction: column;
   justify-items: start;
+  justify-content: start;
   padding-top: 30px;
   align-items: center;
   padding-bottom: 30px;
@@ -359,6 +356,7 @@ button:focus {
 .aboutBox2{
   display: flex;
   flex-direction: column;
+  
   padding-top: 30px;
   padding-bottom: 30px;
   
@@ -407,6 +405,22 @@ button:focus {
   font-size: 4em !important;
   
 }
+.fontColor{
+  background: linear-gradient(45deg, rgb(212 98 205), #512158);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 0.9;
+  /* animation: animate 5s ease-in-out infinite; */
+  /* font-family: 'Orbitron', sans-serif; */
+  font-family: 'Audiowide', sans-serif;
+  font-weight: 100 !important;
+  font-size: 3em !important;
+  
+  position: relative;
+  right: 10px;
+}
 
 .citLogo{
   margin-top: 20px;
@@ -417,6 +431,7 @@ button:focus {
   .reverseFlex{
     display: flex;
     flex-direction: row-reverse;
+    justify-content: start;
   }
   .verticalDivider{
     display: block;
@@ -476,7 +491,7 @@ button:focus {
   /* font-family: 'Orbitron', sans-serif; */
   font-family: 'Audiowide', sans-serif;
   font-weight: 100 !important;
-  font-size: 2.3em !important;
+  font-size: 2.2em !important;
 
 }
 @media (min-width:900px) {
@@ -500,7 +515,22 @@ button:focus {
     rotate: 0deg;
   }
 
-
+  .fontColor{
+    background: linear-gradient(45deg, rgb(212 98 205), #512158);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 0.9;
+    /* animation: animate 5s ease-in-out infinite; */
+    /* font-family: 'Orbitron', sans-serif; */
+    font-family: 'Audiowide', sans-serif;
+    font-weight: 100 !important;
+    font-size: 3em !important;
+    
+    position: relative;
+    right: 10px;
+  }
   .aboutFont{
     background: linear-gradient(56deg, #d96caf, #ba0072);
     background-size: 300%;
