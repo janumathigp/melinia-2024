@@ -18,7 +18,7 @@ import rohith from '../../Assets/crew/rohitEdited.jpg';
 import abhinaya from  "../../Assets/crew/abhinayaqEdited.jpg";
 import susmaMondal from "../../Assets/crew/susmaEdited.jpg";
 import prakalya from "../../Assets/crew/prakalyaEdited.jpg";
-import abhirami from "../../Assets/crew/abhirami2.jpg";
+import abhirami from "../../Assets/crew/abhiramiEdited.jpg";
 import aswath from "../../Assets/crew/ashwathEdited.jpg";
 import bhupesh from "../../Assets/crew/bhupeshEdited.jpg"
 import { Particle } from "../ParticlesBackground";
@@ -45,7 +45,7 @@ class Board extends React.Component
           name: "Dr.V.Keerthika",
           role: "Event Management",
           department: "Department of Computing",
-          phone: "0422-2574071 Extn: 335",
+          phone: "0422-2574071",
           email: "vkeerthika@cit.edu.in",
           image: keerthiImage,
         },
@@ -53,7 +53,7 @@ class Board extends React.Component
             name: "Dr.D.Manju",
             role: "Event management",
             department: "Department of Computing",
-            phone: "0422-2574071 Extn: 335",
+            phone: "0422-2574071",
             email: "manju@cit.edu.in",
             image: manjuImage,
           },
@@ -61,7 +61,7 @@ class Board extends React.Component
             name: "Dr.M.Sujithra",
             role: "Technical Event Management",
             department: "Department of Computing",
-            phone: "0422-2574071 Extn: 335",
+            phone: "0422-2574071",
             email: "sujithra@cit.edu.in",
             image: sujithraImage,
           },
@@ -69,7 +69,7 @@ class Board extends React.Component
             name: "Mrs.P Hemashree",
             role: "Non-Technical Event Management",
             department: "Department of Computing",
-            phone: "0422-2574071 Extn: 335",
+            phone: "0422-2574071",
             email: "hemashree@cit.edu.in",
             image: hemaImage,
           },
@@ -79,7 +79,7 @@ class Board extends React.Component
       cardDataCMSEC=[
         {
           name: "S Abinaya",
-          role: "Chairman",
+          role: "Chairperson",
           department: "M.Sc. Artificial Intelligence and Machine Learning",
           phone: "9994883560",
           email: "2034002aiml@cit.edu.in",
