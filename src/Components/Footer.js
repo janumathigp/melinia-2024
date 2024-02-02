@@ -103,7 +103,7 @@ function Footer() {
   </div>
 
   <div className="dum" style={{ display: "flex", flexDirection: "column" }}>
-    <div className="foot" style={{ fontSize: "20px", color: "white" }}>Our Socials</div>
+    <div className="foot" style={{ fontSize: "20px", color: "white" }}>Our Connections</div>
     <div className="socials" style={{ display: "flex", justifyContent: "space-between", fontSize: "20px", color: "white" }}>
       <div className="icons" style={{ display: "flex", justifyContent: "space-between" }}>
             <a
