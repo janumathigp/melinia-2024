@@ -63,5 +63,14 @@
 }
 
 .link {
-display: flex;
-flex-direction: column;}
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    background-color: #cc93a3;
+    border: none;
+    position: relative;
+    padding: 0.5rem;
+    justify-self: center;
+}

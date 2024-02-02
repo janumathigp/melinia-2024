@@ -3,7 +3,7 @@ import { Box, Container } from "@mui/system";
 import Divider from "@mui/material/Divider";
 import React, { useState } from "react";
 import { FaHandshake } from "react-icons/fa";
-import kla from "../Assets/logo/rq.png"
+import kla from "../Assets/logo/rq3.JPG"
 
 function Sponsors() {
   const sponsors = [

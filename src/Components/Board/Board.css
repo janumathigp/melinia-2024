@@ -9,6 +9,7 @@
 span
 {
     font-family:"Raleway", serif !important;
+    cursor:default;
 }
 
 .fa-phone

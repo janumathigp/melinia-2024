@@ -205,7 +205,7 @@ class Board extends React.Component
             <div style={{ cursor:'pointer',display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: '10px' }}>
               <FontAwesomeIcon icon={faPhone} style={{ fontSize: '20px', color: '#3498db' }} />
               <Typography variant="body1" display="block" gutterBottom onClick={() => window.location.href=`tel:${'0422-2574071 Extn: 335'}`} sx={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 'bolder', color: '#555', fontSize: '1rem' }}>
-              <span style={{fontFamily:'"Raleway", serif !important' }}>0422-2574071 Extn: 335</span>
+              <span style={{fontFamily:'"Raleway", serif !important' }}>0422-2574071</span>
               </Typography>
             </div>
           </CardContent>
