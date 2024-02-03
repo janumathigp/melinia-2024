@@ -297,7 +297,7 @@ const MainDescription = () => {
             <div className='round1' style={{ margin: "10px" }}>
               <div className='element-2' style={{ marginBottom: "20px" }}>
                 <Bs1CircleFill style={{ fontSize: '40px' }} />
-                <h3 className="text-md text-lg" style={{ textAlign: "justify" }}>{round1.title}</h3>
+                <h3 className="text-md text-lg" style={{ textAlign: "left" }}>{round1.title}</h3>
               </div>
               <div className='element-3'>
                 <p className="text-md text-lg">{round1.detail}</p>
@@ -307,7 +307,7 @@ const MainDescription = () => {
             <div className='round2' style={{ margin: "10px" }}>
               <div className='element-2' style={{ marginBottom: "20px" }}>
                 <Bs2CircleFill style={{ fontSize: '40px' }} />
-                <h3 className="text-md text-lg" style={{ textAlign: "justify" }}>{round2.title}</h3>
+                <h3 className="text-md text-lg" style={{ textAlign: "left" }}>{round2.title}</h3>
               </div>
               <div className='element-3'>
                 <p className="text-md text-lg">{round2.detail}</p>
@@ -318,7 +318,7 @@ const MainDescription = () => {
               <div className='round3' style={{ flex: "1 1 300px", margin: "10px" }}>
                 <div className='element-2' style={{ marginBottom: "20px" }}>
                   <Bs3CircleFill style={{ fontSize: '50px' }} />
-                  <h3 className="text-md text-lg" style={{ textAlign: "justify" }}>{round3.title}</h3>
+                  <h3 className="text-md text-lg" style={{ textAlign: "left" }}>{round3.title}</h3>
                 </div>
                 <div className='element-3'>
                   <p className="text-md text-lg">{round3.detail}</p>
