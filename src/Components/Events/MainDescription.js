@@ -251,8 +251,8 @@ const MainDescription = () => {
     const { title, description, round1, round2, round3, rules, venue, note, teamsize, coordinators, date, time, technical } = event;
 
     return (
-        <>
-            <Container className="text-white" style={{ marginTop: "100px" }}>
+        <div className="main-wrapper" style={{ backgroundColor: "#d9d2e9" }}>
+            <Container className="text-black" style={{ marginTop: "100px", padding:'10px' }}>
                 <Particle></Particle>
                 <div className='title'>
                     <h3 className=" aboutFont text-lg">{title}</h3>
@@ -272,7 +272,7 @@ const MainDescription = () => {
                     {description}
                 </div>
 
-                <div className='info-event row text-white' style={{ marginBottom: "40px" }}>
+                <div className='info-event row text-black' style={{ marginBottom: "40px" }}>
                     <div className='venue col-md-4' >
                         <IoLocation style={{ fontSize: "20px" }} />
                         <p className='info-detail text-md text-lg' style={{ fontSize: '20px' }}>{venue}</p>
@@ -290,47 +290,42 @@ const MainDescription = () => {
                 </div>
 
                 <h3 className="text-lg">Rounds</h3>
-                <div className='round-rules' style={{ padding: 0 }}>
-                    <div className='rounds' style={{
-                        display: "flex",
-                        flexDirection: "row",  // Default to row layout
-                        justifyContent: "space-evenly",
-                        flexWrap: "wrap",  // Allow items to wrap to the next line
-                    }}>
+                <div className='round-rules' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: 0 }}>
+  <div className='rounds'>
 
-                        <div className='round1' style={{ flex: "1 1 300px", margin: "10px" }}>
-                            <div className='element-2' style={{ marginBottom: "20px" }}>
-                                <Bs1CircleFill style={{ fontSize: '50px' }} />
-                                <h3 className="text-md text-lg" style={{ textAlign: "justify" }}>{round1.title}</h3>
-                            </div>
-                            <div className='element-3'>
-                                <p className="text-md text-lg">{round1.detail}</p>
-                            </div>
-                        </div>
+    <div className='round1' style={{ margin: "10px" }}>
+      <div className='element-2' style={{ marginBottom: "20px" }}>
+        <Bs1CircleFill style={{ fontSize: '40px' }} />
+        <h3 className="text-md text-lg" style={{ textAlign: "justify" }}>{round1.title}</h3>
+      </div>
+      <div className='element-3'>
+        <p className="text-md text-lg">{round1.detail}</p>
+      </div>
+    </div>
 
-                        <div className='round2' style={{ flex: "1 1 300px", margin: "10px" }}>
-                            <div className='element-2' style={{ marginBottom: "20px" }}>
-                                <Bs2CircleFill style={{ fontSize: '50px' }} />
-                                <h3 className="text-md text-lg">{round2.title}</h3>
-                            </div>
-                            <div className='element-3'>
-                                <p className="text-md text-lg">{round2.detail}</p>
-                            </div>
-                        </div>
+    <div className='round2' style={{ margin: "10px" }}>
+      <div className='element-2' style={{ marginBottom: "20px" }}>
+        <Bs2CircleFill style={{ fontSize: '40px' }} />
+        <h3 className="text-md text-lg">{round2.title}</h3>
+      </div>
+      <div className='element-3'>
+        <p className="text-md text-lg">{round2.detail}</p>
+      </div>
+    </div>
 
-                        {round3 && (
-                            <div className='round3' style={{ flex: "1 1 300px", margin: "10px" }}>
-                                <div className='element-2' style={{ marginBottom: "20px" }}>
-                                    <Bs3CircleFill style={{ fontSize: '50px' }} />
-                                    <h3 className="text-md text-lg">{round3.title}</h3>
-                                </div>
-                                <div className='element-3'>
-                                    <p className="text-md text-lg">{round3.detail}</p>
-                                </div>
-                            </div>
-                        )}
-                    </div>
-                </div>
+    {round3 && (
+      <div className='round3' style={{ flex: "1 1 300px", margin: "10px" }}>
+        <div className='element-2' style={{ marginBottom: "20px" }}>
+          <Bs3CircleFill style={{ fontSize: '50px' }} />
+          <h3 className="text-md text-lg">{round3.title}</h3>
+        </div>
+        <div className='element-3'>
+          <p className="text-md text-lg">{round3.detail}</p>
+        </div>
+      </div>
+    )}
+  </div>
+</div>
 
 
                 {rules && (
@@ -368,7 +363,7 @@ const MainDescription = () => {
                     </a>
 
                 </button>            </Container>
-        </>
+        </div>
 
     )
 };

@@ -129,9 +129,9 @@ import { Link as ScrollLink } from "react-scroll";
 import { useMediaQuery } from "react-responsive";
 import { FiMoreVertical } from "react-icons/fi";
 
-import { Link } from "react-router-dom";
-import citlogo from '../Assets/logo/citlogo.png';
-import cit from '../Assets/logo/cit.png';
+  import { Link, useLocation, useNavigate } from 'react-router-dom';
+  import citlogo from '../Assets/logo/log.png';
+  import cit from '../Assets/logo/mobile.png';
 
 const NavBar = () => {
   const [expand, updateExpanded] = useState(false);

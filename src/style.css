@@ -161,9 +161,8 @@ button:focus {
 
 .logo {
   position: relative;
-  bottom: 5.4px;
-  height: 80px!important;
-  width: 300px !important;
+  height: 50px!important;
+  width: 175px !important;
 }
 
 .navbar-nav .nav-link {
