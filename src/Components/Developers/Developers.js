@@ -58,7 +58,7 @@ const Developers = () => {
     <>
 
 
-      <h3 className="aboutFont" style={{ marginTop: '100px' }}>DEVELOPMENT TEAM</h3>
+      <h3 className="aboutFont" style={{ marginTop: '100px', textAlign:"center", right:"0 !important"}}>DEVELOPMENT TEAM</h3>
 
 
       <div className="develop d-flex flex-wrap justify-content-around" style={{ margin: '50px' }}>

@@ -77,7 +77,7 @@ class Board extends React.Component {
 
   cardDataCMSEC = [
     {
-      name: "S Abinaya",
+      name: "Abinaya S",
       role: "Chairperson",
       department: "M.Sc. Artificial Intelligence and Machine Learning",
       phone: "9994883560",
@@ -85,7 +85,7 @@ class Board extends React.Component {
       image: abhinaya,
     },
     {
-      name: "S Rohith",
+      name: "Rohith S",
       role: "Secretary",
       department: "M.Sc. Software Systems",
       phone: "9655898111",
@@ -96,7 +96,7 @@ class Board extends React.Component {
 
   cardJointSecTreasurer = [
     {
-      name: "A R Aswath",
+      name: "Aswath A R",
       role: "Joint Secretary ",
       department: "M.Sc. Software Systems",
       phone: "9943263888",
@@ -104,7 +104,7 @@ class Board extends React.Component {
       image: aswath,
     },
     {
-      name: "M Praveen Kumar",
+      name: "Praveen Kumar M",
       role: "Treasurer",
       department: "M.Sc. Software Systems",
       phone: "9600224398",
@@ -115,7 +115,7 @@ class Board extends React.Component {
 
   cardStudentCoordinators = [
     {
-      name: "R Susma Mondal",
+      name: "Susma Mondal R",
       role: "Event Head Coordinator",
       department: "M.Sc. Decision and Computing Sciences",
       phone: "9843736523",
@@ -123,7 +123,7 @@ class Board extends React.Component {
       image: susmaMondal,
     },
     {
-      name: "R Abirami",
+      name: "Abirami R",
       role: "Event Head Coordinator",
       department: "M.Sc. Decision and Computing Sciences",
       phone: "9003764378",
@@ -131,7 +131,7 @@ class Board extends React.Component {
       image: abhirami,
     },
     {
-      name: "B S Prakalya",
+      name: "Prakalya B S",
       role: "Event Head Coordinator",
       department: "M.Sc. Data Science",
       phone: "9488038087",
@@ -139,7 +139,7 @@ class Board extends React.Component {
       image: prakalya,
     },
     {
-      name: "P S Bhupesh",
+      name: "Bhupesh P S",
       role: "Event Head Coordinator ",
       department: "M.Sc. Data Science",
       phone: "9994615335",
