@@ -312,7 +312,7 @@ class Board extends React.Component
         Office Bearers
       </Typography></div> */}
 
-
+<br></br>
 <div>
       {/* Use the StyledTypography component */}
       <StyledTypography variant="h4" gutterBottom >
@@ -321,7 +321,6 @@ class Board extends React.Component
         </span>
       </StyledTypography>
     </div>
-
 
       <div style={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center', flexWrap: 'wrap' , position:'relative',zIndex:'100'}}>
           {this.cardDataCMSEC.map((data, index) => (
