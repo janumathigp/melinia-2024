@@ -6,8 +6,8 @@
   import { FiMoreVertical } from "react-icons/fi";
 
   import { Link, useLocation, useNavigate } from 'react-router-dom';
-  import citlogo from '../Assets/logo/citlogo.png';
-  import cit from '../Assets/logo/cit.png';
+  import citlogo from '../Assets/logo/log.png';
+  import cit from '../Assets/logo/mobile.png';
 
   function NavBar() {
 
