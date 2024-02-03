@@ -3,15 +3,12 @@ import { Box, Container } from "@mui/system";
 import Divider from "@mui/material/Divider";
 import React, { useState } from "react";
 import { FaHandshake } from "react-icons/fa";
-import kla from "../Assets/logo/kla.png"
+import kla from "../Assets/logo/rq3.JPG"
 
 function Sponsors() {
   const sponsors = [
     
-    {
-      name: "Smartail",
-      logo: "https://smartail.ai/wp-content/uploads/2021/09/Site-Identity-Logo-Smartail.svg",
-    },
+    
     {
       name:"KLA",
       logo:kla}
@@ -26,9 +23,12 @@ function Sponsors() {
   sx={{
     marginTop: "80px",
     height: "100%",
-    width: "100%",
-    background: "linear-gradient(to right, #c6b6c9, #b18dca);",
-    padding: "20px"
+    // width: "60%",
+    // background: "linear-gradient(to right, #c6b6c9, #b18dca);",
+   
+    padding: "40px",
+    borderRadius:"10%",
+    // marginLeft:"340px",
   }}
 >
       <Container
@@ -40,18 +40,19 @@ function Sponsors() {
           alignItems: "center",
           justifyContent: "center",
           flexDirection: "column",
+          
         }}
       >
       <div style={{width:'100%', padding:0}}><span
-          className="aboutFont"
+          className="fontColor"
           variant="h4"
           component="h1"
           fontWeight="700"
-          style={{ marginBottom:'10px', background:'linear-gradient(0deg, #86558d, #3b0043)', webkitBackgroundClip: 'text', backgroundClip: 'text'}}
+          style={{ marginBottom:'10px', alignItems:"center"}}
           mb={2}
+          
         >
           EVENT SPONSORS
-          <FaHandshake style={{marginLeft:'15px', fontSize:'60px', marginTop:'-7px'}} />
         </span> <Divider style={{padding:'0', marginTop:'10px', borderColor:'black'}}/></div>
         
        

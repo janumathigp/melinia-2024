@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Particle } from "../ParticlesBackground";
 import AboutMelinia from "../aboutMelinia";
+
+//import melinia from "../../Assets/addon/meliniaposter.jpg"
 import QueryCard from "../QueryCard";
 import Workshop from "../workshop";
 import Sponsors from "../Sponsers";
@@ -22,8 +24,11 @@ function Home() {
             <Row>
               <Col className="home-header">
                 <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-                  <h1 style={{ paddingBottom: 15, textAlign: 'center' }} className="heading">
-                    Department of Computing
+                <h1 style={{ paddingBottom: 15, textAlign: 'center',fontFamily:"Audiowide",fontSize:"1.5em"}} className=" q">
+                    Coimbatore Institute of Technology
+                  </h1>
+                  <h1 style={{ paddingBottom: 15, textAlign: 'center',fontFamily:"Audiowide",fontSize:"1.3em"}} className="q">
+                    Department of Computing <br/>MSc SS | DS | DCS | AIML
                   </h1>
                   <div style={{ display: 'flex', justifyContent: 'center' }}>
                     <div className="rajdhaniFont">
@@ -37,10 +42,11 @@ function Home() {
                   </div>
                   <h1 className="heading-name meliniaFont">
                     MELINIA
-                    <strong className="main-name"> 2024  </strong>
+                    <strong className="main-name"> 2k24  </strong>
                   </h1>
                   <h1 style={{ paddingBottom: 15, textAlign: 'center' }} className="heading">
-                    National Level Technical Symposium
+                    One day National Level Technical Symposium <br/><br/>
+                    25 Years of MSc
                   </h1>
                   {isEventCompleted ? (
                     <div style={{ display: 'flex', justifyContent: 'center', textAlign: 'center', marginTop: '15px' }}>
@@ -64,21 +70,29 @@ function Home() {
           <Container style={{ margin: 0, padding: 0, minWidth: '100%', marginBottom:"30px" }}>
             <Workshop />
           </Container>
-          <Container style={{ margin: 0, padding: 0, minWidth: '100%', marginBottom:"30px" }}>
+          {/* <Container style={{ margin: 0, padding: 0, minWidth: '100%', marginBottom:"30px" }}>
             <QueryCard />
-          </Container>
+          </Container> */}
           <Container style={{ margin: 0, padding: 0, minWidth: '100%', marginBottom:"30px" }}>
             <Sponsors />
           </Container>
           <Container style={{ margin: 0, padding: 0, minWidth: '100%', marginBottom:"30px" }}>
             <ChiefGuest />
           </Container>
-          <Container>
+         
+          <Container style={{ margin: 0, padding: 0, minWidth: '100%', marginBottom:"50px" }}>
             <Timeline />
           </Container>
-          <Container>
+
+          {/* <div class="divv" style={{color: 'white',fontSize:'1.6rem',fontWeight: 700,fontFamily: "Audiowide"}}>Feel</div> */}
+          
+  
+   
+  
+
+          {/* <Container style={{ margin: 0, padding: 0, minWidth: '100%', marginBottom:"0px" }}>
             <Contact />
-          </Container>
+          </Container> */}
         </Container>
       </section>
     </>

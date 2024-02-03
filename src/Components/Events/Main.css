@@ -1,7 +1,7 @@
 .element-2 {
     display: flex;
     margin-left: 30px;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     gap: 3rem;
 }
@@ -19,11 +19,9 @@
 }
 
 .round-rules {
-    margin: 10px 50px;
-    /* width: 40%; */
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .round {
@@ -65,5 +63,14 @@
 }
 
 .link {
-display: flex;
-flex-direction: column;}
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    background-color: #cc93a3;
+    border: none;
+    position: relative;
+    padding: 0.5rem;
+    justify-self: center;
+}

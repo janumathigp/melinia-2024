@@ -7,6 +7,7 @@ import Home from "./Components/Home/Home";
 import Board from "./Components/Board/Board";
 import MainDescription from './Components/Events/MainDescription';
 import Footer from "./Components/Footer";
+import Contact from "./Components/Contact/Contact"
 
 
 
@@ -19,8 +20,12 @@ import ScrollToTop from "./Components/ScrollToTop";
 import "./style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Developers from './Components/Developers/Developers';
+import mixpanel from 'mixpanel-browser';
 // import Achievements from "./Components/Achievements/Achievements";
 
+mixpanel.init("80b2a21992bf5ce950bb5dbd06b144a7",{
+  debug:true
+})
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -43,6 +48,8 @@ function App() {
           <Route path="/events/:id" element={<MainDescription />} />
    
           <Route path="/developers" element={<Developers />} />
+          <Route path="/contact" element={<Contact />} />
+
 
         </Routes>
         <Footer />

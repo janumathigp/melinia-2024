@@ -9,6 +9,7 @@ import codegolf from '../../Assets/events/code golf.png';
 import crypticquest from '../../Assets/events/crypticquest.png';
 import datacraft from '../../Assets/events/data craft.png';
 import somethingfishy from '../../Assets/events/something fishy.png';
+import mixpanel from 'mixpanel-browser';
 
 const cardData = [
   { id: 1, imageUrl: Keycharades },
@@ -62,7 +63,44 @@ const Events = () => {
       window.removeEventListener('resize', updateCarouselSettings);
     };
   }, []);
-
+  const handleLinkClick = (cardId) => {
+    if(cardId===1){
+      mixpanel.track("keycharades event clicked", {
+        page:"home"
+      });
+    }
+    else if(cardId===2){
+      mixpanel.track("sequelverse event clicked", {
+        page:"home"
+      });
+    }
+    else if(cardId===3){
+      mixpanel.track("codegolf event clicked", {
+        page:"home"
+      });
+    }
+    else if(cardId===4){
+      mixpanel.track("bidbattle event clicked", {
+        page:"home"
+      });
+    }
+    else if(cardId===5){
+      mixpanel.track("crypticquest event clicked", {
+        page:"home"
+      });
+    }
+    else if(cardId===6){
+      mixpanel.track("datacraft event clicked", {
+        page:"home"
+      });
+    }
+    else if(cardId===7){
+      mixpanel.track("somethingfishy event clicked", {
+        page:"home"
+      });
+    }
+    // You can call your custom function or perform any other actions here
+  };
   const renderCarouselItems = () => {
     const items = [];
 
@@ -73,7 +111,7 @@ const Events = () => {
         <Carousel.Item key={i}>
           <div className="d-flex justify-content-around">
             {setOfImages.map((card, j) => (
-              <Link key={`${card.id}-${j}`} to={`events/${card.id}`} style={{ textDecoration: 'none'}}>
+              <Link onClick={() => handleLinkClick(card.id)}  key={`${card.id}-${j}`} to={`events/${card.id}`} style={{ textDecoration: 'none'}}>
                 <img
                   src={card.imageUrl}
                   alt={`Card ${card.id}`}
@@ -96,11 +134,11 @@ const Events = () => {
   };
 
   return (
-    <Container fluid style={{ padding: '30px' }}>
-      <span className="aboutFont2" style={{ color: 'white' }}>
+    <Container fluid style={{ padding: '30px' }} id='events'>
+      <span className="aboutFont" >
         DIVERSE EVENTS, ENDLESS POSSIBILITIES
       </span>
-      <Col>
+      <Col style={{ paddingTop:"20px"}}>
         <Carousel activeIndex={index} onSelect={handleSelect} interval={5000} indicators={false} wrap={true}>
           {renderCarouselItems()}
         </Carousel>

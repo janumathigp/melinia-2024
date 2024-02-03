@@ -1,0 +1,22 @@
+@media (max-width: 767px) {
+    .footer {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+      }
+    
+      .mel-logo img {
+        width: 120px;
+        height: 32px;
+      }
+    
+      .contactus,
+      .dum {
+        text-align: center;
+      }
+    
+      .foot {
+        display: none; /* Hide only the text "Our Socials" on mobile */
+      }
+  }
+  
