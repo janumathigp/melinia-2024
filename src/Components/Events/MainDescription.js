@@ -138,7 +138,7 @@ const cardData = [
         description: 'Teams solve coding questions to obtain clues. Clues guide them to  locations with hints for the next coding challenge. Top 10 teams that emerge        with the final set of clues will advance to the final round.',
         round1: {
             title: "Code and hunt",
-            detail: "Participants will have to solve a set of MCQ's"
+            detail: "Teams solve coding questions to obtain clues. Clues guide them to            locations with hints for the next coding challenge. Top 10 teams that emerge            with the final set of clues will advance to the final round."
         },
         round2: {
             title: "Coding",
