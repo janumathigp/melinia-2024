@@ -17,7 +17,6 @@ import crypticquest from "../../Assets/events/crypticquest.png"
 import datacraft from "../../Assets/events/data craft.png"
 import somethingfishy from "../../Assets/events/something fishy.png"
 import { Container } from 'react-bootstrap';
-import { Container } from 'react-bootstrap';
 
 
 const cardData = [
