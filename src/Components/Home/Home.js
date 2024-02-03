@@ -45,8 +45,9 @@ function Home() {
                     <strong className="main-name"> 2K24  </strong>
                   </h1>
                   <h1 style={{ paddingBottom: 15, textAlign: 'center' }} className="heading">
-                    One day National Level Technical Symposium <br/><br/>
-                    25 Years of MSc
+                   25 Years of MSc<br/><br/>
+                    National Level Technical Symposium 
+                    
                   </h1>
                   {isEventCompleted ? (
                     <div style={{ display: 'flex', justifyContent: 'center', textAlign: 'center', marginTop: '15px' }}>
