@@ -24,7 +24,10 @@ function Home() {
             <Row>
               <Col className="home-header">
                 <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-                  <h1 style={{ paddingBottom: 15, textAlign: 'center' }} className=" q">
+                <h1 style={{ paddingBottom: 15, textAlign: 'center',fontFamily:"Audiowide",fontSize:"1.5em"}} className=" q">
+                    Coimbatore Institute of Technology
+                  </h1>
+                  <h1 style={{ paddingBottom: 15, textAlign: 'center',fontFamily:"Audiowide",fontSize:"1.3em"}} className="q">
                     Department of Computing <br/>MSc SS | DS | DCS | AIML
                   </h1>
                   <div style={{ display: 'flex', justifyContent: 'center' }}>
@@ -39,10 +42,11 @@ function Home() {
                   </div>
                   <h1 className="heading-name meliniaFont">
                     MELINIA
-                    <strong className="main-name"> 2024  </strong>
+                    <strong className="main-name"> 2k24  </strong>
                   </h1>
                   <h1 style={{ paddingBottom: 15, textAlign: 'center' }} className="heading">
-                    National Level Technical Symposium
+                    One day National Level Technical Symposium <br/><br/>
+                    25 Years of MSc
                   </h1>
                   {isEventCompleted ? (
                     <div style={{ display: 'flex', justifyContent: 'center', textAlign: 'center', marginTop: '15px' }}>
