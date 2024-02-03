@@ -42,7 +42,7 @@ function Home() {
                   </div>
                   <h1 className="heading-name meliniaFont">
                     MELINIA
-                    <strong className="main-name"> 2k24  </strong>
+                    <strong className="main-name"> 2K24  </strong>
                   </h1>
                   <h1 style={{ paddingBottom: 15, textAlign: 'center' }} className="heading">
                     One day National Level Technical Symposium <br/><br/>
