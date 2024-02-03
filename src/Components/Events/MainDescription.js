@@ -213,7 +213,7 @@ const MainDescription = () => {
 
     return (
         <div className="main-wrapper" style={{ backgroundColor: "#d9d2e9" }}>
-            <Container className="text-black" style={{ marginTop: "100px" }}>
+            <Container className="text-black" style={{ marginTop: "100px", padding:'10px' }}>
                 <Particle></Particle>
                 <div className='title'>
                     <h3 className=" aboutFont text-lg">{title}</h3>
