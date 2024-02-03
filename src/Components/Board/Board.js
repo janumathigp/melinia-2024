@@ -269,7 +269,7 @@ class Board extends React.Component
             
            sx={{
            '@media (max-width: 600px)': {
-            height:"fit-content"
+            height:"auto"
           },
           
           }}

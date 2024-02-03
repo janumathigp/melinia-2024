@@ -1,6 +1,6 @@
 .image-fit{
     object-fit: contain !important;
-    height: fit-content;
+    height: auto;
 }
 .fa-envelope {
     /* margin-top: 0; */
