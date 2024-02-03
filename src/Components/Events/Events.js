@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { Carousel, Col, Container } from 'react-bootstrap';
 
@@ -26,6 +26,8 @@ const Events = () => {
   const [numImagesPerSet, setNumImagesPerSet] = useState(3);
   const [imageSize, setImageSize] = useState({ width: '200px', height: '200px' });
   const [extendedCardData, setExtendedCardData] = useState([]);
+  const containerRef = useRef(null);
+
 
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
@@ -64,42 +66,41 @@ const Events = () => {
     };
   }, []);
   const handleLinkClick = (cardId) => {
-    if(cardId===1){
+    if (cardId === 1) {
       mixpanel.track("keycharades event clicked", {
-        page:"home"
+        page: "home"
       });
     }
-    else if(cardId===2){
+    else if (cardId === 2) {
       mixpanel.track("sequelverse event clicked", {
-        page:"home"
+        page: "home"
       });
     }
-    else if(cardId===3){
+    else if (cardId === 3) {
       mixpanel.track("codegolf event clicked", {
-        page:"home"
+        page: "home"
       });
     }
-    else if(cardId===4){
+    else if (cardId === 4) {
       mixpanel.track("bidbattle event clicked", {
-        page:"home"
+        page: "home"
       });
     }
-    else if(cardId===5){
+    else if (cardId === 5) {
       mixpanel.track("crypticquest event clicked", {
-        page:"home"
+        page: "home"
       });
     }
-    else if(cardId===6){
+    else if (cardId === 6) {
       mixpanel.track("datacraft event clicked", {
-        page:"home"
+        page: "home"
       });
     }
-    else if(cardId===7){
+    else if (cardId === 7) {
       mixpanel.track("somethingfishy event clicked", {
-        page:"home"
+        page: "home"
       });
     }
-    // You can call your custom function or perform any other actions here
   };
   const renderCarouselItems = () => {
     const items = [];
@@ -111,7 +112,7 @@ const Events = () => {
         <Carousel.Item key={i}>
           <div className="d-flex justify-content-around">
             {setOfImages.map((card, j) => (
-              <Link onClick={() => handleLinkClick(card.id)}  key={`${card.id}-${j}`} to={`events/${card.id}`} style={{ textDecoration: 'none'}}>
+              <Link onClick={() => handleLinkClick(card.id)} key={`${card.id}-${j}`} to={`events/${card.id}`} style={{ textDecoration: 'none' }}>
                 <img
                   src={card.imageUrl}
                   alt={`Card ${card.id}`}
@@ -134,16 +135,19 @@ const Events = () => {
   };
 
   return (
-    <Container fluid style={{ padding: '30px' }} id='events'>
-      <span className="aboutFont" >
-        DIVERSE EVENTS, ENDLESS POSSIBILITIES
-      </span>
-      <Col style={{ paddingTop:"20px"}}>
-        <Carousel activeIndex={index} onSelect={handleSelect} interval={5000} indicators={false} wrap={true}>
-          {renderCarouselItems()}
-        </Carousel>
-      </Col>
-    </Container>
+    <div ref={containerRef} id='events'>
+
+      <Container fluid style={{ padding: '30px' }} >
+        <h4 className="aboutFont" >
+          DIVERSE EVENTS, ENDLESS POSSIBILITIES
+        </h4>
+        <Col style={{ paddingTop: "20px" }}>
+          <Carousel activeIndex={index} onSelect={handleSelect} interval={5000} indicators={false} wrap={true}>
+            {renderCarouselItems()}
+          </Carousel>
+        </Col>
+      </Container>
+    </div>
   );
 };
 
