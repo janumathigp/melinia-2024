@@ -24,8 +24,8 @@ function Home() {
             <Row>
               <Col className="home-header">
                 <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-                  <h1 style={{ paddingBottom: 15, textAlign: 'center' }} className="heading">
-                    Department of Computing <br/>(MSc SS | AIML | DS | DCS)
+                  <h1 style={{ paddingBottom: 15, textAlign: 'center' }} className=" q">
+                    Department of Computing <br/>MSc SS | DS | DCS | AIML
                   </h1>
                   <div style={{ display: 'flex', justifyContent: 'center' }}>
                     <div className="rajdhaniFont">
@@ -66,21 +66,29 @@ function Home() {
           <Container style={{ margin: 0, padding: 0, minWidth: '100%', marginBottom:"30px" }}>
             <Workshop />
           </Container>
-          <Container style={{ margin: 0, padding: 0, minWidth: '100%', marginBottom:"30px" }}>
+          {/* <Container style={{ margin: 0, padding: 0, minWidth: '100%', marginBottom:"30px" }}>
             <QueryCard />
-          </Container>
+          </Container> */}
           <Container style={{ margin: 0, padding: 0, minWidth: '100%', marginBottom:"30px" }}>
             <Sponsors />
           </Container>
           <Container style={{ margin: 0, padding: 0, minWidth: '100%', marginBottom:"30px" }}>
             <ChiefGuest />
           </Container>
-          <Container>
+         
+          <Container style={{ margin: 0, padding: 0, minWidth: '100%', marginBottom:"50px" }}>
             <Timeline />
           </Container>
-          <Container>
+
+          {/* <div class="divv" style={{color: 'white',fontSize:'1.6rem',fontWeight: 700,fontFamily: "Audiowide"}}>Feel</div> */}
+          
+  
+   
+  
+
+          {/* <Container style={{ margin: 0, padding: 0, minWidth: '100%', marginBottom:"0px" }}>
             <Contact />
-          </Container>
+          </Container> */}
         </Container>
       </section>
     </>

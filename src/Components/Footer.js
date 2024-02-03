@@ -39,7 +39,7 @@ function Footer() {
     <div className="socials" style={{ display: "flex", justifyContent: "space-between", fontSize: "20px", color: "white" }}>
       <div className="icons" style={{ display: "flex", justifyContent: "space-between" }}>
             <a
-                href="/"
+                href="mailto:melinia2k24@gmail.com"
                 style={{ color: "white" ,fontSize: '30px',marginRight:"20px",textDecoration:'none'}}
                 target="_blank" 
                 rel="noopener noreferrer"

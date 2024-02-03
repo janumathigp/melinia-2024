@@ -5,4 +5,15 @@
 .fa-envelope {
     /* margin-top: 0; */
     margin-left: 0%;
+    
     }
+span
+{
+    /* font-family:"Raleway", serif !important; */
+    cursor:default;
+}
+
+.fa-phone
+{
+    margin-left: 0%;
+}

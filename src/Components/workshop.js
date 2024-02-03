@@ -9,6 +9,14 @@ import { FaArrowRight } from "react-icons/fa";
 function Workshop() {
   const [isEventCompleted, setCondition] = useState(false);
 
+  const handleRegisterClick = () => {
+    // Navigate to the specified URL
+    window.open('https://unstop.com/o/WJEbn31?lb=D5CxNBMi', '_blank');
+  };
+  const handleRegisterClick1 = () => {
+    // Navigate to the specified URL
+    window.open('https://unstop.com/p/paper-presentation-coimbatore-institute-of-technology-cit-coimbatore-886885', '_blank');
+  };
   return (
     <div className="workshopMainBox">
       <div className="aboutBox" style={{marginBottom:"30px"}}>
@@ -17,13 +25,17 @@ function Workshop() {
         </div>
         <div className="verticalDivider" style={{ height: '300px', width: '10px', backgroundColor: '#676368', marginLeft: '20px', marginRight: '15px' }}></div>
         <div style={{ paddingLeft: '30px', paddingRight: '20px', marginTop: '20px' }}>
-          <div className="d-flex justify-content-between flex-column flex-md-row">
-            <div>
+          <div className="d-flex justify-content-between flex-sm-column flex-xl-row">
+            <div style={{marginBottom:'10px'}}>
               <span className="workshopFont font-weight-bold">HACKATHON</span>
             </div>
             <div>
-              <span className="workshopSubFont font-weight-bold" style={{ color: 'white', fontSize: '0.9em' }}>5TH APRIL 10.00 - 11.30 AM</span>
+              <span className="workshopSubFont font-weight-bold" style={{ color: 'white', fontSize: '0.9em' }}>Round 1 : Feb 1-10 2024 <br></br> Round 2 : Feb 12-14 2024</span>
             </div>
+            {/* <br/>
+            <div>
+              <span className="workshopSubFont font-weight-bold" style={{ color: 'white', fontSize: '0.9em' }}>Round 2: Feb 12-14 2024</span>
+            </div> */}
           </div>
           {/* <div style={{ marginTop: '5px' }}>
             <span className="workshopFont">ABOUT THE MELINIA HACKATHON</span>
@@ -43,7 +55,7 @@ function Workshop() {
 Join us in crafting viable and feasible product prototypes that not only enhance the lifestyles of students and professors but also elevate the working standards of institutions at large. Let your creativity thrive and leave a lasting mark on the world! 💡</p>
           <div style={{ display: 'flex', justifyContent: 'end' }}>
             {!isEventCompleted ? (
-              <Button className="buttonFont" style={{ backgroundColor: '#61016e' }} variant="contained">Register <FaArrowRight style={{ marginLeft: '3px' }} /></Button>
+              <Button className="buttonFont" style={{ backgroundColor: '#61016e' }} variant="contained" onClick={handleRegisterClick}>Register <FaArrowRight style={{ marginLeft: '3px' }} /></Button>
 
             ) : (<Button className="buttonFont" style={{ color: '#61016e', borderColor: '#61016e' }} variant="outlined">Event Completed <FaArrowRight style={{ marginLeft: '3px' }} /></Button>)}
 
@@ -69,7 +81,7 @@ Join us in crafting viable and feasible product prototypes that not only enhance
                 <span className="workshopFont font-weight-bold">PAPER PRESENTATION</span>
               </div>
               <div>
-                <span className="workshopSubFont font-weight-bold" style={{ color: 'white', fontSize: '0.9em' }}>5TH APRIL 10.00 - 11.30 AM</span>
+                <span className="workshopSubFont font-weight-bold" style={{ color: 'white', fontSize: '0.9em' }}>Feb 16 2024</span>
               </div>
             </div>
             {/* <div style={{ marginTop: '5px', display:'flex', justifyContent:'start' }}>
@@ -90,7 +102,7 @@ Join us in crafting viable and feasible product prototypes that not only enhance
 Seize this opportunity to present insightful perspectives and contribute to the rich tapestry of intellectual innovation. Unfold your ideas on the stage of knowledge! 📚 </p>
             <div style={{ display: 'flex', justifyContent: 'end' }}>
               {!isEventCompleted ? (
-                <Button className="buttonFont" style={{ backgroundColor: '#61016e' }} variant="contained">Register <FaArrowRight style={{ marginLeft: '3px' }} /></Button>
+                <Button className="buttonFont" style={{ backgroundColor: '#61016e' }} variant="contained" onClick={handleRegisterClick1}>Register <FaArrowRight style={{ marginLeft: '3px' }} /></Button>
 
               ) : (<Button className="buttonFont" style={{ color: '#61016e', borderColor: '#61016e' }} variant="outlined">Event Completed <FaArrowRight style={{ marginLeft: '3px' }} /></Button>)}
             </div>

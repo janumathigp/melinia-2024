@@ -316,8 +316,10 @@ const MainDescription = () => {
 
                     </div>
                 </div>
-                <button style={{ margin: "10px", position:"relative"}}>
-                    <a href='https://docs.google.com/forms/d/e/1FAIpQLSeNh2Ouo9eoOSXaeQmVFUQahUHBQuYW8X5TdTUFBRecjgbFeQ/viewform?usp=sf_link' style={{textDecoration:"none", color:"white", width:"50% !important"}}>
+                <button >
+                    <a href='https://docs.google.com/forms/d/e/1FAIpQLSeNh2Ouo9eoOSXaeQmVFUQahUHBQuYW8X5TdTUFBRecjgbFeQ/viewform?usp=sf_link' style={{textDecoration:"none", color:"white", width:"50% !important"}}
+                    target="_blank"
+                    >
                         Register
                     </a>
 
