@@ -6,15 +6,22 @@ import hackathon from "../Assets/events/hackATHON.png"
 import Divider from "@mui/material/Divider";
 import Button from "@mui/material/Button";
 import { FaArrowRight } from "react-icons/fa";
+import mixpanel from "mixpanel-browser";
 function Workshop() {
   const [isEventCompleted, setCondition] = useState(false);
 
   const handleRegisterClick = () => {
     // Navigate to the specified URL
+    mixpanel.track("hackathon button clicked", {
+      page:"home"
+    });
     window.open('https://unstop.com/o/WJEbn31?lb=D5CxNBMi', '_blank');
   };
   const handleRegisterClick1 = () => {
     // Navigate to the specified URL
+    mixpanel.track("paperpresentation button clicked", {
+      page:"home"
+    });
     window.open('https://unstop.com/p/paper-presentation-coimbatore-institute-of-technology-cit-coimbatore-886885', '_blank');
   };
   return (
@@ -25,10 +32,11 @@ function Workshop() {
         </div>
         <div className="verticalDivider" style={{ height: '300px', width: '10px', backgroundColor: '#676368', marginLeft: '20px', marginRight: '15px' }}></div>
         <div style={{ paddingLeft: '30px', paddingRight: '20px', marginTop: '20px' }}>
-          <div className="d-flex justify-content-between flex-sm-column flex-xl-row">
+          <div className="d-flex justify-content-between flex-column flex-xl-column">
             <div style={{marginBottom:'10px'}}>
               <span className="workshopFont font-weight-bold">HACKATHON</span>
             </div>
+            <br></br>
             <div>
               <span className="workshopSubFont font-weight-bold" style={{ color: 'white', fontSize: '0.9em' }}>Round 1 : Feb 1-10 2024 <br></br> Round 2 : Feb 12-14 2024</span>
             </div>
@@ -76,7 +84,7 @@ Join us in crafting viable and feasible product prototypes that not only enhance
           </div>
           <div className="verticalDivider" style={{ height: '300px', width: '10px', backgroundColor: '#676368', marginLeft: '20px', marginRight: '25px' }}></div>
           <div style={{ paddingLeft: '30px', paddingRight: '20px', marginTop: '20px' }}>
-            <div className="d-flex justify-content-between flex-column flex-md-row">
+            <div className="d-flex justify-content-between flex-column flex-md-row" >
               <div>
                 <span className="workshopFont font-weight-bold">PAPER PRESENTATION</span>
               </div>

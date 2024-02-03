@@ -24,25 +24,25 @@ function Timeline1() {
       <div class="box box-left">
       <img src={launch} alt="launch" class="launch"/>
 
-        <div class="info">
-          <h6>08.30 am - 09.30 am</h6>
-          <p>
-           Inaugration ceremony
-          </p>
-          
+          <div class="info">
+            <h6>08.30 am - 09.30 am</h6>
+            <p>
+              Inaugration ceremony
+            </p>
+
+          </div>
         </div>
-      </div>
-      <div class="box box-right">
-      <img src={event} alt="event" class="event"/>
-        <div class="info">
-        <h6>10.00 am - 01.30 pm</h6>
-          <p>
-           Technical and Non-Technical Events
-          </p>
+        <div class="box box-right">
+          <img src={event} alt="event" class="event" />
+          <div class="info">
+            <h6>10.00 am - 01.30 pm</h6>
+            <p>
+              Technical and Non-Technical Events
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="box box-left">
-      <img src={lunch} alt="lunch" class="lunch"/>
+        <div class="box box-left">
+          <img src={lunch} alt="lunch" class="lunch" />
 
         <div class="info">
         <h6>01.30 pm - 02.30 pm</h6>
