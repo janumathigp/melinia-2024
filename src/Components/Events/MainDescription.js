@@ -135,14 +135,14 @@ const cardData = [
         id: 5,
         imageUrl: crypticquest,
         title: 'Cryptic Quest',
-        description: 'An adventure hunt where movie themed codes protecting treasures. Solve the codes inspired by films to find the path to mysteries. As you go further, the challenges get bigger, leading to the next level of  code challenge. Use your coding skills ,movie knowledge, crack the codes, and grab the treasures – "Cryptic quest" offers a fun journey for everyone!',
+        description: 'Teams solve coding questions to obtain clues. Clues guide them to  locations with hints for the next coding challenge. Top 10 teams that emerge        with the final set of clues will advance to the final round.',
         round1: {
-            title: "League",
+            title: "Code and hunt",
             detail: "Participants will have to solve a set of MCQ's"
         },
         round2: {
-            title: "Finale",
-            detail: "Participants should solve 2 questions in 45 minutes"
+            title: "Coding",
+            detail: "Participants will be presented with a programming challenge to solve within            the designated time frame. A set of guidelines will be provided to assist in            problem-solving. The top three teams will be determined based on the speed            at which they complete the task."
         },
         rules: "Students are requested to bring their own laptops with stable internet connection",
         venue: "Room -105",
