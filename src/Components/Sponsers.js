@@ -25,7 +25,7 @@ function Sponsors() {
     height: "100%",
     // width: "60%",
     // background: "linear-gradient(to right, #c6b6c9, #b18dca);",
-    backgroundColor:"#0c0513",
+   
     padding: "40px",
     borderRadius:"10%",
     // marginLeft:"340px",
@@ -44,11 +44,11 @@ function Sponsors() {
         }}
       >
       <div style={{width:'100%', padding:0}}><span
-          className="aboutFont"
+          className="fontColor"
           variant="h4"
           component="h1"
           fontWeight="700"
-          style={{ marginBottom:'10px', background:'linear-gradient(0deg, #86558d, #3b0043)', webkitBackgroundClip: 'text', backgroundClip: 'text',alignItems:"center"}}
+          style={{ marginBottom:'10px', alignItems:"center"}}
           mb={2}
           
         >
