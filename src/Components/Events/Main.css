@@ -1,9 +1,9 @@
 .element-2 {
     display: flex;
-    margin-left: 30px;
+    
     justify-content: flex-start;
     align-items: center;
-    gap: 3rem;
+    gap: 1rem;
 }
 
 .element-3 {
