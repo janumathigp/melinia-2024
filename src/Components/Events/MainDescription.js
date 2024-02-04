@@ -184,17 +184,17 @@ const cardData = [
     title: 'Something Fishy',
     description: 'Fact vs Fiction & Prompt Powerplay" beckons participants into a dual challenge of discerning truth from deception and unleashing creativity. Engage in an event where mysteries unfold and imaginations run wild!',
     round1: {
-      title: "Same Same but Diffelant",
-      detail: "Teams will be provided with a website for generating AI images, along with a specific theme. Each team, composed of up to 2 members, is required to use their creativity to produce one image aligning with the given theme. The best image, judged based on uniqueness and adherence to the theme, will receive a prize"
+      title: "Same Same but Diffelent",
+      detail: "Teams of up to 2 members will be presented with two statements. One statement will be true, while the other will be false. The objective is for the participants to identify the true statement. This round evaluates the team's knowledge and analytical skills."
     },
     round2: {
       title: "Prompt Play",
       detail: "Teams will be provided with a website for generating AI images, along with a specific theme. Each team, composed of up to 2 members, is required to use their creativity to produce one image aligning with the given theme. The best image, judged based on uniqueness and adherence to the theme, will receive a prize."
     },
     rules: "Students are requested  bring their own laptops with stable internet connection",
-    venue: "CM -302",
+    venue: "CM - 102",
     teamsize: 2,
-    coordinators: [{ name: "Priya Darshini ", Num: "9786233864" }, { name: "Abirami ", Num: "9003764378" }],
+    coordinators: [{ name: "Priya Darsini ", Num: "9786233864" }, { name: "Abirami ", Num: "9003764378" }],
     date: '2024-02-16',
     time: '10:00 AM - 1.30 PM',
     technical: false,
