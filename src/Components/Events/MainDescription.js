@@ -349,9 +349,10 @@ const MainDescription = () => {
 
         <h3 className="text-lg">Coordinators</h3>
 
-        <div className='column' style={{ display: "flex", flexDirection: "row", justifyContent: "center", gap: "2rem" }}>
+        <div className='column' style={{ display: "flex", flexDirection: "row", justifyContent: "center", flexWrap:"wrap" }}
+        >
 
-          <div className='coord1' style={{ display: "flex", flexDirection: "row", margin: "20px 0", justifyContent: "center", alignItems: "center" }}>
+          <div className='coord1' style={{ display: "flex", flexDirection: "row", margin: "20px 0", justifyContent: "center", alignItems: "center", flex:'1' }}>
             <div style={{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
               <div style={{ display: "flex", flexDirection: "column", marginRight: "30px" }}>
                 <div className="text-md" style={{ fontSize: "20px" }}>{coordinators[0].name}</div>
@@ -365,7 +366,7 @@ const MainDescription = () => {
             </div>
           </div>
 
-          <div className='coord2' style={{ display: "flex", flexDirection: "row", margin: "20px 0", justifyContent: "center", alignItems: "center" }}>
+          <div className='coord2' style={{ display: "flex", flexDirection: "row", margin: "20px 0", justifyContent: "center", alignItems: "center",flex:"1" }}>
             <div style={{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
               <div style={{ display: "flex", flexDirection: "column", marginRight: "30px" }}>
                 <div className="text-md" style={{ fontSize: "20px" }}>{coordinators[1].name}</div>
