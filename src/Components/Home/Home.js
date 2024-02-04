@@ -11,7 +11,7 @@ import ChiefGuest from "../ChiefGuest";
 import Timeline from "../Timeline/Timeline";
 import Contact from '../Contact/Contact';
 import Events from '../Events/Events';
-
+import yearsImage from '../../Assets/logo/years25.png';
 function Home() {
   const [isEventCompleted, setCondition] = useState(false);
 
@@ -45,9 +45,12 @@ function Home() {
                     <strong className="main-name"> 2K24  </strong>
                   </h1>
                   <h1 style={{ paddingBottom: 15, textAlign: 'center' }} className="heading">
-                   25 Years of MSc<br/><br/>
                     National Level Technical Symposium 
-                    
+                    <br></br>     <br></br>
+                  <div style={{ maxWidth: '100%', height: 'auto' }}>
+                  <img src={yearsImage} alt="25 Years" style={{ width: '100%' }} />
+                </div>
+ 
                   </h1>
                   {isEventCompleted ? (
                     <div style={{ display: 'flex', justifyContent: 'center', textAlign: 'center', marginTop: '15px' }}>
