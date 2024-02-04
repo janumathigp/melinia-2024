@@ -37,12 +37,12 @@ const cardData = [
     },
 
     rules: "Students are requested to bring their own laptops with stable internet connection",
-    venue: "Room -102",
+    venue: "CM - 306",
     // note: " Land of the Dead, where cre . Winners will be selected based on their results and the time taken to complete the challenge.  4. A brief explanation of the language will be given to the participants for better understanding.",
     teamsize: 3,
     coordinators: [{ name: "Navika ", Num: "9499006602" }, { name: "Susma ", Num: "9843736523" }],
     date: '2024-02-16',
-    time: '10:00 AM',
+    time: '10:00 AM - 1.30 PM',
     technical: true,
   },
 
@@ -64,11 +64,11 @@ const cardData = [
       detail: "This round will have complex SQL queries"
     },
     rules: "Students are requested to bring their own laptops with stable internet connection",
-    venue: "Room-101",
+    venue: "CM - 301",
     teamsize: "1/2",
     coordinators: [{ name: "Dharshini ", Num: "6374698514" }, { name: "Abirami ", Num: "9003764378" }],
     date: '2024-02-16',
-    time: '10:30 AM',
+    time: '10:00 AM - 1.30 PM',
     technical: true,
   },
 
@@ -91,11 +91,11 @@ const cardData = [
     },
 
     rules: "Students are requested to bring their own laptops with stable internet connection",
-    venue: "Room -103",
+    venue: "CM -103",
     teamsize: 2,
     coordinators: [{ name: "Janumathi", Num: "9360638869" }, { name: "Prakalya ", Num: "9488038087" }],
     date: '2024-02-16',
-    time: '11:30 AM',
+    time: '10:00 AM - 1.30 PM',
     technical: true,
   },
 
@@ -106,7 +106,7 @@ const cardData = [
     description: 'Engage in strategic bidding and coding prowess in our event, where teams vie for questions, place their bids, and endeavor to conquer challenges.Take risk and score big by answering right in this thrilling Bid and Code showdown.',
     round1: {
       title: "Prelims",
-      detail: <>1. Each team will have a purse of 1000 points<br></br>2. No of Questions-10-12<br></br>3. Bidding Value<br></br>4. Easy Question – 100 points<br></br>5. Difficult Question – 50 points<br></br>6. Marquee Question - +250 points if correct else -250 points<br></br>7. Top 9 teams with highest remaining purse will qualify to the finals</>
+      detail: <>1. Each team will have a purse of 1000 points<br></br>2. No of Questions-10-12<br></br>3. Bidding Value<br></br>4. Easy Question – 100 points<br></br>5. Difficult Question – 50 points<br></br>6. Marquee Question - +250 points if correct else -250 points<br></br>7. Top 9 teams with highest remaining purse will qualify to the finals <br></br>8. Teams will incur a deduction of points equal to their bid in the event of an incorrect answer</>
     },
     round2: {
       title: "Finale",
@@ -125,11 +125,11 @@ const cardData = [
     },
 
     // rules: "Students are requested to bring their own laptops with stable internet connection",
-    venue: "Room -104",
+    venue: "CM -104",
     teamsize: 2,
     coordinators: [{ name: "Chanakkya", Num: "9500924924" }, { name: "Prakalya", Num: "9488038087" }],
     date: '2024-02-16',
-    time: '12:00 PM',
+    time: '10:00 AM - 1.30 PM',
     technical: false,
   },
 
@@ -137,7 +137,7 @@ const cardData = [
     id: 5,
     imageUrl: crypticquest,
     title: 'Cryptic Quest',
-    description: 'Teams solve coding questions to obtain clues. Clues guide them to  locations with hints for the next coding challenge. Top 10 teams that emerge        with the final set of clues will advance to the final round.',
+    description: ' "Cryptic Quest" - an adventure hunt where movie themed codes protecting treasures. Solve the codes inspired by films to find the path to mysteries. As you go further, the challenges get bigger, leading to the next level of  code challenge. Use your coding skills ,movie knowledge, crack the codes, and grab the treasures – "Cryptic quest" offers a fun journey for everyone!',
     round1: {
       title: "Code and hunt",
       detail: "Teams solve coding questions to obtain clues. Clues guide them to            locations with hints for the next coding challenge. Top 10 teams that emerge            with the final set of clues will advance to the final round."
@@ -147,11 +147,11 @@ const cardData = [
       detail: "Participants will be presented with a programming challenge to solve within            the designated time frame. A set of guidelines will be provided to assist in            problem-solving. The top three teams will be determined based on the speed            at which they complete the task."
     },
     rules: "Students are requested to bring their own laptops with stable internet connection",
-    venue: "Room -105",
-    teamsize: 2,
+    venue: "CM - 204",
+    teamsize: 3,
     coordinators: [{ name: "Ranjith ", Num: "9384360375" }, { name: "Bhupesh", Num: "9994615335" }],
     date: '2024-02-16',
-    time: '12:00 PM',
+    time: '10:00 AM - 1.30 PM',
     technical: true,
   },
 
@@ -162,18 +162,18 @@ const cardData = [
     description: 'A trailer for internships and placements, offering a glimpse into a future where data isn\'t just analyzed; it\'s a dynamic force shaping careers. Witness the crafting of raw data into a beautiful sculpture with expert data cleaning, preprocessing, and exploratory data analysis. Marvel at the precision of model building and the dance of evaluation metrics. After a refreshing intermission, experience the art of using Dash to make life simpler, showcasing stylish and interactive data visualizations. Join us for a journey of insights, innovation, and boundless opportunities!',
     round1: {
       title: "Data Analysis",
-      detail: "The first round of the event would be held in two batches, each with 20 to 30 participants. Each batch has 40 minutes to finish the first round.  Participants can be in a team of two or one. The teams with first the high scores from each batch will be moved to the second round "
+      detail: "The first round of the event would be held in two batches, each with 20 to 30 participants. Each batch has 40 minutes to finish the first round.  Participants can be in a team of two or one. The teams with the first high scores from each batch will be moved to the second round "
     },
     round2: {
       title: "Dashboard creation ",
       detail: "The second round will have 6 participants(team). This will be the final round deciding the winner of the event."
     },
     rules: "Students are requested to bring their own laptops with stable internet connection",
-    venue: "Room -301",
+    venue: "CM - 105",
     teamsize: 2,
     coordinators: [{ name: "Avudaiappan ", Num: "9361259521" }, { name: "Bhupesh ", Num: "9994615335" }],
     date: '2024-02-16',
-    time: '11:00 AM',
+    time: '10:00 AM - 1.30 PM',
     technical: true,
   },
 
@@ -191,11 +191,11 @@ const cardData = [
       detail: "Teams will be provided with a website for generating AI images, along with a specific theme. Each team, composed of up to 2 members, is required to use their creativity to produce one image aligning with the given theme. The best image, judged based on uniqueness and adherence to the theme, will receive a prize."
     },
     rules: "Students are requested to bring their own laptops with stable internet connection",
-    venue: "Room -302",
+    venue: "CM -302",
     teamsize: 2,
     coordinators: [{ name: "Priya Dharsini ", Num: "9786233864" }, { name: "Abirami ", Num: "9360638869" }],
     date: '2024-02-16',
-    time: '12:30 PM',
+    time: '10:00 AM - 1.30 PM',
     technical: false,
   },
 
@@ -252,52 +252,55 @@ const MainDescription = () => {
   const { title, description, round1, round2, round3, rules, venue, note, teamsize, coordinators, date, time, technical } = event;
 
   return (
-    <div className="main-wrapper" style={{ backgroundColor: "#d9d2e9", padding:"20px" }}>
-      <Container className="text-black" style={{ marginTop: "100px", padding: '10px' }}>
+    <div className="main-wrapper" style={{ backgroundColor: "#d9d2e9" }}>
+      <Container className="text-black" style={{ marginTop: "100px", padding: '30px' }}>
         <Particle></Particle>
         <div className='title'>
           <h3 className=" aboutFont text-lg">{title}</h3>
         </div>
-        {technical ? (
-          <div style={{ padding: "10px" }}>
-            Technical Event
-          </div>
-        ) : (
-          <div style={{ padding: "10px" }}>
-            Non - Technical Event
-          </div>
-        )}
-
+        <div style={{ padding: "10px", display: "inline-block", background: "rgba(64, 25, 80, 0.7)", borderRadius: "5px", color: "white", margin: "20px", textAlign: "center" }}>
+          {technical ? "Technical Event" : "Non - Technical Event"}
+        </div>
 
         <div className='description text-md text-lg' style={{ textAlign: "justify", marginBottom: "40px" }}>
           {description}
         </div>
 
-        <div className='info-event row text-black' style={{ marginBottom: "40px" }}>
-          <div className='venue col-md-4' >
-            <IoLocation style={{ fontSize: "20px" }} />
-            <p className='info-detail text-md text-lg' style={{ fontSize: '20px' }}>{venue}</p>
+        <div className='info-event row d-flex flex-row justify-content-center' style={{ marginBottom: "40px", alignContent: "center" }}>
+          <div className='venue col-md-4'>
+            <div className='icon-container'>
+              <IoLocation style={{ fontSize: "20px" }} />
+            </div>
+            <p className='info-detail text-md text-lg' style={{ fontSize: '20px', marginLeft: '10px', alignSelf: 'center' }}>{venue}</p>
           </div>
 
           <div className='time col-md-4'>
-            <MdOutlineAccessTimeFilled style={{ fontSize: "20px" }} />
-            <p className='info-detail text-md text-lg' style={{ fontSize: '20px' }}>{date} {time}</p>
+            <div className='icon-container'>
+              <MdOutlineAccessTimeFilled style={{ fontSize: "20px" }} />
+            </div>
+            <p className='info-detail text-md text-lg' style={{ fontSize: '20px', marginLeft: '10px', alignSelf: 'center' }}> {time}</p>
           </div>
 
           <div className='teamsize col-md-4'>
-            <BsPeopleFill style={{ fontSize: "20px" }} />
-            <p className='info-detail text-md text-lg' style={{ fontSize: '20px' }}>{teamsize}</p>
+            <div className='icon-container'>
+              <BsPeopleFill style={{ fontSize: "20px" }} />
+            </div>
+            <p className='info-detail text-md text-lg' style={{ fontSize: '20px', marginLeft: '10px', alignSelf: 'center' }}>{teamsize}</p>
           </div>
         </div>
 
-        <h3 className="text-lg">Rounds</h3>
+
+
+        <hr className='divider' />
+
+        {/* <h3 className="text-lg subHead"  >Rounds</h3> */}
         <div className='round-rules' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: 0 }}>
           <div className='rounds'>
 
             <div className='round1' style={{ margin: "10px" }}>
               <div className='element-2' style={{ marginBottom: "20px" }}>
-                <Bs1CircleFill style={{ fontSize: '40px' }} />
-                <h3 className="text-md text-lg" style={{ textAlign: "left" }}>{round1.title}</h3>
+                <Bs1CircleFill style={{ fontSize: '25px' }} />
+                <h3 className="text-md text-lg title" style={{ fontSize: "20px", textAlign: "left" }}>{round1.title}</h3>
               </div>
               <div className='element-3'>
                 <p className="text-md text-lg">{round1.detail}</p>
@@ -306,8 +309,8 @@ const MainDescription = () => {
 
             <div className='round2' style={{ margin: "10px" }}>
               <div className='element-2' style={{ marginBottom: "20px" }}>
-                <Bs2CircleFill style={{ fontSize: '40px' }} />
-                <h3 className="text-md text-lg" style={{ textAlign: "left" }}>{round2.title}</h3>
+                <Bs2CircleFill style={{ fontSize: '25px' }} />
+                <h3 className="text-md text-lg title" style={{ fontSize: "20px", textAlign: "left" }}>{round2.title}</h3>
               </div>
               <div className='element-3'>
                 <p className="text-md text-lg">{round2.detail}</p>
@@ -318,7 +321,7 @@ const MainDescription = () => {
               <div className='round3' style={{ flex: "1 1 300px", margin: "10px" }}>
                 <div className='element-2' style={{ marginBottom: "20px" }}>
                   <Bs3CircleFill style={{ fontSize: '50px' }} />
-                  <h3 className="text-md text-lg" style={{ textAlign: "left" }}>{round3.title}</h3>
+                  <h3 className="text-md text-lg title" style={{ textAlign: "left" }}>{round3.title}</h3>
                 </div>
                 <div className='element-3'>
                   <p className="text-md text-lg">{round3.detail}</p>
@@ -327,16 +330,18 @@ const MainDescription = () => {
             )}
           </div>
         </div>
+        <hr className='divider' />
 
 
         {rules && (
 
           <div className='rules '>
-            <h3 className="text-lg" style={{ marginBottom: "20px" }}>Guidelines</h3>
+            <h3 className="text-lg guideline" >Guidelines</h3>
             <p className='element-3 text-md text-lg' style={{ textAlign: "center" }}>{rules}</p>
           </div>
 
         )}
+        <hr className='divider' />
 
         <h3 className="text-lg">Coordinators</h3>
 
@@ -357,13 +362,13 @@ const MainDescription = () => {
           </div>
         </div>
 
-        <Button className="buttonFont" style={{ backgroundColor: '#61016e' }} variant="contained" > 
-        <a href='https://docs.google.com/forms/d/e/1FAIpQLSeNh2Ouo9eoOSXaeQmVFUQahUHBQuYW8X5TdTUFBRecjgbFeQ/viewform?usp=sf_link' style={{ textDecoration: "none", color: "white", width: "50% !important" }}
-          target="_blank"
-        >
-          Register
-        </a>
-         <FaArrowRight style={{ marginLeft: '3px' }} /></Button>
+        <Button className="buttonFont" style={{ backgroundColor: '#61016e' }} variant="contained" >
+          <a href='https://docs.google.com/forms/d/e/1FAIpQLSeNh2Ouo9eoOSXaeQmVFUQahUHBQuYW8X5TdTUFBRecjgbFeQ/viewform?usp=sf_link' style={{ textDecoration: "none", color: "white", width: "50% !important" }}
+            target="_blank"
+          >
+            Register
+          </a>
+          <FaArrowRight style={{ marginLeft: '3px' }} /></Button>
       </Container>
     </div>
 
