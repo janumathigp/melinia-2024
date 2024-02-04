@@ -128,7 +128,7 @@ const cardData = [
     // rules: "Students are requested to bring their own laptops with stable internet connection",
     venue: "CM -104",
     teamsize: 2,
-    coordinators: [{ name: "Chanakkya", Num: "9500924924" }, { name: "Prakalya", Num: "9488038087" }],
+    coordinators: [{ name: "Chanakkya", Num: "+91 9500924924" }, { name: "Prakalya", Num: "9488038087" }],
     date: '2024-02-16',
     time: '10:00 AM - 1.30 PM',
     technical: false,
