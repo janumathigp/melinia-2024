@@ -6,7 +6,7 @@ import Keycharades from '../../Assets/events/KEY CHARADES.png';
 import SEQUELVERSE from '../../Assets/events/SEQUELVERSE.png';
 import bidbattle from '../../Assets/events/bidbattle.png';
 import codegolf from '../../Assets/events/code golf.png';
-import crypticquest from '../../Assets/events/crypticquest.png';
+import crypticquest from '../../Assets/events/datacra.jpeg';
 import datacraft from '../../Assets/events/data craft.png';
 import somethingfishy from '../../Assets/events/something fishy.png';
 import mixpanel from 'mixpanel-browser';

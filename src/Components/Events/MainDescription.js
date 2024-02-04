@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 // Import images for your cards
 import { Bs1CircleFill, Bs2CircleFill, Bs3CircleFill, BsPeopleFill } from "react-icons/bs";
 import { IoLocation } from "react-icons/io5";
-import { FcBusinessman } from "react-icons/fc";
+import { FaWhatsapp } from "react-icons/fa";
 import { MdOutlineAccessTimeFilled } from "react-icons/md";
 import { Particle } from '../ParticlesBackground';
 import mixpanel from 'mixpanel-browser';
@@ -15,7 +15,7 @@ import Keycharades from "../../Assets/events/KEY CHARADES.png"
 import SEQUELVERSE from "../../Assets/events/SEQUELVERSE.png"
 import bidbattle from "../../Assets/events/bidbattle.png"
 import codegolf from "../../Assets/events/code golf.png"
-import crypticquest from "../../Assets/events/crypticquest.png"
+import crypticquest from "../../Assets/events/datacra.jpeg"
 import datacraft from "../../Assets/events/data craft.png"
 import somethingfishy from "../../Assets/events/something fishy.png"
 import { Container } from 'react-bootstrap';
@@ -254,7 +254,7 @@ const MainDescription = () => {
   return (
     <div className="main-wrapper" style={{ backgroundColor: "#d9d2e9" }}>
       <Container className="text-black" style={{ marginTop: "100px", padding: '30px' }}>
-        <Particle></Particle>
+        <Particle style={{ zIndex: 0 }}></Particle>
         <div className='title'>
           <h3 className=" aboutFont text-lg">{title}</h3>
         </div>
@@ -348,22 +348,31 @@ const MainDescription = () => {
         <div className='column' style={{ display: "flex", flexDirection: "row", justifyContent: "center", gap: "2rem" }}>
 
           <div className='coord1' style={{ display: "flex", flexDirection: "row", margin: "20px 0", justifyContent: "center", alignItems: "center" }}>
-            <div style={{fontSize:"40px", marginRight:"10px"}}>
-            <FcBusinessman />
-
+            <div style={{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
+              <div style={{ display: "flex", flexDirection: "column", marginRight: "30px" }}>
+                <div className="text-md" style={{ fontSize: "20px" }}>{coordinators[0].name}</div>
+                <div className="text-md">{coordinators[0].Num}</div>
+              </div>
+              <div>
+                <a href={`https://wa.me/${coordinators[0].Num}`} target="_blank" rel="noopener noreferrer"  style={{ cursor: "pointer",position:"relative" }}>
+                  <FaWhatsapp style={{ fontSize: "30px", color: "green" }} />
+                </a>
+              </div>
             </div>
-            <div style={{ display: "flex", flexDirection: "column" }}>
-              <div className="text-md">{coordinators[0].name}</div>
-              <div className="text-md">{coordinators[0].Num}</div>
-            </div>
-
           </div>
-          <div className='coord2' style={{ display: "flex", flexDirection: "row", margin: "20px 0", justifyContent: "center", alignItems: "center" }}>
-            <div style={{ display: "flex", flexDirection: "column" }}>
-              <div className="text-md ">{coordinators[1].name}</div>
-              <div className="text-md">{coordinators[1].Num}</div>
-            </div>
 
+          <div className='coord2' style={{ display: "flex", flexDirection: "row", margin: "20px 0", justifyContent: "center", alignItems: "center" }}>
+            <div style={{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
+              <div style={{ display: "flex", flexDirection: "column", marginRight: "30px" }}>
+                <div className="text-md" style={{ fontSize: "20px" }}>{coordinators[1].name}</div>
+                <div className="text-md">{coordinators[1].Num}</div>
+              </div>
+              <div>
+                <a href={`https://wa.me/${coordinators[1].Num}`} target="_blank" rel="noopener noreferrer"  style={{ cursor: "pointer", position:"relative" }}>
+                  <FaWhatsapp style={{ fontSize: "30px", color: "green" }}/>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
 
