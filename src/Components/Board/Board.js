@@ -42,7 +42,8 @@ class Board extends React.Component {
   cardDataTeachers = [
     {
       name: "Dr.V.Keerthika",
-      role: "Faculty Coordinator - Event Management",
+      role: "Faculty Coordinator",
+      role1:"Event Management",
       department: "Department of Computing",
       phone: "0422-2574071",
       email: "vkeerthika@cit.edu.in",
@@ -50,7 +51,8 @@ class Board extends React.Component {
     },
     {
       name: "Dr.D.Manju",
-      role: "Faculty Coordinator - Event management",
+      role: "Faculty Coordinator",
+      role1:"Event Management",
       department: "Department of Computing",
       phone: "0422-2574071",
       email: "manju@cit.edu.in",
@@ -58,7 +60,8 @@ class Board extends React.Component {
     },
     {
       name: "Dr.M.Sujithra",
-      role: "Faculty Coordinator - Technical Event Management",
+      role: "Faculty Coordinator",
+      role1:"Technical Events",
       department: "Department of Computing",
       phone: "0422-2574071",
       email: "sujithra@cit.edu.in",
@@ -66,7 +69,8 @@ class Board extends React.Component {
     },
     {
       name: "Mrs.P Hemashree",
-      role: "Faculty Coordinator - Non-Technical Event Management",
+      role: "Faculty Coordinator",
+      role1:"Non-Technical Events",
       department: "Department of Computing",
       phone: "0422-2574071",
       email: "hemashree@cit.edu.in",
@@ -283,6 +287,9 @@ class Board extends React.Component {
                   </Typography>
                   <Typography variant="body1" display="block" gutterBottom sx={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 'bolder', color: '#555', fontSize: '0.85rem' }}>
                     <span style={{ fontFamily: '"Raleway", serif !important' }}>{data.role}</span>
+                  </Typography>
+                  <Typography variant="body1" display="block" gutterBottom sx={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 'bolder', color: '#555', fontSize: '0.85rem' }}>
+                    <span style={{ fontFamily: '"Raleway", serif !important' }}>{data.role1}</span>
                   </Typography>
                   <Typography variant="body2" color="text.secondary" sx={{ fontFamily: 'Montserrat, sans-serif', color: '#777', fontSize: '0.9rem' }}>
                     <span style={{ fontFamily: '"Raleway", serif !important' }}>{data.department}</span>
