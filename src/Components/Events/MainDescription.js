@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 // Import images for your cards
 import { Bs1CircleFill, Bs2CircleFill, Bs3CircleFill, BsPeopleFill } from "react-icons/bs";
 import { IoLocation } from "react-icons/io5";
-import { FaWhatsapp, FaPhoneAlt } from "react-icons/fa";
+import { FcBusinessman } from "react-icons/fc";
 import { MdOutlineAccessTimeFilled } from "react-icons/md";
 import { Particle } from '../ParticlesBackground';
 import mixpanel from 'mixpanel-browser';
@@ -320,8 +320,8 @@ const MainDescription = () => {
             {round3 && (
               <div className='round3' style={{ flex: "1 1 300px", margin: "10px" }}>
                 <div className='element-2' style={{ marginBottom: "20px" }}>
-                  <Bs3CircleFill style={{ fontSize: '50px' }} />
-                  <h3 className="text-md text-lg title" style={{ textAlign: "left" }}>{round3.title}</h3>
+                  <Bs3CircleFill style={{ fontSize: '25px' }} />
+                  <h3 className="text-md text-lg title" style={{ fontSize: "20px", textAlign: "left" }}>{round3.title}</h3>
                 </div>
                 <div className='element-3'>
                   <p className="text-md text-lg">{round3.detail}</p>
@@ -346,7 +346,12 @@ const MainDescription = () => {
         <h3 className="text-lg">Coordinators</h3>
 
         <div className='column' style={{ display: "flex", flexDirection: "row", justifyContent: "center", gap: "2rem" }}>
+
           <div className='coord1' style={{ display: "flex", flexDirection: "row", margin: "20px 0", justifyContent: "center", alignItems: "center" }}>
+            <div style={{fontSize:"40px", marginRight:"10px"}}>
+            <FcBusinessman />
+
+            </div>
             <div style={{ display: "flex", flexDirection: "column" }}>
               <div className="text-md">{coordinators[0].name}</div>
               <div className="text-md">{coordinators[0].Num}</div>
