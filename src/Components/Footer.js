@@ -48,7 +48,7 @@ function Footer() {
 
       <Row className="justify-content-center">
         <Col xs={12} className="developed-with-love" style={{ fontSize: "15px", color: "white", textDecoration: "underline" }} onClick={handleClick}>
-          Developed with love
+          Dev Team
         </Col>
       </Row>
     </Container>
