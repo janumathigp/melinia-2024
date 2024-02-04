@@ -415,7 +415,7 @@ button:focus {
   /* font-family: 'Orbitron', sans-serif; */
   font-family: 'Audiowide', sans-serif;
   font-weight: 100 !important;
-  font-size: 3em !important;
+  font-size: 2em !important;
   
   position: relative;
   right: 10px;
@@ -477,22 +477,25 @@ button:focus {
     font-size: 2.0em !important;
     
 
+      /* Additional styles as needed */
+    
   }
 }
-.workshopFont{
-  background: linear-gradient(56deg, #d96caf, #ba0072);
-  background-size: 300%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  line-height: 0.9;
-  /* animation: animate 5s ease-in-out infinite; */
-  /* font-family: 'Orbitron', sans-serif; */
-  font-family: 'Audiowide', sans-serif;
-  font-weight: 100 !important;
-  font-size: 2.2em !important;
-
+@media (max-width: 768px) {
+  .workshopFont {
+    background: linear-gradient(56deg, #d96caf, #ba0072);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 0.9;
+    /* animation: animate 5s ease-in-out infinite; */
+    /* font-family: 'Orbitron', sans-serif; */
+    font-family: 'Audiowide', sans-serif;
+    font-weight: 100 !important;
+    font-size: 1.7em !important;  }
 }
+
 @media (min-width:900px) {
 
   .eventImage{
