@@ -252,7 +252,7 @@ const MainDescription = () => {
   const { title, description, round1, round2, round3, rules, venue, note, teamsize, coordinators, date, time, technical } = event;
 
   return (
-    <div className="main-wrapper" style={{ backgroundColor: "#d9d2e9" }}>
+    <div className="main-wrapper" style={{ backgroundColor: "#d9d2e9", padding:"20px" }}>
       <Container className="text-black" style={{ marginTop: "100px", padding: '10px' }}>
         <Particle></Particle>
         <div className='title'>
