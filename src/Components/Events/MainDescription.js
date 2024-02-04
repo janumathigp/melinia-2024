@@ -50,18 +50,18 @@ const cardData = [
     id: 2,
     imageUrl: SEQUELVERSE,
     title: 'Sequel Verse',
-    description: 'SequelVerse is a team event where participants form pairs and are randomly divided into three batches. The first round involves an online quiz, with shortlisted students from each batch advancing to round 2. In round 2, participants take a paper-pen test, writing queries, and the selected few move on to round 3. The final round is a HackerRank challenge, testing SQL fundamentals in this exciting field.',
+    description: 'SequelVerse is an event where participants form pairs or participate individually. The first round involves an online MCQ quiz in the Quizizz platform. The second round is taken in Hackerrank platform where students solve and write queries. The participants are shortlisted after the first and second round based on their scores. The third round is also taken in Hackerrank. The participants will be given complex word problems to solve.',
     round1: {
       title: "MCQ",
-      detail: "Participants will have to solve a set of MCQ's"
+      detail: "Participants will have to solve a set of MCQs in Quizizz platform (10 minutes)"
     },
     round2: {
       title: "SQL Queries",
-      detail: "This round will easy-medium level SQL queries"
+      detail: "This round will intermediate level SQL queries in Hackerrank (10 minutes)"
     },
     round3: {
       title: "Complex SQL Problems",
-      detail: "This round will have complex SQL queries"
+      detail: "This round will have complex SQL word problems in Hackerrank (20-25 minutes)"
     },
     rules: "Students are requested to bring their own laptops with stable internet connection",
     venue: "CM - 301",
@@ -76,18 +76,18 @@ const cardData = [
     id: 3,
     imageUrl: codegolf,
     title: 'Code Golf',
-    description: 'Dive into the coding arena with our thrilling 2-round challenge! Unleash your programming prowess under the pressure of time constraints and elevate your skills to conquer the coding battleground. Are you ready to code against the clock and emerge victorious?',
+    description: 'Dive into the coding arena with our thrilling 3-round challenge! Unleash your programming prowess under the pressure of time constraints and elevate your skills to conquer the coding battleground. Are you ready to code against the clock and emerge victorious?',
     round1: {
       title: "MCQ",
-      detail: "The round will be for 20 minutes.The participants will have to solve the provided questions(which will be of one word type)"
+      detail: "The round will be for 25 minutes.The participants will have to solve 15 MCQ's. 10 Teams with high scores will be eligible for the next round"
     },
     round2: {
       title: "Easy Coding",
-      detail: "High scorers from the previous round are eligible. The participants should solve 2(or more) coding questions in 25 minutes."
+      detail: "The participants should solve 3 coding questions (Easy-Med Level) in 1 hour. Top 5 teams will be eligible for the final round  "
     },
     round3: {
       title: "Complex Coding",
-      detail: "The participant should solve 2 questions in 45 minutes. There will rapid fire round for 10 mins."
+      detail: "The participants should solve 2 coding questions (Med-High Level) in 45 minutes. The round ends with a 10-Minute Rapid fire session."
     },
 
     rules: "Students are requested to bring their own laptops with stable internet connection",
@@ -118,8 +118,9 @@ const cardData = [
           4. Bidding Value<br />
           5. Easy Question – 100 points<br />
           6. Difficult Question – 50 points<br />
-          7. Marquee Question - +250 points if correct else -250 points<br /><br />
-          8. Top 3 teams with the highest remaining purse will be the winners
+          7. Marquee Question - +250 points if correct else -250 points<br />
+          8. Top 3 teams with the highest remaining purse will be the winners<br></br>
+          9. Teams will incur a deduction of points equal to their bid in the event of an incorrect answer
         </>
       ),
     },
@@ -190,7 +191,7 @@ const cardData = [
       title: "Prompt Play",
       detail: "Teams will be provided with a website for generating AI images, along with a specific theme. Each team, composed of up to 2 members, is required to use their creativity to produce one image aligning with the given theme. The best image, judged based on uniqueness and adherence to the theme, will receive a prize."
     },
-    rules: "Students are requested to bring their own laptops with stable internet connection",
+    rules: "Students are requested  bring their own laptops with stable internet connection",
     venue: "CM -302",
     teamsize: 2,
     coordinators: [{ name: "Priya Darshini ", Num: "9786233864" }, { name: "Abirami ", Num: "9003764378" }],
@@ -330,15 +331,18 @@ const MainDescription = () => {
             )}
           </div>
         </div>
-        <hr className='divider' />
 
 
         {rules && (
+          <>
+        <hr className='divider' />
+
 
           <div className='rules '>
             <h3 className="text-lg guideline" >Guidelines</h3>
             <p className='element-3 text-md text-lg' style={{ textAlign: "center" }}>{rules}</p>
           </div>
+          </>
 
         )}
         <hr className='divider' />
