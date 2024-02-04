@@ -193,7 +193,7 @@ const cardData = [
     rules: "Students are requested to bring their own laptops with stable internet connection",
     venue: "CM -302",
     teamsize: 2,
-    coordinators: [{ name: "Priya Dharsini ", Num: "9786233864" }, { name: "Abirami ", Num: "9360638869" }],
+    coordinators: [{ name: "Priya Darshini ", Num: "9786233864" }, { name: "Abirami ", Num: "9003764378" }],
     date: '2024-02-16',
     time: '10:00 AM - 1.30 PM',
     technical: false,
