@@ -4,9 +4,9 @@ import Swal from 'sweetalert2';
 import './Contact.css';
 import { Particle } from '../ParticlesBackground';
 
-const SERVICE_ID = "service_ahi3duf";
-const TEMPLATE_ID = "template_r4ya1dd";
-const PUBLIC_KEY = "kjhxSKhqQ4DCCoy3Q";
+const SERVICE_ID = "service_jbymv2b";
+const TEMPLATE_ID = "template_bs0k0p6";
+const PUBLIC_KEY = "G1CseMWOkyduFhsNr";
 
 const Contact = () => {
   const handleOnSubmit = (e) => {
@@ -62,14 +62,14 @@ const Contact = () => {
         <div class="screen-body-item" >
           <form class="app-form" onSubmit={handleOnSubmit}>
             <div class="app-form-group">
-              <input class="app-form-control" placeholder="NAME" name="from_name" />
+              <input class="app-form-control" placeholder="NAME" name="from_name" required />
             </div>
             <div class="app-form-group">
-              <input class="app-form-control" placeholder="EMAIL" name="from_email"/>
+              <input class="app-form-control" placeholder="EMAIL" name="from_email" required/>
             </div>
             
             <div class="app-form-group message">
-              <input class="app-form-control" placeholder="MESSAGE" name='message'/>
+              <input class="app-form-control" placeholder="MESSAGE" name='message' required/>
             </div>
             <div class="app-form-group buttons">
               
