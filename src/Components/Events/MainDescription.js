@@ -29,11 +29,11 @@ const cardData = [
     description: 'In this event, each participant will receive encrypted messages and a flowchart. One person will act out a keyword, and the rest of the group must figure it out. Once the keyword is discovered, use it to decode your messages using the provided flowchart. The decoded messages will reveal a riddle that the entire group will work together to solve. It\'s a fun and collaborative challenge that combines acting, code-breaking, and riddle-solving.',
     round1: {
       title: "Word Enactment",
-      detail: <>1. Each team will be assigned a programming-related word.<br></br>2.	Without speaking or using any props, the participant must act out the word for others to guess.<br></br>3. The rest of the team members will observe and try to guess the word being enacted.<br></br>4. The participant can use gestures, body language, and actions to convey the essence of the word.<br></br>5. The participant will have a limited time (e.g., 60 seconds) to enact the word.<br></br>6. Once the time is up or the word is correctly guessed, the next participant will move on to the second round.</>
+      detail: <>- Each team will be assigned a programming-related word.<br></br>-	Without speaking or using any props, the participant must act out the word for others to guess.<br></br>- The rest of the team members will observe and try to guess the word being enacted.<br></br>- The participant can use gestures, body language, and actions to convey the essence of the word.<br></br>- The participant will have a limited time (e.g., 60 seconds) to enact the word.<br></br>- Once the time is up or the word is correctly guessed, the next participant will move on to the second round.</>
     },
     round2: {
       title: "Decoding Encrypted Words ",
-      detail: <>1. Each team will be provided with an encrypted word and the algorithm used for encryption.<br></br>2. Participants must decipher the encrypted word using the given algorithm.<br></br>3. Participants can use any language to decode the encrypted word in the given specific platform.<br></br>4. Once decoded, participants should write down or announce the decrypted word.<br></br>5. The correct decrypted word will be revealed by the event organizer.<br></br>6. Participants will earn points or rewards based on the accuracy and speed of decryption.</>
+      detail: <>- Each team will be provided with an encrypted word and the algorithm used for encryption.<br></br>- Participants must decipher the encrypted word using the given algorithm.<br></br>- Participants can use any language to decode the encrypted word in the given specific platform.<br></br>- Once decoded, participants should write down or announce the decrypted word.<br></br>- The correct decrypted word will be revealed by the event organizer.<br></br>- Participants will earn points or rewards based on the accuracy and speed of decryption.</>
     },
 
     rules: "Students are requested to bring their own laptops with stable internet connection",
@@ -53,15 +53,15 @@ const cardData = [
     description: 'SequelVerse is an event where participants form pairs or participate individually. The first round involves an online MCQ quiz in the Quizizz platform. The second round is taken in Hackerrank platform where students solve and write queries. The participants are shortlisted after the first and second round based on their scores. The third round is also taken in Hackerrank. The participants will be given complex word problems to solve.',
     round1: {
       title: "MCQ",
-      detail: "Participants will have to solve a set of MCQs in Quizizz platform (10 minutes)"
+      detail: "- Participants will have to solve a set of MCQs in Quizizz platform (10 minutes)"
     },
     round2: {
       title: "SQL Queries",
-      detail: "This round will intermediate level SQL queries in Hackerrank (10 minutes)"
+      detail: "- This round will intermediate level SQL queries in Hackerrank (10 minutes)"
     },
     round3: {
       title: "Complex SQL Problems",
-      detail: "This round will have complex SQL word problems in Hackerrank (20-25 minutes)"
+      detail: "- This round will have complex SQL word problems in Hackerrank (20-25 minutes)"
     },
     rules: "Students are requested to bring their own laptops with stable internet connection",
     venue: "CM - 301",
@@ -79,15 +79,15 @@ const cardData = [
     description: 'Dive into the coding arena with our thrilling 3-round challenge! Unleash your programming prowess under the pressure of time constraints and elevate your skills to conquer the coding battleground. Are you ready to code against the clock and emerge victorious?',
     round1: {
       title: "MCQ",
-      detail: "The round will be for 25 minutes.The participants will have to solve 15 MCQ's. 10 Teams with high scores will be eligible for the next round"
+      detail: <>- The round will be for 25 minutes.<br></br>- The participants will have to solve 15 MCQ's.<br></br>-  10 Teams with high scores will be eligible for the next round</>
     },
     round2: {
       title: "Easy Coding",
-      detail: "The participants should solve 3 coding questions (Easy-Med Level) in 1 hour. Top 5 teams will be eligible for the final round  "
+      detail: <>- The participants should solve 3 coding questions (Easy-Med Level) in 1 hour.<br></br>- Top 5 teams will be eligible for the final round </>
     },
     round3: {
       title: "Complex Coding",
-      detail: "The participants should solve 2 coding questions (Med-High Level) in 45 minutes. The round ends with a 10-Minute Rapid fire session."
+      detail: <>- The participants should solve 2 coding questions (Med-High Level) in 45 minutes.<br></br>- The round ends with a 10-Minute Rapid fire session.</>
     },
 
     rules: "Students are requested to bring their own laptops with stable internet connection",
@@ -106,21 +106,21 @@ const cardData = [
     description: 'Engage in strategic bidding and coding prowess in our event, where teams vie for questions, place their bids, and endeavor to conquer challenges.Take risk and score big by answering right in this thrilling Bid and Code showdown.',
     round1: {
       title: "Prelims",
-      detail: <>1. Each team will have a purse of 1000 points<br></br>2. No of Questions-10-12<br></br>3. Bidding Value<br></br>4. Easy Question – 100 points<br></br>5. Difficult Question – 50 points<br></br>6. Marquee Question - +250 points if correct else -250 points<br></br>7. Top 9 teams with highest remaining purse will qualify to the finals <br></br>8. Teams will incur a deduction of points equal to their bid in the event of an incorrect answer</>
+      detail: <>- Each team will have a purse of 1000 points<br></br>- No of Questions-10-12<br></br>- Bidding Value<br></br>- Easy Question – 100 points<br></br>- Difficult Question – 50 points<br></br>- Marquee Question - +250 points if correct else -250 points<br></br>- Top 9 teams with highest remaining purse will qualify to the finals <br></br>- Teams will incur a deduction of points equal to their bid in the event of an incorrect answer</>
     },
     round2: {
       title: "Finale",
       detail: (
         <>
-          1. Top 9 teams will participate in the finals<br />
-          2. No of Questions-15<br />
-          3. Each team will have a purse of 1500 points<br />
-          4. Bidding Value<br />
-          5. Easy Question – 100 points<br />
-          6. Difficult Question – 50 points<br />
-          7. Marquee Question - +250 points if correct else -250 points<br />
-          8. Top 3 teams with the highest remaining purse will be the winners<br></br>
-          9. Teams will incur a deduction of points equal to their bid in the event of an incorrect answer
+          - Top 9 teams will participate in the finals<br />
+          - No of Questions-15<br />
+          - Each team will have a purse of 1500 points<br />
+          - Bidding Value<br />
+          - Easy Question – 100 points<br />
+          - Difficult Question – 50 points<br />
+          - Marquee Question - +250 points if correct else -250 points<br />
+          - Top 3 teams with the highest remaining purse will be the winners<br></br>
+          - Teams will incur a deduction of points equal to their bid in the event of an incorrect answer
         </>
       ),
     },
@@ -141,11 +141,11 @@ const cardData = [
     description: ' "Cryptic Quest" - an adventure hunt where movie themed codes protecting treasures. Solve the codes inspired by films to find the path to mysteries. As you go further, the challenges get bigger, leading to the next level of  code challenge. Use your coding skills ,movie knowledge, crack the codes, and grab the treasures – "Cryptic quest" offers a fun journey for everyone!',
     round1: {
       title: "Code and hunt",
-      detail: "Teams solve coding questions to obtain clues. Clues guide them to            locations with hints for the next coding challenge. Top 10 teams that emerge            with the final set of clues will advance to the final round."
+      detail: <>- Teams solve coding questions to obtain clues.<br></br>- Clues guide them to            locations with hints for the next coding challenge.<br></br>- Top 10 teams that emerge            with the final set of clues will advance to the final round.</>
     },
     round2: {
       title: "Coding",
-      detail: "Participants will be presented with a programming challenge to solve within            the designated time frame. A set of guidelines will be provided to assist in            problem-solving. The top three teams will be determined based on the speed            at which they complete the task."
+      detail: <>- Participants will be presented with a programming challenge to solve within            the designated time frame.<br></br>- A set of guidelines will be provided to assist in            problem-solving.<br></br>- The top three teams will be determined based on the speed            at which they complete the task.</>
     },
     rules: "Students are requested to bring their own laptops with stable internet connection",
     venue: "CM - 204",
@@ -163,11 +163,11 @@ const cardData = [
     description: 'A trailer for internships and placements, offering a glimpse into a future where data isn\'t just analyzed; it\'s a dynamic force shaping careers. Witness the crafting of raw data into a beautiful sculpture with expert data cleaning, preprocessing, and exploratory data analysis. Marvel at the precision of model building and the dance of evaluation metrics. After a refreshing intermission, experience the art of using Dash to make life simpler, showcasing stylish and interactive data visualizations. Join us for a journey of insights, innovation, and boundless opportunities!',
     round1: {
       title: "Data Analysis",
-      detail: "The first round of the event would be held in two batches, each with 20 to 30 participants. Each batch has 40 minutes to finish the first round.  Participants can be in a team of two or one. The teams with the first high scores from each batch will be moved to the second round "
+      detail: <>- The first round of the event would be held in two batches, each with 20 to 30 participants.<br></br>- Each batch has 40 minutes to finish the first round.<br></br>- Participants can be in a team of two or one.<br></br>- The teams with the first high scores from each batch will be moved to the second round </>
     },
     round2: {
       title: "Dashboard creation ",
-      detail: "The second round will have 6 participants(team). This will be the final round deciding the winner of the event."
+      detail: <>- The second round will have 6 participants(team).<br></br>- This will be the final round deciding the winner of the event.</>
     },
     rules: "Students are requested to bring their own laptops with stable internet connection",
     venue: "CM - 105",
@@ -185,11 +185,11 @@ const cardData = [
     description: 'Fact vs Fiction & Prompt Powerplay" beckons participants into a dual challenge of discerning truth from deception and unleashing creativity. Engage in an event where mysteries unfold and imaginations run wild!',
     round1: {
       title: "Same Same but Diffelent",
-      detail: "Teams of up to 2 members will be presented with two statements. One statement will be true, while the other will be false. The objective is for the participants to identify the true statement. This round evaluates the team's knowledge and analytical skills."
+      detail: <>- Teams of up to 2 members will be presented with two statements.<br></br>- One statement will be true, while the other will be false.<br></br>- The objective is for the participants to identify the true statement.<br></br>- This round evaluates the team's knowledge and analytical skills.</>
     },
     round2: {
       title: "Prompt Play",
-      detail: "Teams will be provided with a website for generating AI images, along with a specific theme. Each team, composed of up to 2 members, is required to use their creativity to produce one image aligning with the given theme. The best image, judged based on uniqueness and adherence to the theme, will receive a prize."
+      detail: <>- Teams will be provided with a website for generating AI images, along with a specific theme.<br></br>- Each team, composed of up to 2 members, is required to use their creativity to produce one image aligning with the given theme.<br></br>- The best image, judged based on uniqueness and adherence to the theme, will receive a prize.</>
     },
     rules: "Students are requested  bring their own laptops with stable internet connection",
     venue: "CM - 102",
