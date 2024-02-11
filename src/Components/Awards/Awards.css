@@ -1,0 +1,97 @@
+.modal-content {
+    /* Customize the backdrop color and opacity as needed */
+    background-color: rgba(0, 0, 0,0.5);
+  }
+  
+  /* Modal content style */
+  .modal-content-custom {
+    /* Customize the modal content style */
+    background-color: #d9d2e9;
+    border: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+    /* Add additional styles as needed */
+  }
+/* Awards.css */
+
+/* Modal Header styles */
+.modal-content-custom1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #401950;
+    border: none;
+    padding: 15px; /* Add padding for better spacing */
+  }
+  
+  /* Glowing effect for "Alert" text */
+  .glowing-text {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #fff; /* Choose your preferred text color */
+    animation: glow 1.5s infinite alternate; /* Glowing animation */
+  }
+  
+  /* Bold text for "Mr / Ms. Melinia" */
+  .bold-text {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    color: #fff; /* Choose your preferred text color */
+  }
+  
+  /* Glowing animation */
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 15px #ff00ff;
+    }
+    to {
+      text-shadow: 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff;
+    }
+  }
+  
+  
+  /* Awards.css */
+
+/* Container styles */
+.container-fluid {
+    font-family: 'Arial', sans-serif; /* Choose your preferred font-family */
+    /* padding: 20px; */
+  }
+  
+  /* Heading styles */
+  .container-fluid h4 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333; /* Choose your preferred text color */
+    margin-bottom: 10px;
+  }
+  
+  /* List styles */
+  .container-fluid ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: justify; /* Add this line to justify the text within the list */
+  }
+  
+  /* List item styles */
+  .container-fluid ul li {
+    font-size: 13px;
+    color: #555; /* Choose your preferred text color */
+    margin-bottom: 5px;
+    text-align: left; /* If you want to reset the text alignment for individual list items */
+  }
+  
+  /* Participation-based awards paragraph styles */
+  .container-fluid p {
+    font-size: 13px;
+    color: #555; /* Choose your preferred text color */
+    margin-top: 10px;
+  }
+  .modal-header .btn-close
+  {
+    margin: 0px;
+  }
