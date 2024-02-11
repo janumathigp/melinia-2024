@@ -32,8 +32,37 @@ const Awards = ({ isAward, onClose, updateIsAward, showAwardsInfo }) => {
 
       <Modal.Body className="modal-content-custom">
         <div className="container-fluid">
-        <h4 style={{fontSize:'15px',fontFamily: "'Arial', sans-serif",color:"#444",
-    fontWeight:"500"}}>This is an overall award given to an individual based on the following criteria:</h4>
+        <div>
+  <span style={{
+    fontSize: '15px',
+    fontFamily: "'Arial', sans-serif",
+    color: "black",
+    fontWeight: "600"
+  }}>
+    This is an overall award given to an
+  </span>
+  {/* <br /> */}&nbsp;
+  <span style={{
+    fontSize: '25px',
+    fontFamily: "'Comic Sans MS', cursive", // Unique font style
+    color: "rgb(18, 2, 108)", // Accent color
+    textShadow: "rgba(0, 0, 0, 0.8) 4px 4px 4px", // Text shadow for depth
+    // marginBottom: "10px", 
+    display: "inline-block" // Inline block for proper shadow sizing
+  }}>
+    Individual
+  </span>&nbsp;
+  <span style={{
+    fontSize: '15px',
+    fontFamily: "'Arial', sans-serif",
+    color: "black",
+    fontWeight: "600"
+  }}>
+    based on the following criteria:
+  </span>
+</div>
+
+
   <h4 style={{color:"color: #333"}}>Points-Based:</h4>
   <ul className="awards-list">
     <li><span>1st Place &nbsp;  :</span> 100 Points</li>
