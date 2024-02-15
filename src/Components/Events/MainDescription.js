@@ -83,11 +83,11 @@ const cardData = [
     },
     round2: {
       title: "Easy Coding",
-      detail: <>- The participants should solve 3 coding questions (Easy-Med Level) in 1 hour.<br></br>- Top 5 teams will be eligible for the final round </>
+      detail: <>- The participants should solve 3 coding questions (Easy-Med Level) in 1 hour.<br></br>- Top 3 teams will be eligible for the final round </>
     },
     round3: {
       title: "Complex Coding",
-      detail: <>- The participants should solve 2 coding questions (Med-High Level) in 45 minutes.<br></br>- The round ends with a 10-Minute Rapid fire session.</>
+      detail: <>- The participants should solve 1 coding question (Med-High Level) in 40 minutes.<br></br>- The round ends with a 10-Minute Rapid fire session.</>
     },
 
     rules: "Students are requested to bring their own laptops with stable internet connection",
