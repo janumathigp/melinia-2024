@@ -6,7 +6,7 @@ import { useMediaQuery } from "react-responsive";
 import { FiMoreVertical } from "react-icons/fi";
 
   import { Link, useLocation, useNavigate } from 'react-router-dom';
-  import citlogo from '../Assets/logo/log.png';
+  import citlogo from '../Assets/logo/MELINIA24_LOGO.png';
   import cit from '../Assets/logo/mobile.png';
 
 const NavBar = () => {

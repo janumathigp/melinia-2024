@@ -12,11 +12,31 @@ import Timeline from "../Timeline/Timeline";
 import Contact from '../Contact/Contact';
 import Events from '../Events/Events';
 import yearsImage from '../../Assets/logo/years25.png';
+import Awards from "../Awards/Awards";
+import { useEffect } from "react";
 function Home() {
   const [isEventCompleted, setCondition] = useState(false);
 
+  const [showModal, setShowModal] = useState(true);
+
+  const updateIsAward = (value) => {
+    setShowModal(value);
+  };
+
+  useEffect(() => {
+    // Open the Awards Information modal when the component mounts
+    setShowModal(true);
+
+    // Cleanup function to close the modal when the component unmounts
+    return () => {
+      setShowModal(false);
+    };
+  }, []); // The empty dependency array ensures this effect runs only once on mount
+
+
   return (
     <>
+    <Awards isAward={showModal} onClose={() => setShowModal(false)} updateIsAward={updateIsAward} showAwardsInfo={true} />
       <Particle />
       <section>
         <Container fluid className="home-section" id="home">
